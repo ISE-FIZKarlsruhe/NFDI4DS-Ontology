@@ -21,7 +21,11 @@
                                               <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/> ;
                                               <http://purl.org/dc/terms/title> "NFDI4DS Ontology" ;
                                               <http://purl.org/ontology/bibo/status> "Ontology Specification" ;
+<<<<<<< HEAD
                                               <http://purl.org/vocab/vann/preferredNamespacePrefix> :nfdi4dso ;
+=======
+                                              <http://purl.org/vocab/vann/preferredNamespacePrefix> <nfdi4dso> ;
+>>>>>>> 3bac401f34e8f38126ff1c18c59f40f47e9e85b5
                                               rdfs:label "NFDI4DS Ontology (nfdi4dso)" ;
                                               owl:versionInfo "v1.0.0" .
 
@@ -88,6 +92,7 @@ fabio:hasPublicationYear rdf:type owl:ObjectProperty ;
 
 ###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatus
 :LODStatus rdf:type owl:ObjectProperty ;
+<<<<<<< HEAD
            owl:inverseOf :LODStatusOf ;
            rdfs:label "LOD status" .
 
@@ -101,6 +106,12 @@ fabio:hasPublicationYear rdf:type owl:ObjectProperty ;
              rdfs:label "LOD status of" .
 
 
+=======
+           owl:inverseOf :lodStatusOf ;
+           rdfs:label "LOD status" .
+
+
+>>>>>>> 3bac401f34e8f38126ff1c18c59f40f47e9e85b5
 ###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/ORCIDIDof
 :ORCIDIDof rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000219> ;
@@ -266,6 +277,18 @@ fabio:hasPublicationYear rdf:type owl:ObjectProperty ;
       rdfs:label "lead" .
 
 
+<<<<<<< HEAD
+=======
+###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lodStatusOf
+:lodStatusOf rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
+             rdfs:domain :LODRating ;
+             rdfs:range nfdicore:Dataset ;
+             <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a FAIR Data Principle and a dataset." ;
+             rdfs:label "lod status of" .
+
+
+>>>>>>> 3bac401f34e8f38126ff1c18c59f40f47e9e85b5
 ###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaDescription
 :personaDescription rdf:type owl:ObjectProperty ;
                     owl:inverseOf :personaDescriptionOf ;
@@ -341,7 +364,11 @@ fabio:hasPublicationYear rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
                        rdfs:domain :PersonaTechnicalSkillLevel ;
                        rdfs:range :Persona ;
+<<<<<<< HEAD
                        rdfs:label "technical skill level of" .
+=======
+                       <http://purl.obolibrary.org/obo/IAO_0000115> "technical skill level of" .
+>>>>>>> 3bac401f34e8f38126ff1c18c59f40f47e9e85b5
 
 
 ###  https://schema.org/eventAttendanceMode
@@ -548,7 +575,11 @@ fabio:JournalVolume rdf:type owl:Class .
 :JointProject rdf:type owl:Class ;
               rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000011> ;
               <http://purl.obolibrary.org/obo/IAO_0000115> "A joint project organized by a group of consortium members." ;
+<<<<<<< HEAD
               rdfs:label "joint project" ;
+=======
+              rdfs:label "JointProject" ;
+>>>>>>> 3bac401f34e8f38126ff1c18c59f40f47e9e85b5
               <http://www.w3.org/2004/02/skos/core#example> "NFDI4DS Project" .
 
 
@@ -715,14 +746,22 @@ fabio:JournalVolume rdf:type owl:Class .
 :SubProject rdf:type owl:Class ;
             rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000011> ;
             <http://purl.obolibrary.org/obo/IAO_0000115> "A sub project associated with another joint project." ;
+<<<<<<< HEAD
             rdfs:label "sub-project" .
+=======
+            rdfs:label "SubProject" .
+>>>>>>> 3bac401f34e8f38126ff1c18c59f40f47e9e85b5
 
 
 ###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask
 :SubTask rdf:type owl:Class ;
          rdfs:subClassOf :AcademicEvent ;
          <http://purl.obolibrary.org/obo/IAO_0000115> "One of the divided tasks of a certain shared task." ;
+<<<<<<< HEAD
          rdfs:label "sub-task" ;
+=======
+         rdfs:label "sub task" ;
+>>>>>>> 3bac401f34e8f38126ff1c18c59f40f47e9e85b5
          <http://www.w3.org/2004/02/skos/core#example> "Task 1: DBLP-QUAD — Knowledge Graph Question Answering over DBLP https://kgqa.github.io/scholarly-QALD-challenge/2023/" .
 
 
