@@ -423,6 +423,23 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://schema.org/eventAttendanceMode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://schema.org/" .
 <https://schema.org/eventAttendanceMode> <http://www.w3.org/2000/01/rdf-schema#label> "event attendance mode" .
 # 
+# https://www.w3.org/TR/owl-time/#time:hasBeginning
+<https://www.w3.org/TR/owl-time/#time:hasBeginning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3.org/TR/owl-time/#time:hasBeginning> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/TR/owl-time/#time:Instant> .
+<https://www.w3.org/TR/owl-time/#time:hasBeginning> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.w3.org/TR/owl-time/" .
+# 
+# https://www.w3.org/TR/owl-time/#time:hasEnd
+<https://www.w3.org/TR/owl-time/#time:hasEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3.org/TR/owl-time/#time:hasEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3.org/TR/owl-time/#time:Interval> .
+<https://www.w3.org/TR/owl-time/#time:hasEnd> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/TR/owl-time/#time:Instant> .
+<https://www.w3.org/TR/owl-time/#time:hasEnd> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.w3.org/TR/owl-time/" .
+# 
+# https://www.w3.org/TR/owl-time/#time:hasTime
+<https://www.w3.org/TR/owl-time/#time:hasTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3.org/TR/owl-time/#time:hasTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3.org/TR/owl-time/#time:Interval> .
+<https://www.w3.org/TR/owl-time/#time:hasTime> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/TR/owl-time/#time:Interval> .
+<https://www.w3.org/TR/owl-time/#time:hasTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.w3.org/TR/owl-time/" .
+# 
 # 
 # 
 # #################################################################
@@ -869,6 +886,12 @@ _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Workshop> <http://purl.obolibrary.org/obo/IAO_0000115> "A workshop event." .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Workshop> <http://www.w3.org/2000/01/rdf-schema#label> "workshop" .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Workshop> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Workshop> .
+# 
+# https://www.w3.org/TR/owl-time/#time:Instant
+<https://www.w3.org/TR/owl-time/#time:Instant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://www.w3.org/TR/owl-time/#time:Interval
+<https://www.w3.org/TR/owl-time/#time:Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # 
 # 

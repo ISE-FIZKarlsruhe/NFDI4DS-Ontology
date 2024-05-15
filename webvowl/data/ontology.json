@@ -2,7 +2,7 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "undefined" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "http://purl.obolibrary.org/obo", "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "https://nfdi.fiz-karlsruhe.de/ontology", "http://www.w3.org/2001/XMLSchema", "http://purl.org/spar/fabio", "http://xmlns.com/foaf/0.1", "http://prismstandard.org/namespaces/basic/2.0" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "http://purl.obolibrary.org/obo", "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "https://nfdi.fiz-karlsruhe.de/ontology", "http://www.w3.org/2001/XMLSchema", "http://purl.org/spar/fabio", "http://xmlns.com/foaf/0.1", "https://www.w3.org/TR/owl-time/", "http://prismstandard.org/namespaces/basic/2.0" ],
     "title" : {
       "undefined" : "NFDI4DS Ontology"
     },
@@ -22,17 +22,17 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Genet Asefa Gesese https://orcid.org/0000-0003-3807-7145",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
         "value" : "Harald Sack https://orcid.org/0000-0001-7069-9804",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
         "value" : "Jörg Waitelonis https://orcid.org/0000-0001-7192-7143",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Genet Asefa Gesese https://orcid.org/0000-0003-3807-7145",
         "type" : "label"
       } ],
       "created" : [ {
@@ -47,16 +47,16 @@
         "value" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/nfdi4dso",
         "type" : "iri"
       } ],
-      "abstract" : [ {
-        "identifier" : "abstract",
-        "language" : "en",
-        "value" : "The NFDI4DS ontology (nfdi4dso) is an ontology describing various resources all resources (datasets, data providers, persons, projects and other entities) within the domain of NFDI4DataScience.  nfdi4dso is a module that builds upon the NFDIcore Ontology (https://ise-fizkarlsruhe.github.io/nfdicore/2.0.0/) and maintains alignment with the Basic Formal Ontology (BFO).",
-        "type" : "label"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "v1.0.0",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "en",
+        "value" : "The NFDI4DS ontology (nfdi4dso) is an ontology describing various resources all resources (datasets, data providers, persons, projects and other entities) within the domain of NFDI4DataScience.  nfdi4dso is a module that builds upon the NFDIcore Ontology (https://ise-fizkarlsruhe.github.io/nfdicore/2.0.0/) and maintains alignment with the Basic Formal Ontology (BFO).",
         "type" : "label"
       } ],
       "bibliographicCitation" : [ {
@@ -84,7 +84,7 @@
     "id" : "0",
     "type" : "owl:Class"
   }, {
-    "id" : "2",
+    "id" : "1",
     "type" : "owl:Class"
   }, {
     "id" : "9",
@@ -96,271 +96,262 @@
     "id" : "13",
     "type" : "owl:Class"
   }, {
-    "id" : "20",
+    "id" : "8",
     "type" : "owl:Class"
   }, {
     "id" : "30",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "33",
+    "id" : "31",
     "type" : "owl:Thing"
   }, {
     "id" : "34",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "35",
     "type" : "owl:Thing"
   }, {
-    "id" : "39",
-    "type" : "rdfs:Literal"
+    "id" : "35",
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "41",
-    "type" : "owl:Class"
+    "id" : "26",
+    "type" : "owl:Thing"
   }, {
     "id" : "42",
-    "type" : "owl:Class"
+    "type" : "rdfs:Literal"
   }, {
     "id" : "44",
     "type" : "owl:Class"
   }, {
-    "id" : "46",
+    "id" : "45",
     "type" : "owl:Class"
   }, {
-    "id" : "5",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "24",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "50",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "51",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "55",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "56",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "57",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "54",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "60",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "26",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "58",
+    "id" : "27",
     "type" : "owl:Class"
   }, {
-    "id" : "8",
+    "id" : "47",
     "type" : "owl:Class"
   }, {
-    "id" : "66",
-    "type" : "owl:Class"
-  }, {
-    "id" : "68",
-    "type" : "owl:Class"
-  }, {
-    "id" : "79",
-    "type" : "owl:Class"
-  }, {
-    "id" : "81",
-    "type" : "owl:Class"
-  }, {
-    "id" : "7",
-    "type" : "owl:Class"
-  }, {
-    "id" : "48",
-    "type" : "owl:Class"
-  }, {
-    "id" : "105",
-    "type" : "owl:Class"
-  }, {
-    "id" : "19",
-    "type" : "owl:Class"
-  }, {
-    "id" : "64",
-    "type" : "owl:Class"
-  }, {
-    "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "110",
-    "type" : "owl:Class"
-  }, {
-    "id" : "16",
-    "type" : "owl:Class"
-  }, {
-    "id" : "120",
-    "type" : "owl:Class"
-  }, {
-    "id" : "109",
-    "type" : "owl:Class"
-  }, {
-    "id" : "12",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "98",
-    "type" : "owl:Class"
-  }, {
-    "id" : "21",
-    "type" : "owl:Class"
-  }, {
-    "id" : "23",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "80",
-    "type" : "owl:Class"
-  }, {
-    "id" : "53",
+    "id" : "49",
     "type" : "owl:Class"
   }, {
     "id" : "37",
     "type" : "owl:Class"
   }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "128",
-    "type" : "owl:Class"
-  }, {
-    "id" : "100",
-    "type" : "owl:Class"
-  }, {
-    "id" : "135",
-    "type" : "owl:Class"
-  }, {
-    "id" : "124",
-    "type" : "owl:Class"
-  }, {
-    "id" : "106",
-    "type" : "owl:Class"
-  }, {
-    "id" : "102",
-    "type" : "owl:Class"
-  }, {
-    "id" : "96",
-    "type" : "owl:Class"
-  }, {
-    "id" : "160",
-    "type" : "owl:Class"
-  }, {
-    "id" : "118",
-    "type" : "owl:Class"
-  }, {
-    "id" : "169",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "145",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "146",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "170",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "171",
-    "type" : "owl:Class"
-  }, {
-    "id" : "172",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "130",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "74",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "164",
-    "type" : "owl:Class"
-  }, {
-    "id" : "168",
+    "id" : "5",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "94",
-    "type" : "owl:Class"
+    "id" : "22",
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "176",
+    "id" : "53",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
     "type" : "owl:unionOf"
   }, {
-    "id" : "70",
-    "type" : "owl:unionOf"
+    "id" : "57",
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "17",
+    "id" : "63",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "61",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
+    "id" : "66",
     "type" : "owl:Class"
   }, {
-    "id" : "114",
-    "type" : "owl:Class"
-  }, {
-    "id" : "84",
-    "type" : "owl:Class"
-  }, {
-    "id" : "136",
-    "type" : "owl:Class"
-  }, {
-    "id" : "73",
-    "type" : "owl:Class"
-  }, {
-    "id" : "14",
+    "id" : "69",
     "type" : "owl:Class"
   }, {
     "id" : "71",
     "type" : "owl:Class"
   }, {
-    "id" : "143",
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "132",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "138",
+    "type" : "owl:Class"
+  }, {
+    "id" : "128",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "164",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "122",
+    "type" : "owl:Class"
+  }, {
+    "id" : "174",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "150",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "151",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "175",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "176",
+    "type" : "owl:Class"
+  }, {
+    "id" : "177",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "134",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "77",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "169",
     "type" : "owl:Class"
   }, {
     "id" : "173",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "104",
     "type" : "owl:Class"
   }, {
-    "id" : "107",
+    "id" : "181",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "73",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
     "type" : "owl:Class"
   }, {
     "id" : "76",
     "type" : "owl:Class"
   }, {
-    "id" : "86",
+    "id" : "139",
     "type" : "owl:Class"
   }, {
-    "id" : "125",
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "178",
+    "type" : "owl:Class"
+  }, {
+    "id" : "147",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/TaskAreaLeadRole",
-    "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "instances" : 0,
-    "annotations" : {
-      "IAO_0000115" : [ {
-        "identifier" : "IAO_0000115",
-        "language" : "undefined",
-        "value" : "A role inhering in an agent that is realized when the agent is a lead of a task area defined in a Consortium.",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "TaskAreaLeadRole",
-      "undefined" : "task area lead role"
-    },
-    "id" : "0",
-    "superClasses" : [ "1" ]
-  }, {
     "iri" : "http://schema.org/EventAttendanceModeEnumeration",
     "baseIri" : "http://schema.org",
     "instances" : 0,
@@ -401,7 +392,25 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "2"
+    "id" : "0"
+  }, {
+    "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/TaskAreaLeadRole",
+    "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A role inhering in an agent that is realized when the agent is a lead of a task area defined in a Consortium.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TaskAreaLeadRole",
+      "undefined" : "task area lead role"
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Persona",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -445,43 +454,6 @@
     "id" : "11",
     "superClasses" : [ "12" ]
   }, {
-    "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/OrganizedEvent",
-    "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "instances" : 0,
-    "annotations" : {
-      "exactMatch" : [ {
-        "identifier" : "exactMatch",
-        "language" : "undefined",
-        "value" : "https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent",
-        "type" : "iri"
-      } ],
-      "IAO_0000115" : [ {
-        "identifier" : "IAO_0000115",
-        "language" : "en",
-        "value" : "Any kind of organised event having a start and an end date.",
-        "type" : "label"
-      } ],
-      "IAO_0000119" : [ {
-        "identifier" : "IAO_0000119",
-        "language" : "undefined",
-        "value" : "http://www.scholarlydata.org/ontology/doc/#d4e1203",
-        "type" : "iri"
-      } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "conferences, workshops, lectures, or any other planned event.",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "OrganizedEvent",
-      "undefined" : "organized event"
-    },
-    "subClasses" : [ "15", "16", "17", "18", "19" ],
-    "id" : "13",
-    "superClasses" : [ "14" ]
-  }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
     "instances" : 0,
@@ -522,8 +494,45 @@
         "IRI-based" : "Reusable"
       }
     } ],
-    "id" : "20",
-    "superClasses" : [ "21" ]
+    "id" : "13",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/OrganizedEvent",
+    "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
+    "instances" : 0,
+    "annotations" : {
+      "exactMatch" : [ {
+        "identifier" : "exactMatch",
+        "language" : "undefined",
+        "value" : "https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent",
+        "type" : "iri"
+      } ],
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "en",
+        "value" : "Any kind of organised event having a start and an end date.",
+        "type" : "label"
+      } ],
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "http://www.scholarlydata.org/ontology/doc/#d4e1203",
+        "type" : "iri"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "conferences, workshops, lectures, or any other planned event.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OrganizedEvent",
+      "undefined" : "organized event"
+    },
+    "subClasses" : [ "16", "17", "18", "19", "7" ],
+    "id" : "8",
+    "superClasses" : [ "15" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "30",
@@ -534,27 +543,34 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "33",
+    "id" : "31",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "34",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "34",
+    "id" : "35",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "35",
+    "id" : "26",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "39",
+    "id" : "42",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -581,8 +597,8 @@
       "IRI-based" : "Workshop",
       "undefined" : "workshop"
     },
-    "id" : "41",
-    "superClasses" : [ "19" ]
+    "id" : "44",
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -605,8 +621,17 @@
       "IRI-based" : "SubTask",
       "undefined" : "sub-task"
     },
-    "id" : "42",
-    "superClasses" : [ "19" ]
+    "id" : "45",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://www.w3.org/TR/owl-time/#time:Instant",
+    "baseIri" : "https://www.w3.org/TR/owl-time/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "time:Instant"
+    },
+    "attributes" : [ "external" ],
+    "id" : "27"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODRating",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -623,8 +648,8 @@
       "IRI-based" : "LODRating",
       "undefined" : "LOD rating"
     },
-    "id" : "44",
-    "superClasses" : [ "21" ]
+    "id" : "47",
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "http://purl.org/spar/fabio/JournalIssue",
     "baseIri" : "http://purl.org/spar/fabio",
@@ -633,7 +658,16 @@
       "IRI-based" : "JournalIssue"
     },
     "attributes" : [ "external" ],
-    "id" : "46"
+    "id" : "49"
+  }, {
+    "iri" : "https://www.w3.org/TR/owl-time/#time:Interval",
+    "baseIri" : "https://www.w3.org/TR/owl-time/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "time:Interval"
+    },
+    "attributes" : [ "external" ],
+    "id" : "37"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -644,40 +678,17 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "24",
+    "id" : "22",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "50",
+    "id" : "53",
     "label" : {
       "IRI-based" : "positiveInteger"
     }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "51",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://purl.obolibrary.org/obo/IAO_0000442",
-    "baseIri" : "http://purl.obolibrary.org/obo",
-    "id" : "55"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "56",
-    "label" : {
-      "IRI-based" : "positiveInteger"
-    }
-  }, {
-    "instances" : 0,
-    "union" : [ "58", "46" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "57"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -686,16 +697,39 @@
       "IRI-based" : "string"
     }
   }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_0000442",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "id" : "58"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "positiveInteger"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "61", "49" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "60"
+  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "60",
+    "id" : "57",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "26",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
     "label" : {
       "IRI-based" : "string"
     }
@@ -707,7 +741,7 @@
       "IRI-based" : "JournalVolume"
     },
     "attributes" : [ "external" ],
-    "id" : "58"
+    "id" : "61"
   }, {
     "iri" : "http://purl.obolibrary.org/obo/IAO_0000578",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -715,9 +749,9 @@
     "label" : {
       "IRI-based" : "IAO_0000578"
     },
-    "subClasses" : [ "7" ],
+    "subClasses" : [ "39" ],
     "attributes" : [ "external" ],
-    "id" : "8"
+    "id" : "66"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Conference",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -746,8 +780,8 @@
       "IRI-based" : "Conference",
       "undefined" : "conference"
     },
-    "id" : "66",
-    "superClasses" : [ "19" ]
+    "id" : "69",
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Proceedings",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -764,8 +798,8 @@
       "IRI-based" : "Proceedings",
       "undefined" : "Proceedings"
     },
-    "id" : "68",
-    "superClasses" : [ "37" ]
+    "id" : "71",
+    "superClasses" : [ "40" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaTechnicalSkillLevel",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -782,8 +816,8 @@
       "IRI-based" : "PersonaTechnicalSkillLevel",
       "undefined" : "persona technical skill level"
     },
-    "id" : "79",
-    "superClasses" : [ "21" ]
+    "id" : "83",
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/TaskArea",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -806,7 +840,7 @@
       "IRI-based" : "TaskArea",
       "undefined" : "task area"
     },
-    "id" : "81",
+    "id" : "85",
     "superClasses" : [ "12" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/OBI_0002110",
@@ -816,8 +850,8 @@
       "IRI-based" : "OBI_0002110"
     },
     "attributes" : [ "external" ],
-    "id" : "7",
-    "superClasses" : [ "8" ]
+    "id" : "39",
+    "superClasses" : [ "66" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaEthicalOrLegalSkillLevel",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -834,8 +868,8 @@
       "IRI-based" : "PersonaEthicalOrLegalSkillLevel",
       "undefined" : "persona ethical or legal skill level"
     },
-    "id" : "48",
-    "superClasses" : [ "21" ]
+    "id" : "51",
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/IAO_0000442",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -844,7 +878,7 @@
       "IRI-based" : "IAO_0000442"
     },
     "attributes" : [ "external" ],
-    "id" : "105"
+    "id" : "109"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/AcademicEvent",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -867,9 +901,9 @@
       "IRI-based" : "AcademicEvent",
       "undefined" : "academic event"
     },
-    "subClasses" : [ "66", "106", "41", "42", "107" ],
-    "id" : "19",
-    "superClasses" : [ "13" ]
+    "subClasses" : [ "69", "110", "44", "45", "111" ],
+    "id" : "7",
+    "superClasses" : [ "8" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaTask",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -886,8 +920,8 @@
       "IRI-based" : "PersonaTask",
       "undefined" : "persona task"
     },
-    "id" : "64",
-    "superClasses" : [ "21" ]
+    "id" : "112",
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SummerSchool",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -910,26 +944,8 @@
       "IRI-based" : "SummerSchool",
       "undefined" : "summer school"
     },
-    "id" : "15",
-    "superClasses" : [ "13" ]
-  }, {
-    "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaSoftSkillLevel",
-    "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "instances" : 0,
-    "annotations" : {
-      "IAO_0000115" : [ {
-        "identifier" : "IAO_0000115",
-        "language" : "undefined",
-        "value" : "The soft skill level a persona possesses",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "PersonaSoftSkillLevel",
-      "undefined" : "persona soft skill level"
-    },
-    "id" : "110",
-    "superClasses" : [ "21" ]
+    "id" : "16",
+    "superClasses" : [ "8" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Hackathon",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -955,8 +971,26 @@
     "comment" : {
       "en" : "An event where individuals or teams come together to engage in rapid and collaborative engineering over a relatively short period of time."
     },
-    "id" : "16",
-    "superClasses" : [ "13" ]
+    "id" : "17",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaSoftSkillLevel",
+    "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "The soft skill level a persona possesses",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PersonaSoftSkillLevel",
+      "undefined" : "persona soft skill level"
+    },
+    "id" : "115",
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaDescription",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -973,8 +1007,8 @@
       "IRI-based" : "PersonaDescription",
       "undefined" : "persona description"
     },
-    "id" : "120",
-    "superClasses" : [ "21" ]
+    "id" : "124",
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/MeasureLeadRole",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -991,8 +1025,8 @@
       "IRI-based" : "MeasureLeadRole",
       "undefined" : "measure lead role"
     },
-    "id" : "109",
-    "superClasses" : [ "1" ]
+    "id" : "108",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/IAO_0000033",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -1000,7 +1034,7 @@
     "label" : {
       "IRI-based" : "IAO_0000033"
     },
-    "subClasses" : [ "81", "11" ],
+    "subClasses" : [ "85", "11" ],
     "attributes" : [ "external" ],
     "id" : "12"
   }, {
@@ -1010,9 +1044,9 @@
     "label" : {
       "IRI-based" : "BFO_0000023"
     },
-    "subClasses" : [ "114", "109", "0", "102", "96", "94", "100", "98", "86" ],
+    "subClasses" : [ "114", "108", "1", "100", "98", "104", "102", "89", "87" ],
     "attributes" : [ "external" ],
-    "id" : "1"
+    "id" : "2"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/TaskAreaContributorRole",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -1029,8 +1063,8 @@
       "IRI-based" : "TaskAreaContributorRole",
       "undefined" : "task area contributor role"
     },
-    "id" : "98",
-    "superClasses" : [ "1" ]
+    "id" : "89",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/IAO_0000030",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -1038,9 +1072,9 @@
     "label" : {
       "IRI-based" : "IAO_0000030"
     },
-    "subClasses" : [ "84", "48", "20", "4", "44", "64", "124", "23", "79", "110", "76", "125", "120" ],
+    "subClasses" : [ "96", "51", "13", "4", "47", "112", "128", "21", "83", "115", "79", "129", "124" ],
     "attributes" : [ "external" ],
-    "id" : "21"
+    "id" : "14"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/NewsArticle",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -1057,8 +1091,8 @@
       "IRI-based" : "NewsArticle",
       "undefined" : "news article"
     },
-    "id" : "23",
-    "superClasses" : [ "21" ]
+    "id" : "21",
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "https://nfdi.fiz-karlsruhe.de/ontology/Agent",
     "baseIri" : "https://nfdi.fiz-karlsruhe.de/ontology",
@@ -1066,7 +1100,7 @@
     "label" : {
       "IRI-based" : "Agent"
     },
-    "subClasses" : [ "9", "73" ],
+    "subClasses" : [ "9", "76" ],
     "attributes" : [ "external" ],
     "id" : "10"
   }, {
@@ -1077,7 +1111,7 @@
       "IRI-based" : "IAO_0000708"
     },
     "attributes" : [ "external" ],
-    "id" : "80"
+    "id" : "82"
   }, {
     "iri" : "https://nfdi.fiz-karlsruhe.de/ontology/Person",
     "baseIri" : "https://nfdi.fiz-karlsruhe.de/ontology",
@@ -1086,7 +1120,7 @@
       "IRI-based" : "Person"
     },
     "attributes" : [ "external" ],
-    "id" : "53"
+    "id" : "56"
   }, {
     "iri" : "https://nfdi.fiz-karlsruhe.de/ontology/Publication",
     "baseIri" : "https://nfdi.fiz-karlsruhe.de/ontology",
@@ -1094,9 +1128,9 @@
     "label" : {
       "IRI-based" : "Publication"
     },
-    "subClasses" : [ "143", "68" ],
+    "subClasses" : [ "147", "71" ],
     "attributes" : [ "external" ],
-    "id" : "37"
+    "id" : "40"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PageRange",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -1114,7 +1148,7 @@
       "undefined" : "page range"
     },
     "id" : "4",
-    "superClasses" : [ "21" ]
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "https://nfdi.fiz-karlsruhe.de/ontology/Project",
     "baseIri" : "https://nfdi.fiz-karlsruhe.de/ontology",
@@ -1123,7 +1157,7 @@
       "IRI-based" : "Project"
     },
     "attributes" : [ "external" ],
-    "id" : "128"
+    "id" : "132"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokespersonRole",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -1140,8 +1174,8 @@
       "IRI-based" : "CoSpokespersonRole",
       "undefined" : "co-spokesperson role"
     },
-    "id" : "100",
-    "superClasses" : [ "1" ]
+    "id" : "102",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/EducationalFunction",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -1164,8 +1198,8 @@
       "IRI-based" : "EducationalFunction",
       "undefined" : "educational function"
     },
-    "id" : "135",
-    "superClasses" : [ "136" ]
+    "id" : "138",
+    "superClasses" : [ "139" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaWishDescription",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -1182,8 +1216,8 @@
       "IRI-based" : "PersonaWishDescription",
       "undefined" : "persona wish description"
     },
-    "id" : "124",
-    "superClasses" : [ "21" ]
+    "id" : "128",
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SharedTask",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -1206,8 +1240,8 @@
       "IRI-based" : "SharedTask",
       "undefined" : "shared task"
     },
-    "id" : "106",
-    "superClasses" : [ "19" ]
+    "id" : "110",
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SpokesPersonRole",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -1224,8 +1258,17 @@
       "IRI-based" : "SpokesPersonRole",
       "undefined" : "spokesperson role"
     },
-    "id" : "102",
-    "superClasses" : [ "1" ]
+    "id" : "100",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://nfdi.fiz-karlsruhe.de/ontology/Place",
+    "baseIri" : "https://nfdi.fiz-karlsruhe.de/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Place"
+    },
+    "attributes" : [ "external" ],
+    "id" : "164"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaOccupationRole",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -1242,17 +1285,8 @@
       "IRI-based" : "PersonaOccupationRole",
       "undefined" : "persona occupation role"
     },
-    "id" : "96",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "https://nfdi.fiz-karlsruhe.de/ontology/Place",
-    "baseIri" : "https://nfdi.fiz-karlsruhe.de/ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Place"
-    },
-    "attributes" : [ "external" ],
-    "id" : "160"
+    "id" : "98",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "https://nfdi.fiz-karlsruhe.de/ontology/Organization",
     "baseIri" : "https://nfdi.fiz-karlsruhe.de/ontology",
@@ -1261,27 +1295,27 @@
       "IRI-based" : "Organization"
     },
     "attributes" : [ "external" ],
-    "id" : "118"
+    "id" : "122"
   }, {
     "instances" : 0,
-    "union" : [ "106", "42" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "169"
+    "union" : [ "110", "45" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "174"
   }, {
     "instances" : 0,
-    "union" : [ "81", "11" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "145"
+    "union" : [ "85", "11" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "150"
   }, {
     "instances" : 0,
-    "union" : [ "53", "164" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "146"
+    "union" : [ "56", "169" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "151"
   }, {
     "instances" : 0,
-    "union" : [ "81", "11" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "170"
+    "union" : [ "85", "11" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "175"
   }, {
     "iri" : "http://purl.org/spar/fabio/Journal",
     "baseIri" : "http://purl.org/spar/fabio",
@@ -1290,22 +1324,22 @@
       "IRI-based" : "Journal"
     },
     "attributes" : [ "external" ],
-    "id" : "171"
+    "id" : "176"
   }, {
     "instances" : 0,
-    "union" : [ "53", "173" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "172"
+    "union" : [ "56", "178" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "177"
   }, {
     "instances" : 0,
-    "union" : [ "53", "173" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "130"
+    "union" : [ "56", "178" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "134"
   }, {
     "instances" : 0,
-    "union" : [ "53", "173" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "74"
+    "union" : [ "56", "178" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "77"
   }, {
     "iri" : "https://nfdi.fiz-karlsruhe.de/ontology/Consortium",
     "baseIri" : "https://nfdi.fiz-karlsruhe.de/ontology",
@@ -1314,11 +1348,11 @@
       "IRI-based" : "Consortium"
     },
     "attributes" : [ "external" ],
-    "id" : "164"
+    "id" : "169"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "168",
+    "id" : "173",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1338,18 +1372,18 @@
       "IRI-based" : "WorkingGroupContactPointRole",
       "undefined" : "working group contact point role"
     },
-    "id" : "94",
-    "superClasses" : [ "1" ]
+    "id" : "104",
+    "superClasses" : [ "2" ]
   }, {
     "instances" : 0,
-    "union" : [ "66", "106", "41", "16", "17", "107" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "176"
+    "union" : [ "69", "110", "44", "17", "18", "111" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "181"
   }, {
     "instances" : 0,
-    "union" : [ "106", "42" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "70"
+    "union" : [ "110", "45" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "73"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/ScienceSlam",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -1366,8 +1400,8 @@
       "IRI-based" : "ScienceSlam",
       "undefined" : "science slam"
     },
-    "id" : "17",
-    "superClasses" : [ "13" ]
+    "id" : "18",
+    "superClasses" : [ "8" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Lecture",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -1384,8 +1418,8 @@
       "IRI-based" : "Lecture",
       "undefined" : "lecture"
     },
-    "id" : "18",
-    "superClasses" : [ "13" ]
+    "id" : "19",
+    "superClasses" : [ "8" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/MeasureContributorRole",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -1403,7 +1437,7 @@
       "undefined" : "measure contributor role"
     },
     "id" : "114",
-    "superClasses" : [ "1" ]
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaDomainKnowledgeLevel",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -1420,18 +1454,8 @@
       "IRI-based" : "PersonaDomainKnowledgeLevel",
       "undefined" : "persona domain knowledge level"
     },
-    "id" : "84",
-    "superClasses" : [ "21" ]
-  }, {
-    "iri" : "http://purl.obolibrary.org/obo/BFO_0000034",
-    "baseIri" : "http://purl.obolibrary.org/obo",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "BFO_0000034"
-    },
-    "subClasses" : [ "135" ],
-    "attributes" : [ "external" ],
-    "id" : "136"
+    "id" : "96",
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/WorkingGroup",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -1454,8 +1478,18 @@
       "IRI-based" : "WorkingGroup",
       "undefined" : "working group"
     },
-    "id" : "73",
+    "id" : "76",
     "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000034",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BFO_0000034"
+    },
+    "subClasses" : [ "138" ],
+    "attributes" : [ "external" ],
+    "id" : "139"
   }, {
     "iri" : "https://nfdi.fiz-karlsruhe.de/ontology/Event",
     "baseIri" : "https://nfdi.fiz-karlsruhe.de/ontology",
@@ -1463,9 +1497,9 @@
     "label" : {
       "IRI-based" : "Event"
     },
-    "subClasses" : [ "13" ],
+    "subClasses" : [ "8" ],
     "attributes" : [ "external" ],
-    "id" : "14"
+    "id" : "15"
   }, {
     "iri" : "https://nfdi.fiz-karlsruhe.de/ontology/Dataset",
     "baseIri" : "https://nfdi.fiz-karlsruhe.de/ontology",
@@ -1474,7 +1508,16 @@
       "IRI-based" : "Dataset"
     },
     "attributes" : [ "external" ],
-    "id" : "71"
+    "id" : "74"
+  }, {
+    "iri" : "https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember",
+    "baseIri" : "https://nfdi.fiz-karlsruhe.de/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConsortiumMember"
+    },
+    "attributes" : [ "external" ],
+    "id" : "178"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/JournalArticle",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -1491,17 +1534,8 @@
       "IRI-based" : "JournalArticle",
       "undefined" : "journal article"
     },
-    "id" : "143",
-    "superClasses" : [ "37" ]
-  }, {
-    "iri" : "https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember",
-    "baseIri" : "https://nfdi.fiz-karlsruhe.de/ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ConsortiumMember"
-    },
-    "attributes" : [ "external" ],
-    "id" : "173"
+    "id" : "147",
+    "superClasses" : [ "40" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Tutorial",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -1524,8 +1558,8 @@
       "IRI-based" : "Tutorial",
       "undefined" : "tutorial"
     },
-    "id" : "107",
-    "superClasses" : [ "19" ]
+    "id" : "111",
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaProblemDescription",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -1542,26 +1576,8 @@
       "IRI-based" : "PersonaProblemDescription",
       "undefined" : "persona problem description"
     },
-    "id" : "76",
-    "superClasses" : [ "21" ]
-  }, {
-    "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/WorkingGroupMemberRole",
-    "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "instances" : 0,
-    "annotations" : {
-      "IAO_0000115" : [ {
-        "identifier" : "IAO_0000115",
-        "language" : "undefined",
-        "value" : "A role inhering in an agent that is realized when the agent is a member of a working group defined in a Consortium.",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "WorkingGroupMemberRole",
-      "undefined" : "working group member role"
-    },
-    "id" : "86",
-    "superClasses" : [ "1" ]
+    "id" : "79",
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/EvaluationMetric",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -1584,8 +1600,26 @@
       "IRI-based" : "EvaluationMetric",
       "undefined" : "evaluation metric"
     },
-    "id" : "125",
-    "superClasses" : [ "21" ]
+    "id" : "129",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/WorkingGroupMemberRole",
+    "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A role inhering in an agent that is realized when the agent is a member of a working group defined in a Consortium.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WorkingGroupMemberRole",
+      "undefined" : "working group member role"
+    },
+    "id" : "87",
+    "superClasses" : [ "2" ]
   } ],
   "property" : [ {
     "id" : "3",
@@ -1594,14 +1628,14 @@
     "id" : "6",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "22",
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "25",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "27",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "28",
     "type" : "rdfs:SubClassOf"
@@ -1609,49 +1643,49 @@
     "id" : "29",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "31",
+    "id" : "32",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "32",
+    "id" : "33",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "36",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "40",
+    "id" : "38",
     "type" : "owl:objectProperty"
   }, {
     "id" : "43",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "45",
+    "id" : "46",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "47",
+    "id" : "48",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "52",
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "38",
+    "id" : "41",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "61",
+    "id" : "64",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "62",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "63",
-    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "65",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "67",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "69",
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
     "type" : "owl:objectProperty"
   }, {
     "id" : "72",
@@ -1660,28 +1694,25 @@
     "id" : "75",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "77",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "78",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "59",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "82",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "83",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "85",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "87",
+    "id" : "80",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "89",
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "90",
@@ -1691,7 +1722,7 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "93",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "95",
     "type" : "rdfs:SubClassOf"
@@ -1706,115 +1737,112 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "104",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "108",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "111",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "112",
+    "id" : "107",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "113",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "115",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "116",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "117",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "119",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "121",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "122",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "88",
     "type" : "owl:objectProperty"
   }, {
     "id" : "123",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "126",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "127",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "129",
-    "type" : "owl:objectProperty"
+    "id" : "130",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "131",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "132",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "133",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "134",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "137",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "138",
-    "type" : "rdfs:SubClassOf"
+    "id" : "133",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "139",
+    "id" : "135",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "137",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "140",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "141",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "142",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "143",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "145",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "147",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "91",
-    "type" : "owl:objectProperty"
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "148",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "149",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "150",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "151",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "152",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "153",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "154",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "155",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "156",
     "type" : "rdfs:SubClassOf"
@@ -1823,7 +1851,7 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "158",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "159",
     "type" : "owl:objectProperty"
@@ -1837,40 +1865,55 @@
     "id" : "163",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "49",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "166",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "167",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "165",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "174",
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "175",
+    "id" : "52",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "177",
+    "id" : "172",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "171",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "178",
+    "id" : "170",
     "type" : "owl:objectProperty"
   }, {
     "id" : "179",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "154",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "180",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "181",
+    "id" : "182",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "183",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "184",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "185",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "160",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "186",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "187",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
@@ -1895,12 +1938,12 @@
   }, {
     "range" : "8",
     "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "6"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/longDescription",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "24",
+    "range" : "22",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -1913,13 +1956,13 @@
       "IRI-based" : "longDescription",
       "undefined" : "long description"
     },
-    "domain" : "23",
+    "domain" : "21",
     "attributes" : [ "datatype" ],
-    "id" : "22"
+    "id" : "20"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/availableAt",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "26",
+    "range" : "24",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -1932,50 +1975,81 @@
       "IRI-based" : "availableAt",
       "undefined" : "available at"
     },
-    "domain" : "23",
+    "domain" : "21",
     "attributes" : [ "datatype" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://www.w3.org/TR/owl-time/#time:hasBeginning",
+    "baseIri" : "https://www.w3.org/TR/owl-time/",
+    "range" : "27",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/TR/owl-time/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "time:hasBeginning"
+    },
+    "domain" : "26",
+    "attributes" : [ "object", "external" ],
     "id" : "25"
   }, {
-    "range" : "13",
+    "range" : "8",
     "domain" : "19",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "27"
-  }, {
-    "range" : "13",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "28"
   }, {
-    "range" : "13",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "8",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "29"
   }, {
-    "range" : "13",
+    "range" : "8",
     "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "31"
-  }, {
-    "range" : "13",
-    "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "32"
+  }, {
+    "range" : "8",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://www.w3.org/TR/owl-time/#time:hasTime",
+    "baseIri" : "https://www.w3.org/TR/owl-time/",
+    "range" : "37",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/TR/owl-time/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "time:hasTime"
+    },
+    "domain" : "37",
+    "attributes" : [ "object", "external" ],
+    "id" : "36"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/DOIOf",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "37",
+    "range" : "40",
     "label" : {
       "IRI-based" : "DOIOf",
       "undefined" : "DOI of"
     },
-    "superproperty" : [ "38" ],
-    "domain" : "7",
+    "superproperty" : [ "41" ],
+    "domain" : "39",
     "attributes" : [ "object" ],
-    "id" : "36"
+    "id" : "38"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasORCIDID",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "33",
+    "range" : "34",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -1988,14 +2062,14 @@
       "IRI-based" : "hasORCIDID",
       "undefined" : "has ORCIDID"
     },
-    "domain" : "33",
+    "domain" : "34",
     "attributes" : [ "object" ],
-    "id" : "40"
+    "id" : "43"
   }, {
     "iri" : "http://prismstandard.org/namespaces/basic/2.0/doi",
-    "inverse" : "36",
+    "inverse" : "38",
     "baseIri" : "http://prismstandard.org/namespaces/basic/2.0",
-    "range" : "7",
+    "range" : "39",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2008,13 +2082,13 @@
       "IRI-based" : "doi",
       "undefined" : "has DOI"
     },
-    "domain" : "37",
+    "domain" : "40",
     "attributes" : [ "object", "external" ],
-    "id" : "43"
+    "id" : "46"
   }, {
     "iri" : "http://schema.org/keywords",
     "baseIri" : "http://schema.org",
-    "range" : "33",
+    "range" : "34",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2027,9 +2101,9 @@
       "IRI-based" : "keywords",
       "undefined" : "keywords"
     },
-    "domain" : "33",
+    "domain" : "34",
     "attributes" : [ "object", "external" ],
-    "id" : "45"
+    "id" : "48"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/EthicalOrLegalSkillLevelOf",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -2038,32 +2112,32 @@
       "IRI-based" : "EthicalOrLegalSkillLevelOf",
       "undefined" : "ethical or legal skill level of"
     },
-    "superproperty" : [ "49" ],
-    "domain" : "48",
+    "superproperty" : [ "52" ],
+    "domain" : "51",
     "attributes" : [ "object" ],
-    "id" : "47"
+    "id" : "50"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/lastName",
     "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "54",
+    "range" : "57",
     "label" : {
       "IRI-based" : "lastName",
       "undefined" : "last name"
     },
-    "domain" : "53",
+    "domain" : "56",
     "attributes" : [ "datatype", "external" ],
-    "id" : "52"
+    "id" : "55"
   }, {
     "iri" : "http://purl.obolibrary.org/obo/IAO_0000219",
     "baseIri" : "http://purl.obolibrary.org/obo",
-    "range" : "33",
+    "range" : "34",
     "label" : {
       "IRI-based" : "IAO_0000219"
     },
-    "domain" : "33",
-    "subproperty" : [ "59", "36" ],
+    "domain" : "34",
+    "subproperty" : [ "62", "38" ],
     "attributes" : [ "object", "external" ],
-    "id" : "38"
+    "id" : "41"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/name",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -2072,28 +2146,28 @@
       "IRI-based" : "name",
       "undefined" : "name"
     },
-    "domain" : "33",
+    "domain" : "34",
     "attributes" : [ "datatype", "external" ],
-    "id" : "61"
+    "id" : "64"
   }, {
-    "range" : "21",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "62"
-  }, {
-    "range" : "21",
-    "domain" : "64",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "63"
-  }, {
-    "range" : "21",
-    "domain" : "44",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "65"
+  }, {
+    "range" : "14",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "range" : "14",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/isAssociatedWith",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "19",
+    "range" : "7",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -2106,13 +2180,13 @@
       "IRI-based" : "isAssociatedWith",
       "undefined" : "is associated with"
     },
-    "domain" : "68",
+    "domain" : "71",
     "attributes" : [ "object" ],
-    "id" : "67"
+    "id" : "70"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/evaluationDataset",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "71",
+    "range" : "74",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -2125,20 +2199,20 @@
       "IRI-based" : "evaluationDataset",
       "undefined" : "evaluation dataset"
     },
-    "domain" : "70",
+    "domain" : "73",
     "attributes" : [ "object" ],
-    "id" : "69"
+    "id" : "72"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupMember",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "74",
+    "range" : "77",
     "label" : {
       "IRI-based" : "workingGroupMember",
       "undefined" : "working group member"
     },
-    "domain" : "73",
+    "domain" : "76",
     "attributes" : [ "object" ],
-    "id" : "72"
+    "id" : "75"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaProblemOf",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -2147,15 +2221,15 @@
       "IRI-based" : "personaProblemOf",
       "undefined" : "persona problem of"
     },
-    "superproperty" : [ "49" ],
-    "domain" : "76",
+    "superproperty" : [ "52" ],
+    "domain" : "79",
     "attributes" : [ "object" ],
-    "id" : "75"
+    "id" : "78"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/EthicalOrLegalSkillLevel",
-    "inverse" : "47",
+    "inverse" : "50",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "48",
+    "range" : "51",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -2170,11 +2244,11 @@
     },
     "domain" : "9",
     "attributes" : [ "object" ],
-    "id" : "77"
+    "id" : "80"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/shortDescription",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "34",
+    "range" : "35",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -2187,26 +2261,26 @@
       "IRI-based" : "shortDescription",
       "undefined" : "short description"
     },
-    "domain" : "23",
+    "domain" : "21",
     "attributes" : [ "datatype" ],
-    "id" : "78"
+    "id" : "81"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/ORCIDIDof",
-    "inverse" : "40",
+    "inverse" : "43",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "53",
+    "range" : "56",
     "label" : {
       "IRI-based" : "ORCIDIDof",
       "undefined" : "ORCIDID of"
     },
-    "superproperty" : [ "38" ],
-    "domain" : "80",
+    "superproperty" : [ "41" ],
+    "domain" : "82",
     "attributes" : [ "object" ],
-    "id" : "59"
+    "id" : "62"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/minimum",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "50",
+    "range" : "53",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -2221,127 +2295,127 @@
     },
     "domain" : "4",
     "attributes" : [ "datatype" ],
-    "id" : "82"
+    "id" : "84"
   }, {
-    "range" : "21",
-    "domain" : "84",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "83"
+    "range" : "2",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
   }, {
-    "range" : "1",
-    "domain" : "86",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "85"
+    "range" : "2",
+    "domain" : "89",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaDescription",
-    "inverse" : "88",
+    "inverse" : "91",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "33",
+    "range" : "34",
     "label" : {
       "IRI-based" : "personaDescription",
       "undefined" : "persona description"
     },
-    "domain" : "33",
+    "domain" : "34",
     "attributes" : [ "object" ],
-    "id" : "87"
+    "id" : "90"
   }, {
-    "range" : "21",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "89"
+    "range" : "14",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/fairStatus",
-    "inverse" : "91",
+    "inverse" : "94",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "20",
+    "range" : "13",
     "label" : {
       "IRI-based" : "fairStatus",
       "undefined" : "fair status"
     },
-    "domain" : "71",
+    "domain" : "74",
     "attributes" : [ "object" ],
-    "id" : "90"
-  }, {
-    "range" : "21",
-    "domain" : "48",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "92"
-  }, {
-    "range" : "1",
-    "domain" : "94",
-    "attributes" : [ "anonymous", "object" ],
     "id" : "93"
   }, {
-    "range" : "1",
+    "range" : "14",
     "domain" : "96",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "95"
   }, {
-    "range" : "1",
+    "range" : "2",
     "domain" : "98",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "97"
   }, {
-    "range" : "1",
+    "range" : "2",
     "domain" : "100",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "99"
   }, {
-    "range" : "1",
+    "range" : "2",
     "domain" : "102",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "101"
   }, {
+    "range" : "2",
+    "domain" : "104",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103"
+  }, {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaProblem",
-    "inverse" : "75",
+    "inverse" : "78",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "76",
+    "range" : "79",
     "label" : {
       "IRI-based" : "personaProblem",
       "undefined" : "persona problem"
     },
     "domain" : "9",
     "attributes" : [ "object" ],
-    "id" : "103"
+    "id" : "106"
   }, {
-    "range" : "1",
-    "domain" : "0",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "104"
+    "range" : "2",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107"
   }, {
-    "range" : "1",
-    "domain" : "109",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "108"
-  }, {
-    "range" : "12",
-    "domain" : "81",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "111"
-  }, {
-    "range" : "19",
-    "domain" : "107",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "112"
-  }, {
-    "range" : "1",
+    "range" : "2",
     "domain" : "114",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "113"
+  }, {
+    "range" : "7",
+    "domain" : "111",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
+  }, {
+    "range" : "7",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
   }, {
     "range" : "12",
     "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "115"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
   }, {
-    "range" : "19",
-    "domain" : "106",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "116"
+    "range" : "12",
+    "domain" : "85",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "range" : "7",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/affiliation",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "118",
+    "range" : "122",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -2354,36 +2428,36 @@
       "IRI-based" : "affiliation",
       "undefined" : "affiliation"
     },
-    "domain" : "53",
+    "domain" : "56",
     "attributes" : [ "object" ],
-    "id" : "117"
-  }, {
-    "range" : "19",
-    "domain" : "66",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "119"
-  }, {
-    "range" : "19",
-    "domain" : "42",
-    "attributes" : [ "anonymous", "object" ],
     "id" : "121"
   }, {
-    "range" : "19",
-    "domain" : "41",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "122"
+    "range" : "66",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "7",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "range" : "7",
+    "domain" : "110",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaDescriptionOf",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "33",
+    "range" : "34",
     "label" : {
       "IRI-based" : "personaDescriptionOf",
       "undefined" : "persona description of"
     },
-    "superproperty" : [ "49" ],
-    "domain" : "33",
+    "superproperty" : [ "52" ],
+    "domain" : "34",
     "attributes" : [ "object" ],
-    "id" : "88"
+    "id" : "91"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/appearsAt",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -2400,23 +2474,23 @@
       "IRI-based" : "appearsAt",
       "undefined" : "appears at"
     },
-    "domain" : "37",
+    "domain" : "40",
     "attributes" : [ "object" ],
-    "id" : "123"
+    "id" : "127"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/zipcode",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "39",
+    "range" : "42",
     "label" : {
       "IRI-based" : "zipcode"
     },
-    "domain" : "33",
+    "domain" : "34",
     "attributes" : [ "datatype" ],
-    "id" : "126"
+    "id" : "130"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/establishedBy",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "128",
+    "range" : "132",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -2429,24 +2503,24 @@
       "IRI-based" : "establishedBy",
       "undefined" : "established by"
     },
-    "domain" : "73",
+    "domain" : "76",
     "attributes" : [ "object" ],
-    "id" : "127"
+    "id" : "131"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupContactPoint",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "130",
+    "range" : "134",
     "label" : {
       "IRI-based" : "workingGroupContactPoint",
       "undefined" : "working group contact point"
     },
-    "domain" : "73",
+    "domain" : "76",
     "attributes" : [ "object" ],
-    "id" : "129"
+    "id" : "133"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasRank",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "51",
+    "range" : "54",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -2459,13 +2533,13 @@
       "IRI-based" : "hasRank",
       "undefined" : "has rank"
     },
-    "domain" : "105",
+    "domain" : "109",
     "attributes" : [ "datatype" ],
-    "id" : "131"
+    "id" : "135"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasAbstract",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "60",
+    "range" : "63",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -2478,19 +2552,24 @@
       "IRI-based" : "hasAbstract",
       "undefined" : "has abstract"
     },
-    "domain" : "37",
+    "domain" : "40",
     "attributes" : [ "datatype" ],
-    "id" : "132"
+    "id" : "136"
   }, {
-    "range" : "14",
-    "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "133"
+    "range" : "139",
+    "domain" : "138",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
   }, {
-    "range" : "136",
-    "domain" : "135",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "134"
+    "range" : "40",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
+  }, {
+    "range" : "15",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "141"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/softSkillOf",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -2499,24 +2578,24 @@
       "IRI-based" : "softSkillOf",
       "undefined" : "soft skill of"
     },
-    "superproperty" : [ "49" ],
-    "domain" : "110",
+    "superproperty" : [ "52" ],
+    "domain" : "115",
     "attributes" : [ "object" ],
-    "id" : "137"
-  }, {
-    "range" : "10",
-    "domain" : "73",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "138"
+    "id" : "142"
   }, {
     "range" : "10",
     "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "139"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "143"
+  }, {
+    "range" : "14",
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "144"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasNext",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "35",
+    "range" : "31",
     "annotations" : {
       "seeAlso" : [ {
         "identifier" : "seeAlso",
@@ -2529,23 +2608,23 @@
       "IRI-based" : "hasNext",
       "undefined" : "has next"
     },
-    "domain" : "105",
+    "domain" : "109",
     "attributes" : [ "object" ],
-    "id" : "140"
+    "id" : "145"
   }, {
-    "range" : "37",
-    "domain" : "68",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "141"
+    "range" : "40",
+    "domain" : "147",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
   }, {
-    "range" : "37",
-    "domain" : "143",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "142"
+    "range" : "10",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "148"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lead",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "146",
+    "range" : "151",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -2558,24 +2637,24 @@
       "IRI-based" : "lead",
       "undefined" : "lead"
     },
-    "domain" : "145",
+    "domain" : "150",
     "attributes" : [ "object" ],
-    "id" : "144"
+    "id" : "149"
   }, {
     "iri" : "http://purl.org/spar/fabio/hasPublicationYear",
     "baseIri" : "http://purl.org/spar/fabio",
-    "range" : "33",
+    "range" : "34",
     "label" : {
       "IRI-based" : "hasPublicationYear",
       "undefined" : "has publication year"
     },
-    "domain" : "33",
+    "domain" : "34",
     "attributes" : [ "object", "external" ],
-    "id" : "147"
+    "id" : "152"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/fairStatusOf",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "71",
+    "range" : "74",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -2592,14 +2671,14 @@
     "label" : {
       "IRI-based" : "fairStatusOf"
     },
-    "superproperty" : [ "49" ],
-    "domain" : "20",
+    "superproperty" : [ "52" ],
+    "domain" : "13",
     "attributes" : [ "object" ],
-    "id" : "91"
+    "id" : "94"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/eventContactPoint",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "53",
+    "range" : "56",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -2612,9 +2691,9 @@
       "IRI-based" : "eventContactPoint",
       "undefined" : "event contact point"
     },
-    "domain" : "14",
+    "domain" : "15",
     "attributes" : [ "object" ],
-    "id" : "148"
+    "id" : "153"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/eventOrganizer",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -2631,40 +2710,28 @@
       "IRI-based" : "eventOrganizer",
       "undefined" : "event organizer"
     },
-    "domain" : "14",
+    "domain" : "15",
     "attributes" : [ "object" ],
-    "id" : "149"
+    "id" : "154"
   }, {
-    "range" : "21",
-    "domain" : "125",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "150"
+    "range" : "14",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "155"
   }, {
-    "range" : "21",
-    "domain" : "76",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "151"
+    "range" : "14",
+    "domain" : "115",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "156"
   }, {
-    "range" : "21",
-    "domain" : "120",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "152"
-  }, {
-    "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatus",
-    "inverse" : "154",
-    "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "44",
-    "label" : {
-      "IRI-based" : "LODStatus",
-      "undefined" : "LOD status"
-    },
-    "domain" : "71",
-    "attributes" : [ "object" ],
-    "id" : "153"
+    "range" : "14",
+    "domain" : "129",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "157"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasSequenceIdentifier",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "56",
+    "range" : "59",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -2677,24 +2744,55 @@
       "IRI-based" : "hasSequenceIdentifier",
       "undefined" : "has sequence identifier"
     },
-    "domain" : "57",
+    "domain" : "60",
     "attributes" : [ "datatype" ],
-    "id" : "155"
+    "id" : "158"
   }, {
-    "range" : "21",
-    "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "156"
+    "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatus",
+    "inverse" : "160",
+    "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "LODStatus",
+      "undefined" : "LOD status"
+    },
+    "domain" : "74",
+    "attributes" : [ "object" ],
+    "id" : "159"
   }, {
-    "range" : "21",
-    "domain" : "124",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "157"
+    "range" : "14",
+    "domain" : "128",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
+  }, {
+    "range" : "14",
+    "domain" : "112",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "162"
+  }, {
+    "iri" : "http://purl.org/spar/fabio/hasPlaceOfPublication",
+    "baseIri" : "http://purl.org/spar/fabio",
+    "range" : "164",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/spar/fabio",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPlaceOfPublication",
+      "undefined" : "has place of publication"
+    },
+    "domain" : "40",
+    "attributes" : [ "object", "external" ],
+    "id" : "163"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/softSkill",
-    "inverse" : "137",
+    "inverse" : "142",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "110",
+    "range" : "115",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -2709,40 +2807,21 @@
     },
     "domain" : "9",
     "attributes" : [ "object" ],
-    "id" : "158"
+    "id" : "165"
   }, {
-    "iri" : "http://purl.org/spar/fabio/hasPlaceOfPublication",
-    "baseIri" : "http://purl.org/spar/fabio",
-    "range" : "160",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/spar/fabio",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasPlaceOfPublication",
-      "undefined" : "has place of publication"
-    },
-    "domain" : "37",
-    "attributes" : [ "object", "external" ],
-    "id" : "159"
+    "range" : "14",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "166"
   }, {
-    "range" : "21",
-    "domain" : "110",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "161"
-  }, {
-    "range" : "21",
-    "domain" : "79",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "162"
+    "range" : "14",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "167"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/spokesperson",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "53",
+    "range" : "56",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -2755,20 +2834,31 @@
       "IRI-based" : "spokesperson",
       "undefined" : "spokesperson"
     },
-    "domain" : "164",
+    "domain" : "169",
     "attributes" : [ "object" ],
-    "id" : "163"
+    "id" : "168"
   }, {
     "iri" : "http://purl.obolibrary.org/obo/IAO_0000136",
     "baseIri" : "http://purl.obolibrary.org/obo",
-    "range" : "33",
+    "range" : "34",
     "label" : {
       "IRI-based" : "IAO_0000136"
     },
-    "domain" : "33",
-    "subproperty" : [ "88", "137", "165", "154", "166", "47", "91", "75" ],
+    "domain" : "34",
+    "subproperty" : [ "91", "142", "170", "160", "171", "50", "94", "78" ],
     "attributes" : [ "object", "external" ],
-    "id" : "49"
+    "id" : "52"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/firstName",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "173",
+    "label" : {
+      "IRI-based" : "firstName",
+      "undefined" : "first name"
+    },
+    "domain" : "56",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "172"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -2777,21 +2867,10 @@
       "IRI-based" : "technicalSkillLevelOf",
       "undefined" : "technical skill level of"
     },
-    "superproperty" : [ "49" ],
-    "domain" : "79",
+    "superproperty" : [ "52" ],
+    "domain" : "83",
     "attributes" : [ "object" ],
-    "id" : "166"
-  }, {
-    "iri" : "http://xmlns.com/foaf/0.1/firstName",
-    "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "168",
-    "label" : {
-      "IRI-based" : "firstName",
-      "undefined" : "first name"
-    },
-    "domain" : "53",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "167"
+    "id" : "171"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/domainknowledgeLevelOf",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
@@ -2800,37 +2879,37 @@
       "IRI-based" : "domainknowledgeLevelOf",
       "undefined" : "domain knowledge level of"
     },
-    "superproperty" : [ "49" ],
-    "domain" : "84",
+    "superproperty" : [ "52" ],
+    "domain" : "96",
     "attributes" : [ "object" ],
-    "id" : "165"
+    "id" : "170"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevel",
-    "inverse" : "166",
+    "inverse" : "171",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "79",
+    "range" : "83",
     "label" : {
       "IRI-based" : "technicalSkillLevel",
       "undefined" : "technical skill level"
     },
     "domain" : "9",
     "attributes" : [ "object" ],
-    "id" : "174"
+    "id" : "179"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/taskAreaOrMeasureContributor",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "172",
+    "range" : "177",
     "label" : {
       "IRI-based" : "taskAreaOrMeasureContributor",
       "undefined" : "task area or measure contributor"
     },
-    "domain" : "170",
+    "domain" : "175",
     "attributes" : [ "object" ],
-    "id" : "175"
+    "id" : "180"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/coLocatedWith",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "66",
+    "range" : "69",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2848,14 +2927,14 @@
     "label" : {
       "IRI-based" : "coLocatedWith"
     },
-    "domain" : "176",
+    "domain" : "181",
     "attributes" : [ "object" ],
-    "id" : "177"
+    "id" : "182"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/domainknowledgeLevel",
-    "inverse" : "165",
+    "inverse" : "170",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "84",
+    "range" : "96",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -2870,11 +2949,11 @@
     },
     "domain" : "9",
     "attributes" : [ "object" ],
-    "id" : "178"
+    "id" : "183"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/evaluationMetric",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "125",
+    "range" : "129",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -2887,13 +2966,31 @@
       "IRI-based" : "evaluationMetric",
       "undefined" : "evaluation metric"
     },
-    "domain" : "169",
+    "domain" : "174",
     "attributes" : [ "object" ],
-    "id" : "179"
+    "id" : "184"
+  }, {
+    "iri" : "https://www.w3.org/TR/owl-time/#time:hasEnd",
+    "baseIri" : "https://www.w3.org/TR/owl-time/",
+    "range" : "27",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/TR/owl-time/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "time:hasEnd"
+    },
+    "domain" : "37",
+    "attributes" : [ "object", "external" ],
+    "id" : "185"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatusOf",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "71",
+    "range" : "74",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -2906,14 +3003,14 @@
       "IRI-based" : "LODStatusOf",
       "undefined" : "LOD status of"
     },
-    "superproperty" : [ "49" ],
-    "domain" : "44",
+    "superproperty" : [ "52" ],
+    "domain" : "47",
     "attributes" : [ "object" ],
-    "id" : "154"
+    "id" : "160"
   }, {
     "iri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/coSpokesperson",
     "baseIri" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso",
-    "range" : "53",
+    "range" : "56",
     "annotations" : {
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -2926,13 +3023,13 @@
       "IRI-based" : "coSpokesperson",
       "undefined" : "co-spokesperson"
     },
-    "domain" : "164",
+    "domain" : "169",
     "attributes" : [ "object" ],
-    "id" : "180"
+    "id" : "186"
   }, {
     "iri" : "https://schema.org/eventAttendanceMode",
     "baseIri" : "https://schema.org",
-    "range" : "2",
+    "range" : "0",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2945,8 +3042,8 @@
       "IRI-based" : "eventAttendanceMode",
       "undefined" : "event attendance mode"
     },
-    "domain" : "14",
+    "domain" : "15",
     "attributes" : [ "object", "external" ],
-    "id" : "181"
+    "id" : "187"
   } ]
 }

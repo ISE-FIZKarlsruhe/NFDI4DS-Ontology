@@ -673,6 +673,38 @@
     
 
 
+    <!-- https://www.w3.org/TR/owl-time/#time:hasBeginning -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.w3.org/TR/owl-time/#time:hasBeginning">
+        <rdfs:range rdf:resource="https://www.w3.org/TR/owl-time/#time:Instant"/>
+        <rdfs:isDefinedBy>https://www.w3.org/TR/owl-time/</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3.org/TR/owl-time/#time:hasEnd -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.w3.org/TR/owl-time/#time:hasEnd">
+        <rdfs:domain rdf:resource="https://www.w3.org/TR/owl-time/#time:Interval"/>
+        <rdfs:range rdf:resource="https://www.w3.org/TR/owl-time/#time:Instant"/>
+        <rdfs:isDefinedBy>https://www.w3.org/TR/owl-time/</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3.org/TR/owl-time/#time:hasTime -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.w3.org/TR/owl-time/#time:hasTime">
+        <rdfs:domain rdf:resource="https://www.w3.org/TR/owl-time/#time:Interval"/>
+        <rdfs:range rdf:resource="https://www.w3.org/TR/owl-time/#time:Interval"/>
+        <rdfs:isDefinedBy>https://www.w3.org/TR/owl-time/</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1475,6 +1507,20 @@ Task Area 2 (Research Knowledge Graphs)</skos:example>
         <rdfs:label>workshop</rdfs:label>
         <skos:exactMatch rdf:resource="https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Workshop"/>
     </owl:Class>
+    
+
+
+    <!-- https://www.w3.org/TR/owl-time/#time:Instant -->
+
+
+    <owl:Class rdf:about="https://www.w3.org/TR/owl-time/#time:Instant"/>
+    
+
+
+    <!-- https://www.w3.org/TR/owl-time/#time:Interval -->
+
+
+    <owl:Class rdf:about="https://www.w3.org/TR/owl-time/#time:Interval"/>
     
 
 

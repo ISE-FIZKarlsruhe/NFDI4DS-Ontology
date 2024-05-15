@@ -121,6 +121,7 @@ This is a place holder text for the introduction. The introduction should briefl
 <tr><td><b>schema1</b></td><td>&lt;http://schema.org/&gt;</td></tr>
 <tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core#&gt;</td></tr>
 <tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms/&gt;</td></tr>
+<tr><td><b>time</b></td><td>&lt;https://www.w3.org/TR/owl-time/#time:&gt;</td></tr>
 <tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann/&gt;</td></tr>
 <tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
 <tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
@@ -160,7 +161,8 @@ This ontology has the following classes and properties.</span>
          title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/EvaluationMetric">evaluation metric</a>
    </li>
    <li>
-      <a href="#http://schema.org/EventAttendanceModeEnumeration" title="http://schema.org/EventAttendanceModeEnumeration">
+      <a href="#http://schema.org/EventAttendanceModeEnumeration"
+         title="http://schema.org/EventAttendanceModeEnumeration">
          <span>Event Attendance Mode Enumeration</span>
       </a>
    </li>
@@ -465,6 +467,22 @@ This ontology has the following classes and properties.</span>
          title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf">technical skill level of</a>
    </li>
    <li>
+      <a href="#https://www.w3.org/TR/owl-time/#time:hasBeginning"
+         title="https://www.w3.org/TR/owl-time/#time:hasBeginning">
+         <span>time:has Beginning</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://www.w3.org/TR/owl-time/#time:hasEnd" title="https://www.w3.org/TR/owl-time/#time:hasEnd">
+         <span>time:has End</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://www.w3.org/TR/owl-time/#time:hasTime" title="https://www.w3.org/TR/owl-time/#time:hasTime">
+         <span>time:has Time</span>
+      </a>
+   </li>
+   <li>
       <a href="#workingGroupContactPoint"
          title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupContactPoint">working group contact point</a>
    </li>
@@ -642,9 +660,10 @@ This ontology has the following classes and properties.</span>
 
 ### ROLES
 ![image](https://raw.githubusercontent.com/ISE-FIZKarlsruhe/NFDI4DS-Ontology/Documentation/resources/task-area.png)
+
+Adapting the time ontology classes and properties to defne time for roles
+![image](https://raw.githubusercontent.com/ISE-FIZKarlsruhe/NFDI4DS-Ontology/Documentation/resources/time.png)
 </span></div>
-
-
 
 <!--CROSSREF SECTION-->
    <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for NFDI4DS Ontology (nfdi4dso) classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -1663,6 +1682,9 @@ Task Area 2 (Research Knowledge Graphs)</pre>
   <li><a href="#taskAreaOrMeasureContributor" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/taskAreaOrMeasureContributor">task area or measure contributor</a></li>
   <li><a href="#technicalSkillLevel" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevel">technical skill level</a></li>
   <li><a href="#technicalSkillLevelOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf">technical skill level of</a></li>
+  <li><a href="#https://www.w3.org/TR/owl-time/#time:hasBeginning" title="https://www.w3.org/TR/owl-time/#time:hasBeginning"> <span>time:has Beginning</span> </a></li>
+  <li><a href="#https://www.w3.org/TR/owl-time/#time:hasEnd" title="https://www.w3.org/TR/owl-time/#time:hasEnd"> <span>time:has End</span> </a></li>
+  <li><a href="#https://www.w3.org/TR/owl-time/#time:hasTime" title="https://www.w3.org/TR/owl-time/#time:hasTime"> <span>time:has Time</span> </a></li>
   <li><a href="#workingGroupContactPoint" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupContactPoint">working group contact point</a></li>
   <li><a href="#workingGroupMember" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupMember">working group member</a></li>
  </ul>
@@ -2532,6 +2554,84 @@ Task Area 2 (Research Knowledge Graphs)</pre>
     </dt>
     <dd>
      <a href="#technicalSkillLevel" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevel">technical skill level</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://www.w3.org/TR/owl-time/#time:hasBeginning">
+  <h3>time:has Beginning<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3.org/TR/owl-time/#time:hasBeginning</p>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    https://www.w3.org/TR/owl-time/
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="https://www.w3.org/TR/owl-time/#time:Instant" target="_blank" title="https://www.w3.org/TR/owl-time/#time:Instant">time: Instant</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://www.w3.org/TR/owl-time/#time:hasEnd">
+  <h3>time:has End<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3.org/TR/owl-time/#time:hasEnd</p>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    https://www.w3.org/TR/owl-time/
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="https://www.w3.org/TR/owl-time/#time:Interval" target="_blank" title="https://www.w3.org/TR/owl-time/#time:Interval">time: Interval</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="https://www.w3.org/TR/owl-time/#time:Instant" target="_blank" title="https://www.w3.org/TR/owl-time/#time:Instant">time: Instant</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://www.w3.org/TR/owl-time/#time:hasTime">
+  <h3>time:has Time<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3.org/TR/owl-time/#time:hasTime</p>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    https://www.w3.org/TR/owl-time/
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="https://www.w3.org/TR/owl-time/#time:Interval" target="_blank" title="https://www.w3.org/TR/owl-time/#time:Interval">time: Interval</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="https://www.w3.org/TR/owl-time/#time:Interval" target="_blank" title="https://www.w3.org/TR/owl-time/#time:Interval">time: Interval</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>

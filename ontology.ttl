@@ -420,6 +420,26 @@
                                          rdfs:label "event attendance mode" .
 
 
+###  https://www.w3.org/TR/owl-time/#time:hasBeginning
+<https://www.w3.org/TR/owl-time/#time:hasBeginning> rdf:type owl:ObjectProperty ;
+                                                    rdfs:range <https://www.w3.org/TR/owl-time/#time:Instant> ;
+                                                    rdfs:isDefinedBy "https://www.w3.org/TR/owl-time/" .
+
+
+###  https://www.w3.org/TR/owl-time/#time:hasEnd
+<https://www.w3.org/TR/owl-time/#time:hasEnd> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <https://www.w3.org/TR/owl-time/#time:Interval> ;
+                                              rdfs:range <https://www.w3.org/TR/owl-time/#time:Instant> ;
+                                              rdfs:isDefinedBy "https://www.w3.org/TR/owl-time/" .
+
+
+###  https://www.w3.org/TR/owl-time/#time:hasTime
+<https://www.w3.org/TR/owl-time/#time:hasTime> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <https://www.w3.org/TR/owl-time/#time:Interval> ;
+                                               rdfs:range <https://www.w3.org/TR/owl-time/#time:Interval> ;
+                                               rdfs:isDefinedBy "https://www.w3.org/TR/owl-time/" .
+
+
 #################################################################
 #    Data properties
 #################################################################
@@ -922,6 +942,14 @@ Task Area 2 (Research Knowledge Graphs)""" .
           <http://purl.obolibrary.org/obo/IAO_0000115> "A workshop event." ;
           rdfs:label "workshop" ;
           <http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Workshop> .
+
+
+###  https://www.w3.org/TR/owl-time/#time:Instant
+<https://www.w3.org/TR/owl-time/#time:Instant> rdf:type owl:Class .
+
+
+###  https://www.w3.org/TR/owl-time/#time:Interval
+<https://www.w3.org/TR/owl-time/#time:Interval> rdf:type owl:Class .
 
 
 #################################################################

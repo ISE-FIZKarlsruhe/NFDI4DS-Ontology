@@ -1566,4 +1566,43 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://schema.org/EventAttendanceModeEnumeration"
   } ]
+}, {
+  "@id" : "https://www.w3.org/TR/owl-time/#time:Instant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.w3.org/TR/owl-time/#time:Interval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.w3.org/TR/owl-time/#time:hasBeginning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://www.w3.org/TR/owl-time/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/TR/owl-time/#time:Instant"
+  } ]
+}, {
+  "@id" : "https://www.w3.org/TR/owl-time/#time:hasEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/TR/owl-time/#time:Interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://www.w3.org/TR/owl-time/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/TR/owl-time/#time:Instant"
+  } ]
+}, {
+  "@id" : "https://www.w3.org/TR/owl-time/#time:hasTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/TR/owl-time/#time:Interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://www.w3.org/TR/owl-time/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/TR/owl-time/#time:Interval"
+  } ]
 } ]
