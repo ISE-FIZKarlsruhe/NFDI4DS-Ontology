@@ -19,9 +19,9 @@
 <!-- SCHEMA.ORG METADATA -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/","name":"NFDI4DS Ontology", "headline":"The NFDI4DS ontology (nfdi4dso) is an ontology describing various resources all resources (datasets, data providers, persons, projects and other entities) within the domain of NFDI4DataScience.  nfdi4dso is a module that builds upon the NFDIcore Ontology (https://ise-fizkarlsruhe.github.io/nfdicore/2.0.0/) and maintains alignment with the Basic Formal Ontology (BFO).", "dateReleased":"2024-05-15", "version":"v1.0.0", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"Genet Asefa Gesese https://orcid.org/0000-0003-3807-7145"},{"@type":"Person","name":"Harald Sack https://orcid.org/0000-0001-7069-9804"},{"@type":"Person","name":"Jörg Waitelonis https://orcid.org/0000-0001-7192-7143"}]}</script>
 
-<script src="resources/jquery.js"></script>
-<script src="resources/marked.min.js"></script>
-    <script>
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
 function loadHash() {
   jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
 	var hash = location.hash;
@@ -51,15 +51,15 @@ function loadTOC(){
 		}
 	  });
 	  t+='</ul>';
-	  $("#toc").html(t);
+	  $("#toc").html(t); 
 }
 $(function(){
     loadHash();
 }); $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
- };
-   </script>
-  </head>
+ }; 
+   </script> 
+  </head> 
 
 <body>
 <div class="container">
@@ -80,7 +80,8 @@ $(function(){
 <dd>Genet Asefa Gesese https://orcid.org/0000-0003-3807-7145</dd><dd>Harald Sack https://orcid.org/0000-0001-7069-9804</dd><dd>Jörg Waitelonis https://orcid.org/0000-0001-7192-7143</dd>
 
 <dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/publicdomain/zero/1.0/-blue.svg" alt="https://creativecommons.org/publicdomain/zero/1.0/" /></a>
-</dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
 <dd>Genet Asefa Gesese, Jörg Waitelonis, Harald Sack. NFDI4DS Ontology. Revision: v1.0.0. Retrieved from: https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/1.0.0</dd>
 </dl>
 
@@ -93,7 +94,7 @@ $(function(){
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
 The NFDI4DS ontology (nfdi4dso) is an ontology describing various resources all resources (datasets, data providers, persons, projects and other entities) within the domain of NFDI4DataScience.  nfdi4dso is a module that builds upon the NFDIcore Ontology (https://ise-fizkarlsruhe.github.io/nfdicore/2.0.0/) and maintains alignment with the Basic Formal Ontology (BFO).</span>
 </div>
-<div id="toc"></div>
+<div id="toc"></div> 
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -110,7 +111,7 @@ This is a place holder text for the introduction. The introduction should briefl
 <tr><td><b>cono</b></td><td>&lt;https://w3id.org/scholarlydata/ontology/conference-ontology.owl#&gt;</td></tr>
 <tr><td><b>fabio</b></td><td>&lt;http://purl.org/spar/fabio/&gt;</td></tr>
 <tr><td><b>foaf</b></td><td>&lt;http://xmlns.com/foaf/0.1/&gt;</td></tr>
-<tr><td><b>nfdi4dso</b></td><td>&lt;https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/&gt;</td></tr>
+<tr><td><b>https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/nfdi4dso</b></td><td>&lt;https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/&gt;</td></tr>
 <tr><td><b>nfdicore</b></td><td>&lt;https://nfdi.fiz-karlsruhe.de/ontology/&gt;</td></tr>
 <tr><td><b>obo</b></td><td>&lt;http://purl.obolibrary.org/obo/&gt;</td></tr>
 <tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
@@ -128,7 +129,7 @@ This is a place holder text for the introduction. The introduction should briefl
 </div>
 </div>
 </div>
-
+  
 
 <!--OVERVIEW SECTION-->
     <div id="overview"><h2 id="overv" class="list">NFDI4DS Ontology (nfdi4dso): Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -143,8 +144,8 @@ This ontology has the following classes and properties.</span>
          title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/AcademicEvent">academic event</a>
    </li>
    <li>
-      <a href="#CoSpokesPersonRole"
-         title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokesPersonRole">co-spokesperson role</a>
+      <a href="#CoSpokespersonRole"
+         title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokespersonRole">co-spokesperson role</a>
    </li>
    <li>
       <a href="#Conference"
@@ -170,10 +171,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#Hackathon"
          title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Hackathon">hackathon</a>
-   </li>
-   <li>
-      <a href="#JointProject"
-         title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/JointProject">JointProject</a>
    </li>
    <li>
       <a href="#JournalArticle"
@@ -270,11 +267,7 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#SubTask"
-         title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask">sub task</a>
-   </li>
-   <li>
-      <a href="#SubProject"
-         title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubProject">SubProject</a>
+         title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask">sub-task</a>
    </li>
    <li>
       <a href="#SummerSchool"
@@ -424,8 +417,8 @@ This ontology has the following classes and properties.</span>
          title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatus">LOD status</a>
    </li>
    <li>
-      <a href="#lodStatusOf"
-         title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lodStatusOf">lod status of</a>
+      <a href="#LODStatusOf"
+         title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatusOf">LOD status of</a>
    </li>
    <li>
       <a href="#ORCIDIDof"
@@ -469,9 +462,15 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#technicalSkillLevelOf"
-         title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf">
-         <span>technical Skill Level Of</span>
-      </a>
+         title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf">technical skill level of</a>
+   </li>
+   <li>
+      <a href="#workingGroupContactPoint"
+         title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupContactPoint">working group contact point</a>
+   </li>
+   <li>
+      <a href="#workingGroupMember"
+         title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupMember">working group member</a>
    </li>
 </ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -629,9 +628,9 @@ This ontology has the following classes and properties.</span>
          <span>Reusable</span>
       </a>
    </li>
-</ul>
+</ul><iframe src="webvowl/index.html"></iframe> 
 </div>
-
+  
 
 <!--DESCRIPTION SECTION-->
     <div id="description"><h2 id="desc" class="list">NFDI4DS Ontology (nfdi4dso): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -639,7 +638,7 @@ This ontology has the following classes and properties.</span>
 <span class="markdown">This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.
 
 </span></div>
-
+   
 
 <!--CROSSREF SECTION-->
    <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for NFDI4DS Ontology (nfdi4dso) classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -648,14 +647,13 @@ This section provides details for each class and property defined by NFDI4DS Ont
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
   <li><a href="#AcademicEvent" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/AcademicEvent">academic event</a></li>
-  <li><a href="#CoSpokesPersonRole" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokesPersonRole">co-spokesperson role</a></li>
+  <li><a href="#CoSpokespersonRole" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokespersonRole">co-spokesperson role</a></li>
   <li><a href="#Conference" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Conference">conference</a></li>
   <li><a href="#EducationalFunction" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/EducationalFunction">educational function</a></li>
   <li><a href="#EvaluationMetric" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/EvaluationMetric">evaluation metric</a></li>
   <li><a href="#http://schema.org/EventAttendanceModeEnumeration" title="http://schema.org/EventAttendanceModeEnumeration"> <span>Event Attendance Mode Enumeration</span> </a></li>
   <li><a href="#FAIRDataPriniciple" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple">FAIR data principle</a></li>
   <li><a href="#Hackathon" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Hackathon">hackathon</a></li>
-  <li><a href="#JointProject" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/JointProject">JointProject</a></li>
   <li><a href="#JournalArticle" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/JournalArticle">journal article</a></li>
   <li><a href="#Lecture" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Lecture">lecture</a></li>
   <li><a href="#LODRating" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODRating">LOD rating</a></li>
@@ -679,8 +677,7 @@ This section provides details for each class and property defined by NFDI4DS Ont
   <li><a href="#ScienceSlam" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/ScienceSlam">science slam</a></li>
   <li><a href="#SharedTask" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SharedTask">shared task</a></li>
   <li><a href="#SpokesPersonRole" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SpokesPersonRole">spokesperson role</a></li>
-  <li><a href="#SubTask" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask">sub task</a></li>
-  <li><a href="#SubProject" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubProject">SubProject</a></li>
+  <li><a href="#SubTask" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask">sub-task</a></li>
   <li><a href="#SummerSchool" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SummerSchool">summer school</a></li>
   <li><a href="#TaskArea" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/TaskArea">task area</a></li>
   <li><a href="#TaskAreaContributorRole" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/TaskAreaContributorRole">task area contributor role</a></li>
@@ -709,7 +706,7 @@ This section provides details for each class and property defined by NFDI4DS Ont
     has sub-classes
    </dt>
    <dd>
-    <a href="#Conference" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Conference">conference</a> <sup class="type-c" title="class">c</sup>, <a href="#SharedTask" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SharedTask">shared task</a> <sup class="type-c" title="class">c</sup>, <a href="#SubTask" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask">sub task</a> <sup class="type-c" title="class">c</sup>, <a href="#Tutorial" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Tutorial">tutorial</a> <sup class="type-c" title="class">c</sup>, <a href="#Workshop" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Workshop">workshop</a> <sup class="type-c" title="class">c</sup>
+    <a href="#Conference" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Conference">conference</a> <sup class="type-c" title="class">c</sup>, <a href="#SharedTask" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SharedTask">shared task</a> <sup class="type-c" title="class">c</sup>, <a href="#SubTask" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask">sub-task</a> <sup class="type-c" title="class">c</sup>, <a href="#Tutorial" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Tutorial">tutorial</a> <sup class="type-c" title="class">c</sup>, <a href="#Workshop" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Workshop">workshop</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in range of
@@ -719,9 +716,9 @@ This section provides details for each class and property defined by NFDI4DS Ont
    </dd>
   </dl>
  </div>
- <div class="entity" id="CoSpokesPersonRole">
+ <div class="entity" id="CoSpokespersonRole">
   <h3>co-spokesperson role<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokesPersonRole</p>
+  <p><strong>IRI:</strong> https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokespersonRole</p>
   <div class="comment">
    <span class="markdown">A role inhering in a person that is realized when the person is a co-spokesperson of a Consortium.</span>
   </div>
@@ -921,29 +918,6 @@ This section provides details for each class and property defined by NFDI4DS Ont
    </dd>
   </dl>
  </div>
- <div class="entity" id="JointProject">
-  <h3>JointProject<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/JointProject</p>
-  <div class="comment">
-   <span class="markdown">A joint project organized by a group of consortium members.</span>
-  </div>
-  <dl>
-   <dt>
-    Example
-   </dt>
-   <dd>
-    <pre>NFDI4DS Project</pre>
-   </dd>
-  </dl>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="http://purl.obolibrary.org/obo/OBI_0000011" target="_blank" title="http://purl.obolibrary.org/obo/OBI_0000011">O B I 0000011</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
  <div class="entity" id="JournalArticle">
   <h3>journal article<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/JournalArticle</p>
@@ -991,7 +965,7 @@ This section provides details for each class and property defined by NFDI4DS Ont
     is in domain of
    </dt>
    <dd>
-    <a href="#lodStatusOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lodStatusOf">lod status of</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#LODStatusOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatusOf">LOD status of</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -1153,7 +1127,7 @@ This section provides details for each class and property defined by NFDI4DS Ont
     is in range of
    </dt>
    <dd>
-    <a href="#domainknowledgeLevelOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/domainknowledgeLevelOf">domain knowledge level of</a> <sup class="type-op" title="object property">op</sup>, <a href="#EthicalOrLegalSkillLevelOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/EthicalOrLegalSkillLevelOf">ethical or legal skill level of</a> <sup class="type-op" title="object property">op</sup>, <a href="#personaProblemOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaProblemOf">persona problem of</a> <sup class="type-op" title="object property">op</sup>, <a href="#softSkillOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/softSkillOf">soft skill of</a> <sup class="type-op" title="object property">op</sup>, <a href="#technicalSkillLevelOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf">technical Skill Level Of</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#domainknowledgeLevelOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/domainknowledgeLevelOf">domain knowledge level of</a> <sup class="type-op" title="object property">op</sup>, <a href="#EthicalOrLegalSkillLevelOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/EthicalOrLegalSkillLevelOf">ethical or legal skill level of</a> <sup class="type-op" title="object property">op</sup>, <a href="#personaProblemOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaProblemOf">persona problem of</a> <sup class="type-op" title="object property">op</sup>, <a href="#softSkillOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/softSkillOf">soft skill of</a> <sup class="type-op" title="object property">op</sup>, <a href="#technicalSkillLevelOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf">technical skill level of</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -1303,7 +1277,7 @@ This section provides details for each class and property defined by NFDI4DS Ont
     is in domain of
    </dt>
    <dd>
-    <a href="#technicalSkillLevelOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf">technical Skill Level Of</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#technicalSkillLevelOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf">technical skill level of</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -1409,7 +1383,7 @@ This section provides details for each class and property defined by NFDI4DS Ont
   </dl>
  </div>
  <div class="entity" id="SubTask">
-  <h3>sub task<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <h3>sub-task<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask</p>
   <div class="comment">
    <span class="markdown">One of the divided tasks of a certain shared task.</span>
@@ -1434,21 +1408,6 @@ This section provides details for each class and property defined by NFDI4DS Ont
    </dt>
    <dd>
     <a href="#evaluationDataset" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/evaluationDataset">evaluation dataset</a> <sup class="type-op" title="object property">op</sup>, <a href="#evaluationMetric" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/evaluationMetric">evaluation metric</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="SubProject">
-  <h3>SubProject<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubProject</p>
-  <div class="comment">
-   <span class="markdown">A sub project associated with another joint project.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="http://purl.obolibrary.org/obo/OBI_0000011" target="_blank" title="http://purl.obolibrary.org/obo/OBI_0000011">O B I 0000011</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -1602,7 +1561,7 @@ Task Area 2 (Research Knowledge Graphs)</pre>
     is in domain of
    </dt>
    <dd>
-    <a href="#establishedBy" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/establishedBy">established by</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#establishedBy" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/establishedBy">established by</a> <sup class="type-op" title="object property">op</sup>, <a href="#workingGroupContactPoint" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupContactPoint">working group contact point</a> <sup class="type-op" title="object property">op</sup>, <a href="#workingGroupMember" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupMember">working group member</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -1686,7 +1645,7 @@ Task Area 2 (Research Knowledge Graphs)</pre>
   <li><a href="#http://schema.org/keywords" title="http://schema.org/keywords">keywords</a></li>
   <li><a href="#lead" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lead">lead</a></li>
   <li><a href="#LODStatus" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatus">LOD status</a></li>
-  <li><a href="#lodStatusOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lodStatusOf">lod status of</a></li>
+  <li><a href="#LODStatusOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatusOf">LOD status of</a></li>
   <li><a href="#ORCIDIDof" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/ORCIDIDof">ORCIDID of</a></li>
   <li><a href="#personaDescription" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaDescription">persona description</a></li>
   <li><a href="#personaDescriptionOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaDescriptionOf">persona description of</a></li>
@@ -1697,7 +1656,9 @@ Task Area 2 (Research Knowledge Graphs)</pre>
   <li><a href="#spokesperson" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/spokesperson">spokesperson</a></li>
   <li><a href="#taskAreaOrMeasureContributor" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/taskAreaOrMeasureContributor">task area or measure contributor</a></li>
   <li><a href="#technicalSkillLevel" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevel">technical skill level</a></li>
-  <li><a href="#technicalSkillLevelOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf"> <span>technical Skill Level Of</span> </a></li>
+  <li><a href="#technicalSkillLevelOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf">technical skill level of</a></li>
+  <li><a href="#workingGroupContactPoint" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupContactPoint">working group contact point</a></li>
+  <li><a href="#workingGroupMember" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupMember">working group member</a></li>
  </ul>
  <div class="entity" id="affiliation">
   <h3>affiliation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
@@ -1964,7 +1925,7 @@ Task Area 2 (Research Knowledge Graphs)</pre>
      has domain
     </dt>
     <dd>
-     <a href="#SharedTask" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SharedTask">shared task</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#SubTask" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask">sub task</a> <sup class="type-c" title="class">c</sup>
+     <a href="#SharedTask" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SharedTask">shared task</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#SubTask" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask">sub-task</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -1987,7 +1948,7 @@ Task Area 2 (Research Knowledge Graphs)</pre>
      has domain
     </dt>
     <dd>
-     <a href="#SharedTask" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SharedTask">shared task</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#SubTask" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask">sub task</a> <sup class="type-c" title="class">c</sup>
+     <a href="#SharedTask" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SharedTask">shared task</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#SubTask" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask">sub-task</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -2279,14 +2240,14 @@ Task Area 2 (Research Knowledge Graphs)</pre>
      is inverse of
     </dt>
     <dd>
-     <a href="#lodStatusOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lodStatusOf">lod status of</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#LODStatusOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatusOf">LOD status of</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
  </div>
- <div class="entity" id="lodStatusOf">
-  <h3>lod status of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lodStatusOf</p>
+ <div class="entity" id="LODStatusOf">
+  <h3>LOD status of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatusOf</p>
   <div class="comment">
    <span class="markdown">a relation between a FAIR Data Principle and a dataset.</span>
   </div>
@@ -2532,17 +2493,14 @@ Task Area 2 (Research Knowledge Graphs)</pre>
      is inverse of
     </dt>
     <dd>
-     <a href="#technicalSkillLevelOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf">technical Skill Level Of</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#technicalSkillLevelOf" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf">technical skill level of</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
  </div>
  <div class="entity" id="technicalSkillLevelOf">
-  <h3>technical Skill Level Of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <h3>technical skill level of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf</p>
-  <div class="comment">
-   <span class="markdown">technical skill level of</span>
-  </div>
   <div class="description">
    <dl>
     <dt>
@@ -2568,6 +2526,46 @@ Task Area 2 (Research Knowledge Graphs)</pre>
     </dt>
     <dd>
      <a href="#technicalSkillLevel" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevel">technical skill level</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="workingGroupContactPoint">
+  <h3>working group contact point<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupContactPoint</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#WorkingGroup" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/WorkingGroup">working group</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember" target="_blank" title="https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember">Consortium Member</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="https://nfdi.fiz-karlsruhe.de/ontology/Person" target="_blank" title="https://nfdi.fiz-karlsruhe.de/ontology/Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="workingGroupMember">
+  <h3>working group member<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupMember</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#WorkingGroup" title="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/WorkingGroup">working group</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember" target="_blank" title="https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember">Consortium Member</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="https://nfdi.fiz-karlsruhe.de/ontology/Person" target="_blank" title="https://nfdi.fiz-karlsruhe.de/ontology/Person">Person</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -3015,7 +3013,7 @@ Task Area 2 (Research Knowledge Graphs)</pre>
 </div>
 </div>
 </div>
-
+    
 
 <!--REFERENCES SECTION-->
   <div id="references">
