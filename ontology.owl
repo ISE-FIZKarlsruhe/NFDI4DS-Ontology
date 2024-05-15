@@ -233,8 +233,21 @@
 
 
     <owl:ObjectProperty rdf:about="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatus">
-        <owl:inverseOf rdf:resource="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lodStatusOf"/>
+        <owl:inverseOf rdf:resource="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatusOf"/>
         <rdfs:label>LOD status</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatusOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatusOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <rdfs:domain rdf:resource="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODRating"/>
+        <rdfs:range rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/Dataset"/>
+        <obo:IAO_0000115>a relation between a FAIR Data Principle and a dataset.</obo:IAO_0000115>
+        <rdfs:label>LOD status of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -488,19 +501,6 @@
     
 
 
-    <!-- https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lodStatusOf -->
-
-
-    <owl:ObjectProperty rdf:about="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lodStatusOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-        <rdfs:domain rdf:resource="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODRating"/>
-        <rdfs:range rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/Dataset"/>
-        <obo:IAO_0000115>a relation between a FAIR Data Principle and a dataset.</obo:IAO_0000115>
-        <rdfs:label>lod status of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaDescription -->
 
 
@@ -620,7 +620,43 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
         <rdfs:domain rdf:resource="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaTechnicalSkillLevel"/>
         <rdfs:range rdf:resource="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Persona"/>
-        <obo:IAO_0000115>technical skill level of</obo:IAO_0000115>
+        <rdfs:label>technical skill level of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupContactPoint -->
+
+
+    <owl:ObjectProperty rdf:about="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupContactPoint">
+        <rdfs:domain rdf:resource="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/WorkingGroup"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember"/>
+                    <rdf:Description rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>working group contact point</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupMember -->
+
+
+    <owl:ObjectProperty rdf:about="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupMember">
+        <rdfs:domain rdf:resource="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/WorkingGroup"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember"/>
+                    <rdf:Description rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>working group member</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -854,13 +890,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0002110 -->
 
 
@@ -992,10 +1021,10 @@
     
 
 
-    <!-- https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokesPersonRole -->
+    <!-- https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokespersonRole -->
 
 
-    <owl:Class rdf:about="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokesPersonRole">
+    <owl:Class rdf:about="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokespersonRole">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000115>A role inhering in a person that is realized when the person is a co-spokesperson of a Consortium.</obo:IAO_0000115>
         <rdfs:label>co-spokesperson role</rdfs:label>
@@ -1070,18 +1099,6 @@
         <rdfs:comment xml:lang="en">An event where individuals or teams come together to engage in rapid and collaborative engineering over a relatively short period of time.</rdfs:comment>
         <rdfs:label>hackathon</rdfs:label>
         <skos:example>BioHackathon Germany</skos:example>
-    </owl:Class>
-    
-
-
-    <!-- https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/JointProject -->
-
-
-    <owl:Class rdf:about="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/JointProject">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115>A joint project organized by a group of consortium members.</obo:IAO_0000115>
-        <rdfs:label>JointProject</rdfs:label>
-        <skos:example>NFDI4DS Project</skos:example>
     </owl:Class>
     
 
@@ -1333,24 +1350,13 @@
     
 
 
-    <!-- https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubProject -->
-
-
-    <owl:Class rdf:about="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubProject">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115>A sub project associated with another joint project.</obo:IAO_0000115>
-        <rdfs:label>SubProject</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask -->
 
 
     <owl:Class rdf:about="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask">
         <rdfs:subClassOf rdf:resource="https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/AcademicEvent"/>
         <obo:IAO_0000115>One of the divided tasks of a certain shared task.</obo:IAO_0000115>
-        <rdfs:label>sub task</rdfs:label>
+        <rdfs:label>sub-task</rdfs:label>
         <skos:example>Task 1: DBLP-QUAD — Knowledge Graph Question Answering over DBLP https://kgqa.github.io/scholarly-QALD-challenge/2023/</skos:example>
     </owl:Class>
     

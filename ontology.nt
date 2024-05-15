@@ -119,8 +119,17 @@
 # 
 # https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatus
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatus> <http://www.w3.org/2002/07/owl#inverseOf> <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lodStatusOf> .
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatus> <http://www.w3.org/2002/07/owl#inverseOf> <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatusOf> .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatus> <http://www.w3.org/2000/01/rdf-schema#label> "LOD status" .
+# 
+# https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatusOf
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatusOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatusOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/IAO_0000136> .
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatusOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODRating> .
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatusOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://nfdi.fiz-karlsruhe.de/ontology/Dataset> .
+<https://nfdi.fiz-karlsruhe.de/ontology/Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatusOf> <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a FAIR Data Principle and a dataset." .
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatusOf> <http://www.w3.org/2000/01/rdf-schema#label> "LOD status of" .
 # 
 # https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/ORCIDIDof
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/ORCIDIDof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -215,7 +224,6 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://nfdi4ds.fi
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/evaluationDataset> <http://www.w3.org/2000/01/rdf-schema#range> <https://nfdi.fiz-karlsruhe.de/ontology/Dataset> .
-<https://nfdi.fiz-karlsruhe.de/ontology/Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/evaluationDataset> <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a sharedtask or subtask and a dataset" .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/evaluationDataset> <http://www.w3.org/2000/01/rdf-schema#label> "evaluation dataset" .
 # 
@@ -303,14 +311,6 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lead> <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a measure or a task area and its lead." .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lead> <http://www.w3.org/2000/01/rdf-schema#label> "lead" .
 # 
-# https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lodStatusOf
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lodStatusOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lodStatusOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/IAO_0000136> .
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lodStatusOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODRating> .
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lodStatusOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://nfdi.fiz-karlsruhe.de/ontology/Dataset> .
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lodStatusOf> <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a FAIR Data Principle and a dataset." .
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lodStatusOf> <http://www.w3.org/2000/01/rdf-schema#label> "lod status of" .
-# 
 # https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaDescription
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaDescription> <http://www.w3.org/2002/07/owl#inverseOf> <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaDescriptionOf> .
@@ -386,7 +386,35 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/IAO_0000136> .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaTechnicalSkillLevel> .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Persona> .
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf> <http://purl.obolibrary.org/obo/IAO_0000115> "technical skill level of" .
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf> <http://www.w3.org/2000/01/rdf-schema#label> "technical skill level of" .
+# 
+# https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupContactPoint
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupContactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupContactPoint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/WorkingGroup> .
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupContactPoint> <http://www.w3.org/2000/01/rdf-schema#range> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#unionOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://nfdi.fiz-karlsruhe.de/ontology/Person> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupContactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "working group contact point" .
+# 
+# https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupMember
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupMember> <http://www.w3.org/2000/01/rdf-schema#domain> <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/WorkingGroup> .
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupMember> <http://www.w3.org/2000/01/rdf-schema#range> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#unionOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://nfdi.fiz-karlsruhe.de/ontology/Person> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupMember> <http://www.w3.org/2000/01/rdf-schema#label> "working group member" .
 # 
 # https://schema.org/eventAttendanceMode
 <https://schema.org/eventAttendanceMode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -449,15 +477,15 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasSequenceIdentifier
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasSequenceIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasSequenceIdentifier> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid26 .
-_:genid26 <http://www.w3.org/2002/07/owl#unionOf> _:genid28 .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/JournalVolume> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/JournalIssue> .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasSequenceIdentifier> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#unionOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/JournalVolume> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/JournalIssue> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasSequenceIdentifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasSequenceIdentifier> <http://purl.obolibrary.org/obo/IAO_0000115> "The sequence of a journal issue or journal volume." .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasSequenceIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "has sequence identifier" .
@@ -519,9 +547,6 @@ _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://purl.obolibrary.org/obo/IAO_0000708
 # 
-# http://purl.obolibrary.org/obo/OBI_0000011
-<http://purl.obolibrary.org/obo/OBI_0000011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # http://purl.obolibrary.org/obo/OBI_0002110
 <http://purl.obolibrary.org/obo/OBI_0002110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/OBI_0002110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000578> .
@@ -537,18 +562,18 @@ _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://schema.org/EventAttendanceModeEnumeration
 <http://schema.org/EventAttendanceModeEnumeration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://schema.org/EventAttendanceModeEnumeration> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid29 .
-_:genid29 <http://www.w3.org/2002/07/owl#oneOf> _:genid32 .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/OnlineEventAttendanceMode> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/OfflineEventAttendanceMode> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/MixedEventAttendanceMode> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/EventAttendanceModeEnumeration> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#oneOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/OnlineEventAttendanceMode> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/OfflineEventAttendanceMode> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/MixedEventAttendanceMode> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://schema.org/EventAttendanceModeEnumeration> <http://purl.obolibrary.org/obo/IAO_0000115> "An EventAttendanceMode is one of potentially several modes of organising an event, relating to whether it is online or offline. E.g., Hybrid." .
 <http://schema.org/EventAttendanceModeEnumeration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/EventAttendanceModeEnumeration> .
 # 
@@ -579,11 +604,11 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/AcademicEvent> <http://www.w3.org/2000/01/rdf-schema#label> "academic event" .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/AcademicEvent> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> .
 # 
-# https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokesPersonRole
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokesPersonRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokesPersonRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000023> .
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokesPersonRole> <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in a person that is realized when the person is a co-spokesperson of a Consortium." .
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokesPersonRole> <http://www.w3.org/2000/01/rdf-schema#label> "co-spokesperson role" .
+# https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokespersonRole
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokespersonRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokespersonRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokespersonRole> <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in a person that is realized when the person is a co-spokesperson of a Consortium." .
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokespersonRole> <http://www.w3.org/2000/01/rdf-schema#label> "co-spokesperson role" .
 # 
 # https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Conference
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Conference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -609,21 +634,21 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid33 .
-_:genid33 <http://www.w3.org/2002/07/owl#oneOf> _:genid37 .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Reusable> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Interoperable> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Findable> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Accessible> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#oneOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Reusable> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Interoperable> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Findable> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Accessible> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000030> .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple> <http://purl.obolibrary.org/obo/IAO_0000115> "A principle aiming to enhance the management of data, ultimately fostering transparency, collaboration, and innovation in research and beyond." .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple> <http://www.w3.org/2000/01/rdf-schema#label> "FAIR data principle" .
@@ -635,13 +660,6 @@ _:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Hackathon> <http://www.w3.org/2000/01/rdf-schema#comment> "An event where individuals or teams come together to engage in rapid and collaborative engineering over a relatively short period of time."@en .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Hackathon> <http://www.w3.org/2000/01/rdf-schema#label> "hackathon" .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Hackathon> <http://www.w3.org/2004/02/skos/core#example> "BioHackathon Germany" .
-# 
-# https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/JointProject
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/JointProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/JointProject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OBI_0000011> .
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/JointProject> <http://purl.obolibrary.org/obo/IAO_0000115> "A joint project organized by a group of consortium members." .
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/JointProject> <http://www.w3.org/2000/01/rdf-schema#label> "JointProject" .
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/JointProject> <http://www.w3.org/2004/02/skos/core#example> "NFDI4DS Project" .
 # 
 # https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/JournalArticle
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/JournalArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -780,17 +798,11 @@ _:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SpokesPersonRole> <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in a person that is realized when the person is a spokesperson of a Consortium." .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SpokesPersonRole> <http://www.w3.org/2000/01/rdf-schema#label> "spokesperson role" .
 # 
-# https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubProject
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubProject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OBI_0000011> .
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubProject> <http://purl.obolibrary.org/obo/IAO_0000115> "A sub project associated with another joint project." .
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubProject> <http://www.w3.org/2000/01/rdf-schema#label> "SubProject" .
-# 
 # https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/AcademicEvent> .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask> <http://purl.obolibrary.org/obo/IAO_0000115> "One of the divided tasks of a certain shared task." .
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask> <http://www.w3.org/2000/01/rdf-schema#label> "sub task" .
+<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask> <http://www.w3.org/2000/01/rdf-schema#label> "sub-task" .
 <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask> <http://www.w3.org/2004/02/skos/core#example> "Task 1: DBLP-QUAD — Knowledge Graph Question Answering over DBLP https://kgqa.github.io/scholarly-QALD-challenge/2023/" .
 # 
 # https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SummerSchool

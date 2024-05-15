@@ -137,8 +137,17 @@
 
 ###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatus
 :LODStatus rdf:type owl:ObjectProperty ;
-           owl:inverseOf :lodStatusOf ;
+           owl:inverseOf :LODStatusOf ;
            rdfs:label "LOD status" .
+
+
+###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatusOf
+:LODStatusOf rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
+             rdfs:domain :LODRating ;
+             rdfs:range <https://nfdi.fiz-karlsruhe.de/ontology/Dataset> ;
+             <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a FAIR Data Principle and a dataset." ;
+             rdfs:label "LOD status of" .
 
 
 ###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/ORCIDIDof
@@ -303,15 +312,6 @@
       rdfs:label "lead" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lodStatusOf
-:lodStatusOf rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
-             rdfs:domain :LODRating ;
-             rdfs:range <https://nfdi.fiz-karlsruhe.de/ontology/Dataset> ;
-             <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a FAIR Data Principle and a dataset." ;
-             rdfs:label "lod status of" .
-
-
 ###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaDescription
 :personaDescription rdf:type owl:ObjectProperty ;
                     owl:inverseOf :personaDescriptionOf ;
@@ -387,7 +387,29 @@
                        rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
                        rdfs:domain :PersonaTechnicalSkillLevel ;
                        rdfs:range :Persona ;
-                       <http://purl.obolibrary.org/obo/IAO_0000115> "technical skill level of" .
+                       rdfs:label "technical skill level of" .
+
+
+###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupContactPoint
+:workingGroupContactPoint rdf:type owl:ObjectProperty ;
+                          rdfs:domain :WorkingGroup ;
+                          rdfs:range [ rdf:type owl:Class ;
+                                       owl:unionOf ( <https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember>
+                                                     <https://nfdi.fiz-karlsruhe.de/ontology/Person>
+                                                   )
+                                     ] ;
+                          rdfs:label "working group contact point" .
+
+
+###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupMember
+:workingGroupMember rdf:type owl:ObjectProperty ;
+                    rdfs:domain :WorkingGroup ;
+                    rdfs:range [ rdf:type owl:Class ;
+                                 owl:unionOf ( <https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember>
+                                               <https://nfdi.fiz-karlsruhe.de/ontology/Person>
+                                             )
+                               ] ;
+                    rdfs:label "working group member" .
 
 
 ###  https://schema.org/eventAttendanceMode
@@ -527,10 +549,6 @@
 <http://purl.obolibrary.org/obo/IAO_0000708> rdf:type owl:Class .
 
 
-###  http://purl.obolibrary.org/obo/OBI_0000011
-<http://purl.obolibrary.org/obo/OBI_0000011> rdf:type owl:Class .
-
-
 ###  http://purl.obolibrary.org/obo/OBI_0002110
 <http://purl.obolibrary.org/obo/OBI_0002110> rdf:type owl:Class ;
                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> .
@@ -608,8 +626,8 @@
                <http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokesPersonRole
-:CoSpokesPersonRole rdf:type owl:Class ;
+###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokespersonRole
+:CoSpokespersonRole rdf:type owl:Class ;
                     rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
                     <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in a person that is realized when the person is a co-spokesperson of a Consortium." ;
                     rdfs:label "co-spokesperson role" .
@@ -661,14 +679,6 @@
            rdfs:comment "An event where individuals or teams come together to engage in rapid and collaborative engineering over a relatively short period of time."@en ;
            rdfs:label "hackathon" ;
            <http://www.w3.org/2004/02/skos/core#example> "BioHackathon Germany" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/JointProject
-:JointProject rdf:type owl:Class ;
-              rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000011> ;
-              <http://purl.obolibrary.org/obo/IAO_0000115> "A joint project organized by a group of consortium members." ;
-              rdfs:label "JointProject" ;
-              <http://www.w3.org/2004/02/skos/core#example> "NFDI4DS Project" .
 
 
 ###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/JournalArticle
@@ -830,18 +840,11 @@
                   rdfs:label "spokesperson role" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubProject
-:SubProject rdf:type owl:Class ;
-            rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000011> ;
-            <http://purl.obolibrary.org/obo/IAO_0000115> "A sub project associated with another joint project." ;
-            rdfs:label "SubProject" .
-
-
 ###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask
 :SubTask rdf:type owl:Class ;
          rdfs:subClassOf :AcademicEvent ;
          <http://purl.obolibrary.org/obo/IAO_0000115> "One of the divided tasks of a certain shared task." ;
-         rdfs:label "sub task" ;
+         rdfs:label "sub-task" ;
          <http://www.w3.org/2004/02/skos/core#example> "Task 1: DBLP-QUAD — Knowledge Graph Question Answering over DBLP https://kgqa.github.io/scholarly-QALD-challenge/2023/" .
 
 
