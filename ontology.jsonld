@@ -3,47 +3,731 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Conference"
+      "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Conference"
     }, {
-      "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Hackathon"
+      "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Hackathon"
     }, {
-      "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/ScienceSlam"
+      "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ScienceSlam"
     }, {
-      "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SharedTask"
+      "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/SharedTask"
     }, {
-      "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Tutorial"
+      "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Tutorial"
     }, {
-      "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Workshop"
+      "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Workshop"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid101",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid103",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid105",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/TaskAreaLeadRole"
+  } ]
+}, {
+  "@id" : "_:genid107",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Leading"
+  } ]
+}, {
+  "@id" : "_:genid109",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/TaskArea"
   } ]
 }, {
   "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SharedTask"
+      "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/SharedTask"
     }, {
-      "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask"
+      "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/SubTask"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid111",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember"
+  } ]
+}, {
+  "@id" : "_:genid113",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Person"
+  } ]
+}, {
+  "@id" : "_:genid115",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/lead"
+  } ]
+}, {
+  "@id" : "_:genid117",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/lead"
+  } ]
+}, {
+  "@id" : "_:genid118",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Task Area Contributor"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid140"
+    }, {
+      "@id" : "_:genid138"
+    }, {
+      "@id" : "_:genid136"
+    }, {
+      "@id" : "_:genid134"
+    }, {
+      "@id" : "_:genid132"
+    }, {
+      "@id" : "_:genid130"
+    }, {
+      "@id" : "_:genid128"
+    }, {
+      "@id" : "_:genid126"
+    }, {
+      "@id" : "_:genid124"
+    }, {
+      "@id" : "_:genid122"
+    }, {
+      "@id" : "_:genid120"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid144"
+    }, {
+      "@id" : "_:genid142"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid120",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000054"
+  } ]
+}, {
+  "@id" : "_:genid122",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000087"
+  } ]
+}, {
+  "@id" : "_:genid124",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000087"
+  } ]
+}, {
+  "@id" : "_:genid126",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid128",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid130",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid132",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/TaskAreaLeadRole"
+  } ]
+}, {
+  "@id" : "_:genid134",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Contributing"
+  } ]
+}, {
+  "@id" : "_:genid136",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/TaskArea"
+  } ]
+}, {
+  "@id" : "_:genid138",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember"
   } ]
 }, {
   "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/TaskArea"
+      "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/TaskArea"
     }, {
-      "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/TaskAreaMeasure"
+      "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/TaskAreaMeasure"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid140",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Person"
+  } ]
+}, {
+  "@id" : "_:genid142",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/taskAreaOrMeasureContributor"
+  } ]
+}, {
+  "@id" : "_:genid144",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/taskAreaOrMeasureContributor"
+  } ]
+}, {
+  "@id" : "_:genid145",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Measure Lead"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid167"
+    }, {
+      "@id" : "_:genid165"
+    }, {
+      "@id" : "_:genid163"
+    }, {
+      "@id" : "_:genid161"
+    }, {
+      "@id" : "_:genid159"
+    }, {
+      "@id" : "_:genid157"
+    }, {
+      "@id" : "_:genid155"
+    }, {
+      "@id" : "_:genid153"
+    }, {
+      "@id" : "_:genid151"
+    }, {
+      "@id" : "_:genid149"
+    }, {
+      "@id" : "_:genid147"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid171"
+    }, {
+      "@id" : "_:genid169"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid147",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000054"
+  } ]
+}, {
+  "@id" : "_:genid149",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000087"
+  } ]
+}, {
+  "@id" : "_:genid151",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000087"
+  } ]
+}, {
+  "@id" : "_:genid153",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid155",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid157",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid159",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/MeasureLeadRole"
+  } ]
+}, {
+  "@id" : "_:genid161",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Leading"
+  } ]
+}, {
+  "@id" : "_:genid163",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/TaskAreaMeasure"
+  } ]
+}, {
+  "@id" : "_:genid165",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember"
+  } ]
+}, {
+  "@id" : "_:genid167",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Person"
+  } ]
+}, {
+  "@id" : "_:genid169",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/lead"
   } ]
 }, {
   "@id" : "_:genid17",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Consortium"
+      "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember"
     }, {
       "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Person"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid171",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/lead"
+  } ]
+}, {
+  "@id" : "_:genid172",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Measure Contributor"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid194"
+    }, {
+      "@id" : "_:genid192"
+    }, {
+      "@id" : "_:genid190"
+    }, {
+      "@id" : "_:genid188"
+    }, {
+      "@id" : "_:genid186"
+    }, {
+      "@id" : "_:genid184"
+    }, {
+      "@id" : "_:genid182"
+    }, {
+      "@id" : "_:genid180"
+    }, {
+      "@id" : "_:genid178"
+    }, {
+      "@id" : "_:genid176"
+    }, {
+      "@id" : "_:genid174"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid198"
+    }, {
+      "@id" : "_:genid196"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid174",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000054"
+  } ]
+}, {
+  "@id" : "_:genid176",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000087"
+  } ]
+}, {
+  "@id" : "_:genid178",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000087"
+  } ]
+}, {
+  "@id" : "_:genid180",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid182",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid184",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid186",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/MeasureLeadRole"
+  } ]
+}, {
+  "@id" : "_:genid188",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Contributing"
+  } ]
+}, {
+  "@id" : "_:genid190",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/TaskAreaMeasure"
+  } ]
+}, {
+  "@id" : "_:genid192",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember"
+  } ]
+}, {
+  "@id" : "_:genid194",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Person"
+  } ]
+}, {
+  "@id" : "_:genid196",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/taskAreaOrMeasureContributor"
+  } ]
+}, {
+  "@id" : "_:genid198",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/taskAreaOrMeasureContributor"
+  } ]
+}, {
+  "@id" : "_:genid199",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Working Group Member"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid225"
+    }, {
+      "@id" : "_:genid223"
+    }, {
+      "@id" : "_:genid221"
+    }, {
+      "@id" : "_:genid219"
+    }, {
+      "@id" : "_:genid217"
+    }, {
+      "@id" : "_:genid215"
+    }, {
+      "@id" : "_:genid213"
+    }, {
+      "@id" : "_:genid211"
+    }, {
+      "@id" : "_:genid209"
+    }, {
+      "@id" : "_:genid207"
+    }, {
+      "@id" : "_:genid205"
+    }, {
+      "@id" : "_:genid203"
+    }, {
+      "@id" : "_:genid201"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid229"
+    }, {
+      "@id" : "_:genid227"
     } ]
   } ]
 }, {
@@ -51,10 +735,172 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/TaskArea"
+      "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/TaskArea"
     }, {
-      "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/TaskAreaMeasure"
+      "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/TaskAreaMeasure"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid201",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000054"
+  } ]
+}, {
+  "@id" : "_:genid203",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000087"
+  } ]
+}, {
+  "@id" : "_:genid205",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000087"
+  } ]
+}, {
+  "@id" : "_:genid207",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid209",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid211",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid213",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid215",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/WorkingGroupMemberRole"
+  } ]
+}, {
+  "@id" : "_:genid217",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/BecomingAMember"
+  } ]
+}, {
+  "@id" : "_:genid219",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/TaskAreaMeasure"
+  } ]
+}, {
+  "@id" : "_:genid221",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/WorkingGroup"
+  } ]
+}, {
+  "@id" : "_:genid223",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember"
+  } ]
+}, {
+  "@id" : "_:genid225",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Person"
+  } ]
+}, {
+  "@id" : "_:genid227",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/workingGroupMember"
+  } ]
+}, {
+  "@id" : "_:genid229",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/workingGroupMember"
   } ]
 }, {
   "@id" : "_:genid23",
@@ -67,6 +913,201 @@
     } ]
   } ]
 }, {
+  "@id" : "_:genid230",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Working Group Contact Point"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid256"
+    }, {
+      "@id" : "_:genid254"
+    }, {
+      "@id" : "_:genid252"
+    }, {
+      "@id" : "_:genid250"
+    }, {
+      "@id" : "_:genid248"
+    }, {
+      "@id" : "_:genid246"
+    }, {
+      "@id" : "_:genid244"
+    }, {
+      "@id" : "_:genid242"
+    }, {
+      "@id" : "_:genid240"
+    }, {
+      "@id" : "_:genid238"
+    }, {
+      "@id" : "_:genid236"
+    }, {
+      "@id" : "_:genid234"
+    }, {
+      "@id" : "_:genid232"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid260"
+    }, {
+      "@id" : "_:genid258"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid232",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000054"
+  } ]
+}, {
+  "@id" : "_:genid234",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000087"
+  } ]
+}, {
+  "@id" : "_:genid236",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000087"
+  } ]
+}, {
+  "@id" : "_:genid238",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid240",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid242",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid244",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid246",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/WorkingGroupContactPointRole"
+  } ]
+}, {
+  "@id" : "_:genid248",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Contacting"
+  } ]
+}, {
+  "@id" : "_:genid250",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/TaskAreaMeasure"
+  } ]
+}, {
+  "@id" : "_:genid252",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/WorkingGroup"
+  } ]
+}, {
+  "@id" : "_:genid254",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember"
+  } ]
+}, {
+  "@id" : "_:genid256",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Person"
+  } ]
+}, {
+  "@id" : "_:genid258",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/workingGroupContactPoint"
+  } ]
+}, {
   "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
@@ -75,6 +1116,18 @@
     }, {
       "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Person"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid260",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/workingGroupContactPoint"
   } ]
 }, {
   "@id" : "_:genid29",
@@ -110,27 +1163,437 @@
   } ]
 }, {
   "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "nfdi4dso:BecomingAMember differs from the planned process nfdicore:Contributing because nfdicore:Contributing is when contributing to an endavour in stead of a group."
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/IAO_0000115"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/BecomingAMember"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@value" : "A planned process of becomming a member of a group."
+  } ]
+}, {
+  "@id" : "_:genid40",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
-      "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Accessible"
+      "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dsoAccessible"
     }, {
-      "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Findable"
+      "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dsoFindable"
     }, {
-      "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Interoperable"
+      "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dsoInteroperable"
     }, {
-      "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Reusable"
+      "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dsoReusable"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Co-spokesperson"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid69"
+    }, {
+      "@id" : "_:genid67"
+    }, {
+      "@id" : "_:genid65"
+    }, {
+      "@id" : "_:genid63"
+    }, {
+      "@id" : "_:genid61"
+    }, {
+      "@id" : "_:genid59"
+    }, {
+      "@id" : "_:genid57"
+    }, {
+      "@id" : "_:genid55"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid71"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000054"
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000087"
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/CoSpokespersonRole"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Leading"
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Consortium"
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Person"
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/coSpokesperson"
+  } ]
+}, {
+  "@id" : "_:genid72",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Spokesperson"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid88"
+    }, {
+      "@id" : "_:genid86"
+    }, {
+      "@id" : "_:genid84"
+    }, {
+      "@id" : "_:genid82"
+    }, {
+      "@id" : "_:genid80"
+    }, {
+      "@id" : "_:genid78"
+    }, {
+      "@id" : "_:genid76"
+    }, {
+      "@id" : "_:genid74"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid90"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000054"
+  } ]
+}, {
+  "@id" : "_:genid76",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000087"
+  } ]
+}, {
+  "@id" : "_:genid78",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
   } ]
 }, {
   "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SharedTask"
+      "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/SharedTask"
     }, {
-      "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask"
+      "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/SubTask"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid80",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
+  } ]
+}, {
+  "@id" : "_:genid82",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/SpokespersonRole"
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Leading"
+  } ]
+}, {
+  "@id" : "_:genid86",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Consortium"
+  } ]
+}, {
+  "@id" : "_:genid88",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Person"
+  } ]
+}, {
+  "@id" : "_:genid90",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/spokesperson"
+  } ]
+}, {
+  "@id" : "_:genid91",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Task Area Lead"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid113"
+    }, {
+      "@id" : "_:genid111"
+    }, {
+      "@id" : "_:genid109"
+    }, {
+      "@id" : "_:genid107"
+    }, {
+      "@id" : "_:genid105"
+    }, {
+      "@id" : "_:genid103"
+    }, {
+      "@id" : "_:genid101"
+    }, {
+      "@id" : "_:genid99"
+    }, {
+      "@id" : "_:genid97"
+    }, {
+      "@id" : "_:genid95"
+    }, {
+      "@id" : "_:genid93"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid117"
+    }, {
+      "@id" : "_:genid115"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid93",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000054"
+  } ]
+}, {
+  "@id" : "_:genid95",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000087"
+  } ]
+}, {
+  "@id" : "_:genid97",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000087"
+  } ]
+}, {
+  "@id" : "_:genid99",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
   } ]
 }, {
   "@id" : "http://prismstandard.org/namespaces/basic/2.0/doi",
@@ -142,7 +1605,7 @@
     "@value" : "has DOI"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/DOIOf"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dsoDOIOf"
   } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/BFO_0000023",
@@ -150,6 +1613,9 @@
 }, {
   "@id" : "http://purl.obolibrary.org/obo/BFO_0000034",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/BFO_0000054",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/IAO_0000030",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -170,7 +1636,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/IAO_0000442",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/IAO_0000578",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -178,11 +1644,20 @@
   "@id" : "http://purl.obolibrary.org/obo/IAO_0000708",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "http://purl.obolibrary.org/obo/OBI_0000011",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://purl.obolibrary.org/obo/OBI_0002110",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000578"
   } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/RO_0000056",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/RO_0000087",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/abstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -238,6 +1713,9 @@
   "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://schema.org/EventAttendanceModeEnumeration",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
@@ -258,6 +1736,12 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "keywords"
   } ]
+}, {
+  "@id" : "http://schema.org/logo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#exactMatch",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -298,44 +1782,14 @@
     "@value" : "name"
   } ]
 }, {
-  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Agent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Consortium",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Dataset",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Event",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Organization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Person",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Place",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Project",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Publication",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/abstract" : [ {
     "@language" : "en",
     "@value" : "The NFDI4DS ontology (nfdi4dso) is an ontology describing various resources all resources (datasets, data providers, persons, projects and other entities) within the domain of NFDI4DataScience.  nfdi4dso is a module that builds upon the NFDIcore Ontology (https://ise-fizkarlsruhe.github.io/nfdicore/2.0.0/) and maintains alignment with the Basic Formal Ontology (BFO)."
   } ],
   "http://purl.org/dc/terms/bibliographicCitation" : [ {
-    "@value" : "Genet Asefa Gesese, Jörg Waitelonis, Harald Sack. NFDI4DS Ontology. Revision: v1.0.0. Retrieved from: https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/1.0.0"
+    "@value" : "Genet Asefa Gesese, Jörg Waitelonis, Harald Sack. NFDI4DS Ontology. Revision: v1.0.0. Retrieved from: https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@value" : "2024-05-15"
@@ -357,7 +1811,13 @@
     "@value" : "Ontology Specification"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/nfdi4dso"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/nfdi4dso"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/"
+  } ],
+  "http://schema.org/logo" : [ {
+    "@id" : "https://raw.githubusercontent.com/ISE-FIZKarlsruhe/NFDI4DS-Ontology/Documentation/resources/nfdi4dso_logo.png"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "NFDI4DS Ontology (nfdi4dso)"
@@ -366,13 +1826,13 @@
     "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/2.0.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/1.0.0"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "v1.0.0"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/AcademicEvent",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/AcademicEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "An event which is for example a conference or conference-like event, and all the sub-events of those which are about the topic or theme of the conference, such as talks or panels."
@@ -381,19 +1841,28 @@
     "@value" : "academic event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/OrganizedEvent"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/OrganizedEvent"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Accessible",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple"
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/BecomingAMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "A planned process of becomming a member of a group."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "becoming a member"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OBI_0000011"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokespersonRole",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/CoSpokespersonRole",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A role inhering in a person that is realized when the person is a co-spokesperson of a Consortium."
@@ -405,7 +1874,7 @@
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Conference",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Conference",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A conference event."
@@ -414,7 +1883,7 @@
     "@value" : "conference"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/AcademicEvent"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/AcademicEvent"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Conference"
@@ -423,22 +1892,7 @@
     "@value" : "ISWC-2024"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/DOIOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/OBI_0002110"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "DOI of"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Publication"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/IAO_0000219"
-  } ]
-}, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/EducationalFunction",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/EducationalFunction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "Educational function is \"One of four basic kinds of uses of social communication listed by Schramm from the perspective of the individual, in which the normative objectives are for the sender to teach and for the receiver to learn. He distinguishes this from a purely informational function. From the  perspective of society, Schramm argues that this function is analogous  to the function of socialization. See also media functions; personal functions.\""
@@ -453,7 +1907,7 @@
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000034"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/EthicalOrLegalSkillLevel",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/EthicalOrLegalSkillLevel",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "The level of Ethical or Legal skills the persona possesses"
@@ -462,25 +1916,25 @@
     "@value" : "ethical or legal skill level"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/EthicalOrLegalSkillLevelOf"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/EthicalOrLegalSkillLevelOf"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/EthicalOrLegalSkillLevelOf",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/EthicalOrLegalSkillLevelOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaEthicalOrLegalSkillLevel"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaEthicalOrLegalSkillLevel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "ethical or legal skill level of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Persona"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Persona"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000136"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/EvaluationMetric",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/EvaluationMetric",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A quantitative measure used to assess the performance and effectiveness of a statistical or machine learning model"
@@ -495,7 +1949,7 @@
     "@value" : "Precision, recall, F1-score, and BLEU"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A principle aiming to enhance the management of data, ultimately fostering transparency, collaboration, and innovation in research and beyond."
@@ -507,16 +1961,10 @@
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000030"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid39"
+    "@id" : "_:genid40"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Findable",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple"
-  } ]
-}, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Hackathon",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Hackathon",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "An event where individuals or teams come together to engage in rapid and collaborative engineering over a relatively short period of time."
@@ -529,19 +1977,13 @@
     "@value" : "hackathon"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/OrganizedEvent"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/OrganizedEvent"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "BioHackathon Germany"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Interoperable",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple"
-  } ]
-}, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/JournalArticle",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/JournalArticle",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A report that is published in a jornal."
@@ -553,7 +1995,7 @@
     "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Publication"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODRating",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/LODRating",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A rating of data based on 1) its availability on the Web under an open license, (2) being in the form of structured data, (3) being in a non-proprietary file format, (4) using URIs as its identifiers, (5) including links to other data sources."
@@ -565,22 +2007,22 @@
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000030"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatus",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/LODStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "LOD status"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatusOf"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/LODStatusOf"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatusOf",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/LODStatusOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "a relation between a FAIR Data Principle and a dataset."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODRating"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/LODRating"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "LOD status of"
@@ -592,7 +2034,22 @@
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000136"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Lecture",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Leading",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "A planned process in which the leader information of an entity is provided."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "leading"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OBI_0000011"
+  } ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Lecture",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@language" : "en",
@@ -602,10 +2059,10 @@
     "@value" : "lecture"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/OrganizedEvent"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/OrganizedEvent"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/MeasureContributorRole",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/MeasureContributorRole",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A role inhering in an agent that is realized when the agent is a contributor of a measure defined in a Consortium."
@@ -617,7 +2074,7 @@
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/MeasureLeadRole",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/MeasureLeadRole",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A role inhering in an agent that is realized when the agent is a leader of a measure defined in a Consortium."
@@ -629,7 +2086,7 @@
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/NewsArticle",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/NewsArticle",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A work consisting of an announcement or statement of recent or current events of new data"
@@ -641,7 +2098,7 @@
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000030"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/ORCIDIDof",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ORCIDIDof",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000708"
@@ -656,10 +2113,10 @@
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000219"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasORCIDID"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/hasORCIDID"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/OrganizedEvent",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/OrganizedEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@language" : "en",
@@ -682,7 +2139,7 @@
     "@value" : "conferences, workshops, lectures, or any other planned event."
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PageRange",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/PageRange",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "The range of pages indicating where a publication appears in a proceeding"
@@ -694,7 +2151,7 @@
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000030"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Persona",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Persona",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A persona is a fictional character, which is created based upon a research to represent a group of users that might use a service, product, site, or brand in a similar way"
@@ -709,7 +2166,7 @@
     "@value" : "Alex https://www.nfdi4datascience.de/community/requirements-elicitation/personas/"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaDescription",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A description of a persona"
@@ -721,7 +2178,7 @@
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000030"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaDomainKnowledgeLevel",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaDomainKnowledgeLevel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "The domain knowledge skill level a persona possesses"
@@ -733,7 +2190,7 @@
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000030"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaEthicalOrLegalSkillLevel",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaEthicalOrLegalSkillLevel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "The ethical legal skill level a persona possesses"
@@ -745,7 +2202,7 @@
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000030"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaOccupationRole",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaOccupationRole",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A role inhering in a persona that is realized when the persona participates in a Project."
@@ -757,7 +2214,7 @@
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaProblemDescription",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaProblemDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A description of a problem defined by a Persona"
@@ -769,7 +2226,7 @@
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000030"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaSoftSkillLevel",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaSoftSkillLevel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "The soft skill level a persona possesses"
@@ -781,7 +2238,7 @@
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000030"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaTask",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaTask",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A task that is a persona wants to be addressed"
@@ -793,7 +2250,7 @@
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000030"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaTechnicalSkillLevel",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaTechnicalSkillLevel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "The technical skill level a persona possesses"
@@ -805,7 +2262,7 @@
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000030"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaWishDescription",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaWishDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A description of a wish defined by a Persona"
@@ -817,7 +2274,7 @@
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000030"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Proceedings",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Proceedings",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "The collection of proceedings of an academic event."
@@ -829,13 +2286,7 @@
     "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Publication"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Reusable",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple"
-  } ]
-}, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/ScienceSlam",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ScienceSlam",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@language" : "en",
@@ -845,10 +2296,10 @@
     "@value" : "science slam"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/OrganizedEvent"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/OrganizedEvent"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SharedTask",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/SharedTask",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A shared task is an interactive event organized by NFDI4DS that attract the data science and AI community. The task may be divided into subtasks."
@@ -857,13 +2308,13 @@
     "@value" : "shared task"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/AcademicEvent"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/AcademicEvent"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "Scholarly QALD (Question Answering over Scholarly Knowledge Graphs) at ISWC 2023 https://kgqa.github.io/scholarly-QALD-challenge/2023/"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SpokesPersonRole",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/SpokespersonRole",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A role inhering in a person that is realized when the person is a spokesperson of a Consortium."
@@ -875,7 +2326,7 @@
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/SubTask",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "One of the divided tasks of a certain shared task."
@@ -884,13 +2335,13 @@
     "@value" : "sub-task"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/AcademicEvent"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/AcademicEvent"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "Task 1: DBLP-QUAD — Knowledge Graph Question Answering over DBLP https://kgqa.github.io/scholarly-QALD-challenge/2023/"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SummerSchool",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/SummerSchool",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "An intensive summer educational program with a focus on specialized topics within a particular field or discipline to offer participants the opportunity to deepen their knowledge, develop new skills, and engage with experts and peers in the field."
@@ -899,13 +2350,13 @@
     "@value" : "summer school"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/OrganizedEvent"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/OrganizedEvent"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "International Semantic Web Summer School 2024 (ISWS) https://2024.semanticwebschool.org/"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/TaskArea",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/TaskArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A task area (TA) defined in NFDI4DS project addressing one or more issues."
@@ -920,7 +2371,7 @@
     "@value" : "Task Area 1 DS and AI - Community and Training,\nTask Area 2 (Research Knowledge Graphs)"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/TaskAreaContributorRole",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/TaskAreaContributorRole",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A role inhering in an agent that is realized when the agent is a contributor of a task area defined in a Consortium."
@@ -932,7 +2383,7 @@
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/TaskAreaLeadRole",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/TaskAreaLeadRole",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A role inhering in an agent that is realized when the agent is a lead of a task area defined in a Consortium."
@@ -944,7 +2395,7 @@
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/TaskAreaMeasure",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/TaskAreaMeasure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "a task area measure that is defined as part of a given project task area"
@@ -956,7 +2407,7 @@
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000033"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Tutorial",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Tutorial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A tutorial event."
@@ -965,13 +2416,13 @@
     "@value" : "tutorial"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/AcademicEvent"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/AcademicEvent"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Tutorial"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/WorkingGroup",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/WorkingGroup",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A group of individuals who are members of one or more task areas in NFDI4DS project with a focus on workin together to address a specific topic"
@@ -986,7 +2437,7 @@
     "@value" : "Metadata WG"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/WorkingGroupContactPointRole",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/WorkingGroupContactPointRole",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A role inhering in an agent that is realized when the agent is a contact point of a working group defined in a Consortium."
@@ -998,7 +2449,7 @@
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/WorkingGroupMemberRole",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/WorkingGroupMemberRole",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A role inhering in an agent that is realized when the agent is a member of a working group defined in a Consortium."
@@ -1010,7 +2461,7 @@
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Workshop",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Workshop",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A workshop event."
@@ -1019,13 +2470,13 @@
     "@value" : "workshop"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/AcademicEvent"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/AcademicEvent"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Workshop"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/affiliation",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/affiliation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "a relation between a person and an organization."
@@ -1040,7 +2491,7 @@
     "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Organization"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/appearsAt",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/appearsAt",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A relation between a publication and a page range which indicates where the publication appears in a proceeding using the minimum and maximum page numbers"
@@ -1052,16 +2503,16 @@
     "@value" : "appears at"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PageRange"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/PageRange"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/availableAt",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/availableAt",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "The property takes as a value a url where the news article is available"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/NewsArticle"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/NewsArticle"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "available at"
@@ -1070,7 +2521,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/coLocatedWith",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/c",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/cm",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/coLocatedWith",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A relationship between an event and a conference indicating that the event is happening together at the same place as the conference."
@@ -1082,10 +2539,10 @@
     "@value" : "co-located with"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Conference"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Conference"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/coSpokesperson",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/coSpokesperson",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A relationship between a consortium and its co-spokesperson"
@@ -1098,9 +2555,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/coSpokespersonOf"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/domainknowledgeLevel",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/coSpokespersonOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "co-spokesperson of"
+  } ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/domainknowledgeLevel",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "The level of domain knowledge the persona possesses"
@@ -1109,31 +2575,31 @@
     "@value" : "domain knowledge level"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/domainknowledgeLevelOf"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/domainknowledgeLevelOf"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/domainknowledgeLevelOf",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/domainknowledgeLevelOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaDomainKnowledgeLevel"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaDomainKnowledgeLevel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "domain knowledge level of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Persona"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Persona"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000136"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/establishedBy",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/establishedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "The property is a relation between a working group and a project"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/WorkingGroup"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/WorkingGroup"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "established by"
@@ -1142,7 +2608,7 @@
     "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Project"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/evaluationDataset",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/evaluationDataset",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "a relation between a sharedtask or subtask and a dataset"
@@ -1157,7 +2623,7 @@
     "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Dataset"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/evaluationMetric",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/evaluationMetric",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "a relation between a shared task or a subtask and its evaluation metric"
@@ -1169,10 +2635,10 @@
     "@value" : "evaluation metric"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/EvaluationMetric"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/EvaluationMetric"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/eventContactPoint",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/eventContactPoint",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "a relation between an event and its contact point"
@@ -1187,7 +2653,7 @@
     "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Person"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/eventOrganizer",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/eventOrganizer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "a relation between an event and its organizer"
@@ -1202,16 +2668,16 @@
     "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Agent"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/fairStatus",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/fairStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "fair status"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/fairStatusOf"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/fairStatusOf"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/fairStatusOf",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/fairStatusOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "a relation between a LOD Rating and a dataset."
@@ -1219,7 +2685,7 @@
     "@value" : "fair status of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Dataset"
@@ -1228,7 +2694,7 @@
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000136"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasAbstract",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/hasAbstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "The abstract of a publication"
@@ -1243,8 +2709,8 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasNext",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/hasNext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000442"
   } ],
@@ -1258,7 +2724,7 @@
     "@id" : "https://w3id.org/oc/ontology/hasNext"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasORCIDID",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/hasORCIDID",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "The ORCID ID of the person"
@@ -1267,7 +2733,7 @@
     "@value" : "has ORCIDID"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasRank",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/hasRank",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "The rank of an author of a document"
@@ -1282,7 +2748,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasSequenceIdentifier",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/hasSequenceIdentifier",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "The sequence of a journal issue or journal volume."
@@ -1297,22 +2763,22 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/isAssociatedWith",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/isAssociatedWith",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "An academic event a given proceedings publication is associated with"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Proceedings"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Proceedings"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is associated with"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/AcademicEvent"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/AcademicEvent"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lead",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/lead",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "a relation between a measure or a task area and its lead."
@@ -1325,15 +2791,24 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid17"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/leadOf"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/longDescription",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/leadOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "lead of"
+  } ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/longDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "The detailed content of the news"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/NewsArticle"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/NewsArticle"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "long description"
@@ -1342,13 +2817,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/maximum",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/maximum",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "The page number indicating the last page of a document in a proceeding"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PageRange"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/PageRange"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "maximum"
@@ -1357,13 +2832,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/minimum",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/minimum",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "The page number indicating the first page of a document in a proceeding"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PageRange"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/PageRange"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "minimum"
@@ -1372,16 +2847,19 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaDescription",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/p",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/personaDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "persona description"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaDescriptionOf"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/personaDescriptionOf"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaDescriptionOf",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/personaDescriptionOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "persona description of"
@@ -1390,37 +2868,43 @@
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000136"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaProblem",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/personaProblem",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "persona problem"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaProblemOf"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/personaProblemOf"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaProblemOf",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/personaProblemOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaProblemDescription"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaProblemDescription"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "persona problem of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Persona"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Persona"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000136"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/shortDescription",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/pr",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/ro",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/shortDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "The short description of the content of the news"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/NewsArticle"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/NewsArticle"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "short description"
@@ -1429,7 +2913,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/softSkill",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/softSkill",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "The level of soft skills the persona possesses"
@@ -1438,25 +2922,25 @@
     "@value" : "soft skill"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/softSkillOf"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/softSkillOf"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/softSkillOf",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/softSkillOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaSoftSkillLevel"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaSoftSkillLevel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "soft skill of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Persona"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Persona"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000136"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/spokesperson",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/spokesperson",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
     "@value" : "A relationship between a consortium and its spokesperson"
@@ -1469,9 +2953,21 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/spokespersonOf"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/taskAreaOrMeasureContributor",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/spokespersonOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "spokesperson of"
+  } ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/t",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/taskAreaOrMeasureContributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid20"
@@ -1483,34 +2979,37 @@
     "@id" : "_:genid23"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevel",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevel",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "technical skill level"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaTechnicalSkillLevel"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaTechnicalSkillLevel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "technical skill level of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Persona"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/Persona"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/IAO_0000136"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupContactPoint",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/w",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/workingGroupContactPoint",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/WorkingGroup"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/WorkingGroup"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "working group contact point"
@@ -1519,10 +3018,10 @@
     "@id" : "_:genid26"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/workingGroupMember",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/workingGroupMember",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/WorkingGroup"
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/WorkingGroup"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "working group member"
@@ -1531,8 +3030,83 @@
     "@id" : "_:genid29"
   } ]
 }, {
-  "@id" : "https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/zipcode",
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/zipcode",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dsoAccessible",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple"
+  } ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dsoDOIOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OBI_0002110"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DOI of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/IAO_0000219"
+  } ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dsoFindable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple"
+  } ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dsoInteroperable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple"
+  } ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dsoReusable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://nfdi.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple"
+  } ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Consortium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Contacting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Contributing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Dataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Project",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://nfdi.fiz-karlsruhe.de/ontology/Publication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://schema.org/MixedEventAttendanceMode",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
