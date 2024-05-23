@@ -66,7 +66,7 @@ $(function(){
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
 <h1>NFDI4DS Ontology</h1>
-<img src="https://raw.githubusercontent.com/ISE-FIZKarlsruhe/NFDI4DS-Ontology/Documentation/resources/nfdi4dso_logo.png" width="50/">
+<img src="https://raw.githubusercontent.com/ISE-FIZKarlsruhe/NFDI4DS-Ontology/Documentation/resources/nfdi4dso_logo.png" width="200/">
 <h2>Release: 2024-05-23</h2>
 
 
@@ -100,7 +100,11 @@ The NFDI4DS ontology (nfdi4dso) is an ontology describing various resources all 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+The vision of [NFDI4DataScience (NFDI4DS)](https://www.nfdi4datascience.de/) is to support all steps of the complex and interdisciplinary research data lifecycle in Data Science and Artificial Intelligence. Towards this goal, the NFDI$DS Ontology (nfdi4dso) is created. nfdi4dso is a module that builds upon the NFDIcore Ontology (https://ise-fizkarlsruhe.github.io/nfdicore/2.0.0/) and maintains alignment with the [Basic Formal Ontology (BFO)](https://basic-formal-ontology.org/), [schema.org](https://schema.org/), the [FaBiO ontology](http://purl.org/spar/fabio), and the [Conference Ontology](https://w3id.org/scholarlydata/ontology/conference-ontology.owl).
+
+Current development is managed via [GitHub](https://github.com/ISE-FIZKarlsruhe/NFDI4DS-Ontology/tree/Development-1.0.0). Feel free to give feedback, contribute, or raise issues.
+
+</span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
@@ -696,17 +700,27 @@ This ontology has the following classes and properties.</span>
     <div id="description"><h2 id="desc" class="list">NFDI4DS Ontology (nfdi4dso): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
 <span class="markdown"> <!--This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.!-->
-### AGENTS
+### AGENTS and ROLES
+
+In nfdi4dso, new agents, i.e., nfdi4dso:WorkingGroup and nfdi4dso:Persona, are introduced on top of the agents that are already available in NFDICore ontolgy.
+In addition, different roles such as nfdi4dso:SpokespersonRole and nfdi4dso:TaskAreaLeadRole are added.
+
 ![image](https://raw.githubusercontent.com/ISE-FIZKarlsruhe/NFDI4DS-Ontology/Documentation/resources/agent.png)
 <!--<img src="https://raw.githubusercontent.com/ISE-FIZKarlsruhe/NFDI4DS-Ontology/Documentation/resources/agent.png" />-->
 
-### ROLES
+Some of the time ontology classes and properties can be used to provide more expressivity for roles. For instance the following example diagram shows how time:instance and time:proper interval classes can be used.
+
+![image](https://raw.githubusercontent.com/ISE-FIZKarlsruhe/NFDI4DS-Ontology/Documentation/resources/time.png)
+
+### SHORTCUTS to EXPRESS ROLES
+In order to enable direct connections beween some classes, properties such as nfdi4dso:lead and nfdi4dso:spokesperson are created. Note that these properties may lack some expressivity. It is recommended to emloy the modeling proposed by BFO (i.e., using roles) in cases where more detailed semantics are required to describe the relationships.
+To maintain consistency, as in nfdicore ontology, we establish nfdi4dso properties like nfdi4dso:lead as shortcuts using SWRL rules.
 ![image](https://raw.githubusercontent.com/ISE-FIZKarlsruhe/NFDI4DS-Ontology/Documentation/resources/task-area.png)
 
-Adapting the time ontology classes and properties to defne time for roles
-![image](https://raw.githubusercontent.com/ISE-FIZKarlsruhe/NFDI4DS-Ontology/Documentation/resources/time.png)
-</span></div>
+### OTHER CLASSES
+In addition to the agents and roles mentioned above, in nfdi4dso ontology, more classes which are sub-classes of nfdicore:Event, nfdicore:Resource, and bfo:Process, and so on are also included.
 
+</span></div>
 <!--CROSSREF SECTION-->
    <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for NFDI4DS Ontology (nfdi4dso) classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by NFDI4DS Ontology (nfdi4dso).
@@ -3312,13 +3326,6 @@ Task Area 2 (Research Knowledge Graphs)</pre>
 </div>
 
 
-<!--REFERENCES SECTION-->
-  <div id="references">
-<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-Add your references here. It is recommended to have them as a list.</span>
-
-</div>
 <div id="acknowledgments">
 <h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <p>
