@@ -20,7 +20,7 @@
         <owl:imports rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/2.0.0"/>
         <terms:abstract xml:lang="en">The NFDI4DS ontology (nfdi4dso) is an ontology describing various resources all resources (datasets, data providers, persons, projects and other entities) within the domain of NFDI4DataScience.  nfdi4dso is a module that builds upon the NFDIcore Ontology (https://ise-fizkarlsruhe.github.io/nfdicore/2.0.0/) and maintains alignment with the Basic Formal Ontology (BFO).</terms:abstract>
         <terms:bibliographicCitation>Genet Asefa Gesese, Jörg Waitelonis, Harald Sack. NFDI4DS Ontology. Revision: v1.0.0. Retrieved from: https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0</terms:bibliographicCitation>
-        <terms:created>2024-05-15</terms:created>
+        <terms:created>2024-05-23</terms:created>
         <terms:creator>Genet Asefa Gesese https://orcid.org/0000-0003-3807-7145</terms:creator>
         <terms:creator>Harald Sack https://orcid.org/0000-0001-7069-9804</terms:creator>
         <terms:creator>Jörg Waitelonis https://orcid.org/0000-0001-7192-7143</terms:creator>

@@ -9,7 +9,7 @@
 	 prov:wasAttributedTo :agent2;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:specializationOf <https://nfdi.fiz-karlsruhe.de/nfdi4dso/>;
-	 prov:wasGeneratedAt "2024-05-15";
+	 prov:wasGeneratedAt "2024-05-23";
 .
 :agent0 a prov:Agent; foaf:name "Genet Asefa Gesese https://orcid.org/0000-0003-3807-7145".
 :agent1 a prov:Agent; foaf:name "Harald Sack https://orcid.org/0000-0001-7069-9804".
