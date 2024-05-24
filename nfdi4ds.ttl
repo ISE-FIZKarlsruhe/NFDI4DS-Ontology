@@ -15,10 +15,10 @@
                                           owl:imports <https://nfdi.fiz-karlsruhe.de/ontology/2.0.0> ;
                                           <http://purl.org/dc/terms/abstract> "The NFDI4DS ontology (nfdi4dso) is an ontology describing various resources all resources (datasets, data providers, persons, projects and other entities) within the domain of NFDI4DataScience.  nfdi4dso is a module that builds upon the NFDIcore Ontology (https://ise-fizkarlsruhe.github.io/nfdicore/2.0.0/) and maintains alignment with the Basic Formal Ontology (BFO)."@en ;
                                           <http://purl.org/dc/terms/bibliographicCitation> "Genet Asefa Gesese, Jörg Waitelonis, Harald Sack. NFDI4DS Ontology. Revision: v1.0.0. Retrieved from: https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0" ;
-                                          <http://purl.org/dc/terms/created> "2024-05-23" ;
-                                          <http://purl.org/dc/terms/creator> "Genet Asefa Gesese https://orcid.org/0000-0003-3807-7145" ,
-                                                                             "Harald Sack https://orcid.org/0000-0001-7069-9804" ,
-                                                                             "Jörg Waitelonis https://orcid.org/0000-0001-7192-7143" ;
+                                          <http://purl.org/dc/terms/created> "2024-05-24" ;
+                                          <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-7069-9804> ,
+                                                                             <https://orcid.org/0000-0001-7192-7143> ,
+                                                                             <https://orcid.org/0000-0003-3807-7145> ;
                                           <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/> ;
                                           <http://purl.org/dc/terms/title> "NFDI4DS Ontology" ;
                                           <http://purl.org/ontology/bibo/status> "Ontology Specification" ;
@@ -124,6 +124,26 @@ fabio:hasPublicationYear rdf:type owl:ObjectProperty ;
 <http://schema.org/keywords> rdf:type owl:ObjectProperty ;
                              rdfs:isDefinedBy "https://schema.org/" ;
                              rdfs:label "keywords" .
+
+
+###  http://www.w3.org/2006/time#hasBeginning
+<http://www.w3.org/2006/time#hasBeginning> rdf:type owl:ObjectProperty ;
+                                           rdfs:range <http://www.w3.org/2006/time#Instant> ;
+                                           rdfs:isDefinedBy "http://www.w3.org/2006/time" .
+
+
+###  http://www.w3.org/2006/time#hasEnd
+<http://www.w3.org/2006/time#hasEnd> rdf:type owl:ObjectProperty ;
+                                     rdfs:domain <http://www.w3.org/2006/time#Interval> ;
+                                     rdfs:range <http://www.w3.org/2006/time#Instant> ;
+                                     rdfs:isDefinedBy "http://www.w3.org/2006/time" .
+
+
+###  http://www.w3.org/2006/time#hasTime
+<http://www.w3.org/2006/time#hasTime> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <http://www.w3.org/2006/time#Interval> ;
+                                      rdfs:range <http://www.w3.org/2006/time#Interval> ;
+                                      rdfs:isDefinedBy "http://www.w3.org/2006/time" .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dsoDOIOf
@@ -455,26 +475,6 @@ nfdi4dso:workingGroupMember rdf:type owl:ObjectProperty ;
                                          rdfs:label "event attendance mode" .
 
 
-###  https://www.w3.org/TR/owl-time/#time:hasBeginning
-<https://www.w3.org/TR/owl-time/#time:hasBeginning> rdf:type owl:ObjectProperty ;
-                                                    rdfs:range <https://www.w3.org/TR/owl-time/#time:Instant> ;
-                                                    rdfs:isDefinedBy "https://www.w3.org/TR/owl-time/" .
-
-
-###  https://www.w3.org/TR/owl-time/#time:hasEnd
-<https://www.w3.org/TR/owl-time/#time:hasEnd> rdf:type owl:ObjectProperty ;
-                                              rdfs:domain <https://www.w3.org/TR/owl-time/#time:Interval> ;
-                                              rdfs:range <https://www.w3.org/TR/owl-time/#time:Instant> ;
-                                              rdfs:isDefinedBy "https://www.w3.org/TR/owl-time/" .
-
-
-###  https://www.w3.org/TR/owl-time/#time:hasTime
-<https://www.w3.org/TR/owl-time/#time:hasTime> rdf:type owl:ObjectProperty ;
-                                               rdfs:domain <https://www.w3.org/TR/owl-time/#time:Interval> ;
-                                               rdfs:range <https://www.w3.org/TR/owl-time/#time:Interval> ;
-                                               rdfs:isDefinedBy "https://www.w3.org/TR/owl-time/" .
-
-
 #################################################################
 #    Data properties
 #################################################################
@@ -630,6 +630,14 @@ fabio:JournalVolume rdf:type owl:Class .
                                                                        ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000115> "An EventAttendanceMode is one of potentially several modes of organising an event, relating to whether it is online or offline. E.g., Hybrid." ;
                                                    rdfs:isDefinedBy <https://schema.org/EventAttendanceModeEnumeration> .
+
+
+###  http://www.w3.org/2006/time#Instant
+<http://www.w3.org/2006/time#Instant> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/time#Interval
+<http://www.w3.org/2006/time#Interval> rdf:type owl:Class .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/AcademicEvent
@@ -1001,14 +1009,6 @@ nfdicore:Project rdf:type owl:Class .
 nfdicore:Publication rdf:type owl:Class .
 
 
-###  https://www.w3.org/TR/owl-time/#time:Instant
-<https://www.w3.org/TR/owl-time/#time:Instant> rdf:type owl:Class .
-
-
-###  https://www.w3.org/TR/owl-time/#time:Interval
-<https://www.w3.org/TR/owl-time/#time:Interval> rdf:type owl:Class .
-
-
 #################################################################
 #    Individuals
 #################################################################
@@ -1046,6 +1046,18 @@ nfdicore:Publication rdf:type owl:Class .
 ###  https://schema.org/OnlineEventAttendanceMode
 <https://schema.org/OnlineEventAttendanceMode> rdf:type owl:NamedIndividual ,
                                                         <http://schema.org/EventAttendanceModeEnumeration> .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<https://orcid.org/0000-0003-3807-7145> rdfs:label "Genet Asefa Gesese" .
+
+<https://orcid.org/0000-0001-7192-7143> rdfs:label "Jörg Waitelonis" .
+
+<https://orcid.org/0000-0001-7069-9804> rdfs:label "Harald Sack" .
+
 
 
 #################################################################
