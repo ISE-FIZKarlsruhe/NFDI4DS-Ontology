@@ -1,4 +1,4 @@
-@prefix : <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/> .
+@prefix : <https://nfdi.fiz-karlsruhe.de/nfdi4dso/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -6,35 +6,86 @@
 @prefix cono: <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix nfdi4dso: <https://nfdi.fiz-karlsruhe.de/nfdi4dso/> .
 @prefix nfdicore: <https://nfdi.fiz-karlsruhe.de/ontology/> .
-@base <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/> .
+@base <https://nfdi.fiz-karlsruhe.de/nfdi4dso/> .
 
-<https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/> rdf:type owl:Ontology ;
-                                              owl:versionIRI <https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
-                                              owl:imports <https://nfdi.fiz-karlsruhe.de/ontology/2.0.0> ;
-                                              <http://purl.org/dc/terms/abstract> "The NFDI4DS ontology (nfdi4dso) is an ontology describing various resources all resources (datasets, data providers, persons, projects and other entities) within the domain of NFDI4DataScience.  nfdi4dso is a module that builds upon the NFDIcore Ontology (https://ise-fizkarlsruhe.github.io/nfdicore/2.0.0/) and maintains alignment with the Basic Formal Ontology (BFO)."@en ;
-                                              <http://purl.org/dc/terms/bibliographicCitation> "Genet Asefa Gesese, Jörg Waitelonis, Harald Sack. NFDI4DS Ontology. Revision: v1.0.0. Retrieved from: https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/1.0.0" ;
-                                              <http://purl.org/dc/terms/created> "2024-05-15" ;
-                                              <http://purl.org/dc/terms/creator> "Genet Asefa Gesese https://orcid.org/0000-0003-3807-7145" ,
-                                                                                 "Harald Sack https://orcid.org/0000-0001-7069-9804" ,
-                                                                                 "Jörg Waitelonis https://orcid.org/0000-0001-7192-7143" ;
-                                              <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/> ;
-                                              <http://purl.org/dc/terms/title> "NFDI4DS Ontology" ;
-                                              <http://purl.org/ontology/bibo/status> "Ontology Specification" ;
-<<<<<<< HEAD
-                                              <http://purl.org/vocab/vann/preferredNamespacePrefix> :nfdi4dso ;
-=======
-                                              <http://purl.org/vocab/vann/preferredNamespacePrefix> <nfdi4dso> ;
->>>>>>> 3bac401f34e8f38126ff1c18c59f40f47e9e85b5
-                                              rdfs:label "NFDI4DS Ontology (nfdi4dso)" ;
-                                              owl:versionInfo "v1.0.0" .
+<https://nfdi.fiz-karlsruhe.de/nfdi4dso> rdf:type owl:Ontology ;
+                                          owl:versionIRI <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
+                                          owl:imports <https://nfdi.fiz-karlsruhe.de/ontology/2.0.0> ;
+                                          <http://purl.org/dc/terms/abstract> "The NFDI4DS ontology (nfdi4dso) is an ontology describing various resources all resources (datasets, data providers, persons, projects and other entities) within the domain of NFDI4DataScience.  nfdi4dso is a module that builds upon the NFDIcore Ontology (https://ise-fizkarlsruhe.github.io/nfdicore/2.0.0/) and maintains alignment with the Basic Formal Ontology (BFO)."@en ;
+                                          <http://purl.org/dc/terms/bibliographicCitation> "Genet Asefa Gesese, Jörg Waitelonis, Harald Sack. NFDI4DS Ontology. Revision: v1.0.0. Retrieved from: https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0" ;
+                                          <http://purl.org/dc/terms/created> "2024-05-23" ;
+                                          <http://purl.org/dc/terms/creator> "Genet Asefa Gesese https://orcid.org/0000-0003-3807-7145" ,
+                                                                             "Harald Sack https://orcid.org/0000-0001-7069-9804" ,
+                                                                             "Jörg Waitelonis https://orcid.org/0000-0001-7192-7143" ;
+                                          <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/> ;
+                                          <http://purl.org/dc/terms/title> "NFDI4DS Ontology" ;
+                                          <http://purl.org/ontology/bibo/status> "Ontology Specification" ;
+                                          <http://purl.org/vocab/vann/preferredNamespacePrefix> nfdi4dso:nfdi4dso ;
+                                          <http://purl.org/vocab/vann/preferredNamespaceUri> nfdi4dso: ;
+                                          <http://schema.org/logo> <https://raw.githubusercontent.com/ISE-FIZKarlsruhe/NFDI4DS-Ontology/Documentation/resources/nfdi4dso_logo.png> ;
+                                          rdfs:label "NFDI4DS Ontology (nfdi4dso)" ;
+                                          owl:versionInfo "v1.0.0" .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000119
+<http://purl.obolibrary.org/obo/IAO_0000119> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/logo
+<http://schema.org/logo> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#exactMatch
 <http://www.w3.org/2004/02/skos/core#exactMatch> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -43,9 +94,17 @@
 
 ###  http://prismstandard.org/namespaces/basic/2.0/doi
 <http://prismstandard.org/namespaces/basic/2.0/doi> rdf:type owl:ObjectProperty ;
-                                                    owl:inverseOf :DOIOf ;
+                                                    owl:inverseOf <https://nfdi.fiz-karlsruhe.de/nfdi4dsoDOIOf> ;
                                                     rdfs:isDefinedBy "http://www.doi.org/" ;
                                                     rdfs:label "has DOI" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000136
+<http://purl.obolibrary.org/obo/IAO_0000136> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000219
+<http://purl.obolibrary.org/obo/IAO_0000219> rdf:type owl:ObjectProperty .
 
 
 ###  http://purl.org/spar/fabio/hasPlaceOfPublication
@@ -67,308 +126,325 @@ fabio:hasPublicationYear rdf:type owl:ObjectProperty ;
                              rdfs:label "keywords" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/DOIOf
-:DOIOf rdf:type owl:ObjectProperty ;
-       rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000219> ;
-       rdfs:domain <http://purl.obolibrary.org/obo/OBI_0002110> ;
-       rdfs:range nfdicore:Publication ;
-       rdfs:label "DOI of" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dsoDOIOf
+<https://nfdi.fiz-karlsruhe.de/nfdi4dsoDOIOf> rdf:type owl:ObjectProperty ;
+                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000219> ;
+                                              rdfs:domain <http://purl.obolibrary.org/obo/OBI_0002110> ;
+                                              rdfs:range nfdicore:Publication ;
+                                              rdfs:label "DOI of" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/EthicalOrLegalSkillLevel
-:EthicalOrLegalSkillLevel rdf:type owl:ObjectProperty ;
-                          owl:inverseOf :EthicalOrLegalSkillLevelOf ;
-                          <http://purl.obolibrary.org/obo/IAO_0000115> "The level of Ethical or Legal skills the persona possesses" ;
-                          rdfs:label "ethical or legal skill level" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/EthicalOrLegalSkillLevel
+nfdi4dso:EthicalOrLegalSkillLevel rdf:type owl:ObjectProperty ;
+                                  owl:inverseOf nfdi4dso:EthicalOrLegalSkillLevelOf ;
+                                  <http://purl.obolibrary.org/obo/IAO_0000115> "The level of Ethical or Legal skills the persona possesses" ;
+                                  rdfs:label "ethical or legal skill level" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/EthicalOrLegalSkillLevelOf
-:EthicalOrLegalSkillLevelOf rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                            rdfs:domain :PersonaEthicalOrLegalSkillLevel ;
-                            rdfs:range :Persona ;
-                            rdfs:label "ethical or legal skill level of" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/EthicalOrLegalSkillLevelOf
+nfdi4dso:EthicalOrLegalSkillLevelOf rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                    rdfs:domain nfdi4dso:PersonaEthicalOrLegalSkillLevel ;
+                                    rdfs:range nfdi4dso:Persona ;
+                                    rdfs:label "ethical or legal skill level of" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatus
-:LODStatus rdf:type owl:ObjectProperty ;
-<<<<<<< HEAD
-           owl:inverseOf :LODStatusOf ;
-           rdfs:label "LOD status" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/LODStatus
+nfdi4dso:LODStatus rdf:type owl:ObjectProperty ;
+                   owl:inverseOf nfdi4dso:LODStatusOf ;
+                   rdfs:label "LOD status" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODStatusOf
-:LODStatusOf rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
-             rdfs:domain :LODRating ;
-             rdfs:range nfdicore:Dataset ;
-             <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a FAIR Data Principle and a dataset." ;
-             rdfs:label "LOD status of" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/LODStatusOf
+nfdi4dso:LODStatusOf rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                     rdfs:domain nfdi4dso:LODRating ;
+                     rdfs:range nfdicore:Dataset ;
+                     <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a FAIR Data Principle and a dataset." ;
+                     rdfs:label "LOD status of" .
 
 
-=======
-           owl:inverseOf :lodStatusOf ;
-           rdfs:label "LOD status" .
-
-
->>>>>>> 3bac401f34e8f38126ff1c18c59f40f47e9e85b5
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/ORCIDIDof
-:ORCIDIDof rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000219> ;
-           owl:inverseOf :hasORCIDID ;
-           rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000708> ;
-           rdfs:range nfdicore:Person ;
-           rdfs:label "ORCIDID of" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/affiliation
-:affiliation rdf:type owl:ObjectProperty ;
-             rdfs:domain nfdicore:Person ;
-             rdfs:range nfdicore:Organization ;
-             <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a person and an organization." ;
-             rdfs:label "affiliation" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/appearsAt
-:appearsAt rdf:type owl:ObjectProperty ;
-           rdfs:domain nfdicore:Publication ;
-           rdfs:range :PageRange ;
-           <http://purl.obolibrary.org/obo/IAO_0000115> "A relation between a publication and a page range which indicates where the publication appears in a proceeding using the minimum and maximum page numbers" ;
-           rdfs:label "appears at" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/coLocatedWith
-:coLocatedWith rdf:type owl:ObjectProperty ;
-               rdfs:domain [ rdf:type owl:Class ;
-                             owl:unionOf ( :Conference
-                                           :Hackathon
-                                           :ScienceSlam
-                                           :SharedTask
-                                           :Tutorial
-                                           :Workshop
-                                         )
-                           ] ;
-               rdfs:range :Conference ;
-               <http://purl.obolibrary.org/obo/IAO_0000115> "A relationship between an event and a conference indicating that the event is happening together at the same place as the conference." ;
-               rdfs:isDefinedBy "co-located with" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/coSpokesperson
-:coSpokesperson rdf:type owl:ObjectProperty ;
-                rdfs:domain nfdicore:Consortium ;
-                rdfs:range nfdicore:Person ;
-                <http://purl.obolibrary.org/obo/IAO_0000115> "A relationship between a consortium and its co-spokesperson" ;
-                rdfs:label "co-spokesperson" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/domainknowledgeLevel
-:domainknowledgeLevel rdf:type owl:ObjectProperty ;
-                      owl:inverseOf :domainknowledgeLevelOf ;
-                      <http://purl.obolibrary.org/obo/IAO_0000115> "The level of domain knowledge the persona possesses" ;
-                      rdfs:label "domain knowledge level" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/domainknowledgeLevelOf
-:domainknowledgeLevelOf rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                        rdfs:domain :PersonaDomainKnowledgeLevel ;
-                        rdfs:range :Persona ;
-                        rdfs:label "domain knowledge level of" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/establishedBy
-:establishedBy rdf:type owl:ObjectProperty ;
-               rdfs:domain :WorkingGroup ;
-               rdfs:range nfdicore:Project ;
-               <http://purl.obolibrary.org/obo/IAO_0000115> "The property is a relation between a working group and a project" ;
-               rdfs:label "established by" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/evaluationDataset
-:evaluationDataset rdf:type owl:ObjectProperty ;
-                   rdfs:domain [ rdf:type owl:Class ;
-                                 owl:unionOf ( :SharedTask
-                                               :SubTask
-                                             )
-                               ] ;
-                   rdfs:range nfdicore:Dataset ;
-                   <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a sharedtask or subtask and a dataset" ;
-                   rdfs:label "evaluation dataset" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/evaluationMetric
-:evaluationMetric rdf:type owl:ObjectProperty ;
-                  rdfs:domain [ rdf:type owl:Class ;
-                                owl:unionOf ( :SharedTask
-                                              :SubTask
-                                            )
-                              ] ;
-                  rdfs:range :EvaluationMetric ;
-                  <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a shared task or a subtask and its evaluation metric" ;
-                  rdfs:label "evaluation metric" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/eventContactPoint
-:eventContactPoint rdf:type owl:ObjectProperty ;
-                   rdfs:domain nfdicore:Event ;
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/ORCIDIDof
+nfdi4dso:ORCIDIDof rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000219> ;
+                   owl:inverseOf nfdi4dso:hasORCIDID ;
+                   rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000708> ;
                    rdfs:range nfdicore:Person ;
-                   <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between an event and its contact point" ;
-                   rdfs:label "event contact point" .
+                   rdfs:label "ORCIDID of" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/eventOrganizer
-:eventOrganizer rdf:type owl:ObjectProperty ;
-                rdfs:domain nfdicore:Event ;
-                rdfs:range nfdicore:Agent ;
-                <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between an event and its organizer" ;
-                rdfs:label "event organizer" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/affiliation
+nfdi4dso:affiliation rdf:type owl:ObjectProperty ;
+                     rdfs:domain nfdicore:Person ;
+                     rdfs:range nfdicore:Organization ;
+                     <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a person and an organization." ;
+                     rdfs:label "affiliation" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/fairStatus
-:fairStatus rdf:type owl:ObjectProperty ;
-            owl:inverseOf :fairStatusOf ;
-            rdfs:label "fair status" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/appearsAt
+nfdi4dso:appearsAt rdf:type owl:ObjectProperty ;
+                   rdfs:domain nfdicore:Publication ;
+                   rdfs:range nfdi4dso:PageRange ;
+                   <http://purl.obolibrary.org/obo/IAO_0000115> "A relation between a publication and a page range which indicates where the publication appears in a proceeding using the minimum and maximum page numbers" ;
+                   rdfs:label "appears at" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/fairStatusOf
-:fairStatusOf rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
-              rdfs:domain :FAIRDataPriniciple ;
-              rdfs:range nfdicore:Dataset ;
-              <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a LOD Rating and a dataset." ,
-                                                           "fair status of" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/coLocatedWith
+nfdi4dso:coLocatedWith rdf:type owl:ObjectProperty ;
+                       rdfs:domain [ rdf:type owl:Class ;
+                                     owl:unionOf ( nfdi4dso:Conference
+                                                   nfdi4dso:Hackathon
+                                                   nfdi4dso:ScienceSlam
+                                                   nfdi4dso:SharedTask
+                                                   nfdi4dso:Tutorial
+                                                   nfdi4dso:Workshop
+                                                 )
+                                   ] ;
+                       rdfs:range nfdi4dso:Conference ;
+                       <http://purl.obolibrary.org/obo/IAO_0000115> "A relationship between an event and a conference indicating that the event is happening together at the same place as the conference." ;
+                       rdfs:isDefinedBy "co-located with" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasNext
-:hasNext rdf:type owl:ObjectProperty ;
-         rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000442> ;
-         rdfs:range <http://purl.obolibrary.org/obo/IAO_0000442> ;
-         rdfs:label "has next" ;
-         rdfs:seeAlso <https://w3id.org/oc/ontology/hasNext> .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/coSpokesperson
+nfdi4dso:coSpokesperson rdf:type owl:ObjectProperty ;
+                        owl:inverseOf nfdi4dso:coSpokespersonOf ;
+                        rdfs:domain nfdicore:Consortium ;
+                        rdfs:range nfdicore:Person ;
+                        <http://purl.obolibrary.org/obo/IAO_0000115> "A relationship between a consortium and its co-spokesperson" ;
+                        rdfs:label "co-spokesperson" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasORCIDID
-:hasORCIDID rdf:type owl:ObjectProperty ;
-            <http://purl.obolibrary.org/obo/IAO_0000115> "The ORCID ID of the person" ;
-            rdfs:label "has ORCIDID" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/coSpokespersonOf
+nfdi4dso:coSpokespersonOf rdf:type owl:ObjectProperty ;
+                          rdfs:label "co-spokesperson of" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/isAssociatedWith
-:isAssociatedWith rdf:type owl:ObjectProperty ;
-                  rdfs:domain :Proceedings ;
-                  rdfs:range :AcademicEvent ;
-                  <http://purl.obolibrary.org/obo/IAO_0000115> "An academic event a given proceedings publication is associated with" ;
-                  rdfs:label "is associated with" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/domainknowledgeLevel
+nfdi4dso:domainknowledgeLevel rdf:type owl:ObjectProperty ;
+                              owl:inverseOf nfdi4dso:domainknowledgeLevelOf ;
+                              <http://purl.obolibrary.org/obo/IAO_0000115> "The level of domain knowledge the persona possesses" ;
+                              rdfs:label "domain knowledge level" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lead
-:lead rdf:type owl:ObjectProperty ;
-      rdfs:domain [ rdf:type owl:Class ;
-                    owl:unionOf ( :TaskArea
-                                  :TaskAreaMeasure
-                                )
-                  ] ;
-      rdfs:range [ rdf:type owl:Class ;
-                   owl:unionOf ( nfdicore:Consortium
-                                 nfdicore:Person
-                               )
-                 ] ;
-      <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a measure or a task area and its lead." ;
-      rdfs:label "lead" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/domainknowledgeLevelOf
+nfdi4dso:domainknowledgeLevelOf rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                rdfs:domain nfdi4dso:PersonaDomainKnowledgeLevel ;
+                                rdfs:range nfdi4dso:Persona ;
+                                rdfs:label "domain knowledge level of" .
 
 
-<<<<<<< HEAD
-=======
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/lodStatusOf
-:lodStatusOf rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
-             rdfs:domain :LODRating ;
-             rdfs:range nfdicore:Dataset ;
-             <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a FAIR Data Principle and a dataset." ;
-             rdfs:label "lod status of" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/establishedBy
+nfdi4dso:establishedBy rdf:type owl:ObjectProperty ;
+                       rdfs:domain nfdi4dso:WorkingGroup ;
+                       rdfs:range nfdicore:Project ;
+                       <http://purl.obolibrary.org/obo/IAO_0000115> "The property is a relation between a working group and a project" ;
+                       rdfs:label "established by" .
 
 
->>>>>>> 3bac401f34e8f38126ff1c18c59f40f47e9e85b5
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaDescription
-:personaDescription rdf:type owl:ObjectProperty ;
-                    owl:inverseOf :personaDescriptionOf ;
-                    rdfs:label "persona description" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/evaluationDataset
+nfdi4dso:evaluationDataset rdf:type owl:ObjectProperty ;
+                           rdfs:domain [ rdf:type owl:Class ;
+                                         owl:unionOf ( nfdi4dso:SharedTask
+                                                       nfdi4dso:SubTask
+                                                     )
+                                       ] ;
+                           rdfs:range nfdicore:Dataset ;
+                           <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a sharedtask or subtask and a dataset" ;
+                           rdfs:label "evaluation dataset" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaDescriptionOf
-:personaDescriptionOf rdf:type owl:ObjectProperty ;
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/evaluationMetric
+nfdi4dso:evaluationMetric rdf:type owl:ObjectProperty ;
+                          rdfs:domain [ rdf:type owl:Class ;
+                                        owl:unionOf ( nfdi4dso:SharedTask
+                                                      nfdi4dso:SubTask
+                                                    )
+                                      ] ;
+                          rdfs:range nfdi4dso:EvaluationMetric ;
+                          <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a shared task or a subtask and its evaluation metric" ;
+                          rdfs:label "evaluation metric" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/eventContactPoint
+nfdi4dso:eventContactPoint rdf:type owl:ObjectProperty ;
+                           rdfs:domain nfdicore:Event ;
+                           rdfs:range nfdicore:Person ;
+                           <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between an event and its contact point" ;
+                           rdfs:label "event contact point" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/eventOrganizer
+nfdi4dso:eventOrganizer rdf:type owl:ObjectProperty ;
+                        rdfs:domain nfdicore:Event ;
+                        rdfs:range nfdicore:Agent ;
+                        <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between an event and its organizer" ;
+                        rdfs:label "event organizer" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/fairStatus
+nfdi4dso:fairStatus rdf:type owl:ObjectProperty ;
+                    owl:inverseOf nfdi4dso:fairStatusOf ;
+                    rdfs:label "fair status" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/fairStatusOf
+nfdi4dso:fairStatusOf rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                      rdfs:label "persona description of" .
+                      rdfs:domain nfdi4dso:FAIRDataPriniciple ;
+                      rdfs:range nfdicore:Dataset ;
+                      <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a LOD Rating and a dataset." ,
+                                                                   "fair status of" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaProblem
-:personaProblem rdf:type owl:ObjectProperty ;
-                owl:inverseOf :personaProblemOf ;
-                rdfs:label "persona problem" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/hasNext
+nfdi4dso:hasNext rdf:type owl:ObjectProperty ;
+                 rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000442> ;
+                 rdfs:range <http://purl.obolibrary.org/obo/IAO_0000442> ;
+                 rdfs:label "has next" ;
+                 rdfs:seeAlso <https://w3id.org/oc/ontology/hasNext> .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/personaProblemOf
-:personaProblemOf rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                  rdfs:domain :PersonaProblemDescription ;
-                  rdfs:range :Persona ;
-                  rdfs:label "persona problem of" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/hasORCIDID
+nfdi4dso:hasORCIDID rdf:type owl:ObjectProperty ;
+                    <http://purl.obolibrary.org/obo/IAO_0000115> "The ORCID ID of the person" ;
+                    rdfs:label "has ORCIDID" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/softSkill
-:softSkill rdf:type owl:ObjectProperty ;
-           owl:inverseOf :softSkillOf ;
-           <http://purl.obolibrary.org/obo/IAO_0000115> "The level of soft skills the persona possesses" ;
-           rdfs:label "soft skill" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/isAssociatedWith
+nfdi4dso:isAssociatedWith rdf:type owl:ObjectProperty ;
+                          rdfs:domain nfdi4dso:Proceedings ;
+                          rdfs:range nfdi4dso:AcademicEvent ;
+                          <http://purl.obolibrary.org/obo/IAO_0000115> "An academic event a given proceedings publication is associated with" ;
+                          rdfs:label "is associated with" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/softSkillOf
-:softSkillOf rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
-             rdfs:domain :PersonaSoftSkillLevel ;
-             rdfs:range :Persona ;
-             rdfs:label "soft skill of" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/lead
+nfdi4dso:lead rdf:type owl:ObjectProperty ;
+              owl:inverseOf nfdi4dso:leadOf ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( nfdi4dso:TaskArea
+                                          nfdi4dso:TaskAreaMeasure
+                                        )
+                          ] ;
+              rdfs:range [ rdf:type owl:Class ;
+                           owl:unionOf ( nfdicore:ConsortiumMember
+                                         nfdicore:Person
+                                       )
+                         ] ;
+              <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a measure or a task area and its lead." ;
+              rdfs:label "lead" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/spokesperson
-:spokesperson rdf:type owl:ObjectProperty ;
-              rdfs:domain nfdicore:Consortium ;
-              rdfs:range nfdicore:Person ;
-              <http://purl.obolibrary.org/obo/IAO_0000115> "A relationship between a consortium and its spokesperson" ;
-              rdfs:label "spokesperson" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/leadOf
+nfdi4dso:leadOf rdf:type owl:ObjectProperty ;
+                rdfs:label "lead of" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/taskAreaOrMeasureContributor
-:taskAreaOrMeasureContributor rdf:type owl:ObjectProperty ;
-                              rdfs:domain [ rdf:type owl:Class ;
-                                            owl:unionOf ( :TaskArea
-                                                          :TaskAreaMeasure
-                                                        )
-                                          ] ;
-                              rdfs:range [ rdf:type owl:Class ;
-                                           owl:unionOf ( nfdicore:ConsortiumMember
-                                                         nfdicore:Person
-                                                       )
-                                         ] ;
-                              rdfs:label "task area or measure contributor" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/personaDescription
+nfdi4dso:personaDescription rdf:type owl:ObjectProperty ;
+                            owl:inverseOf nfdi4dso:personaDescriptionOf ;
+                            rdfs:label "persona description" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevel
-:technicalSkillLevel rdf:type owl:ObjectProperty ;
-                     owl:inverseOf :technicalSkillLevelOf ;
-                     rdfs:label "technical skill level" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/personaDescriptionOf
+nfdi4dso:personaDescriptionOf rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                              rdfs:label "persona description of" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf
-:technicalSkillLevelOf rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                       rdfs:domain :PersonaTechnicalSkillLevel ;
-                       rdfs:range :Persona ;
-<<<<<<< HEAD
-                       rdfs:label "technical skill level of" .
-=======
-                       <http://purl.obolibrary.org/obo/IAO_0000115> "technical skill level of" .
->>>>>>> 3bac401f34e8f38126ff1c18c59f40f47e9e85b5
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/personaProblem
+nfdi4dso:personaProblem rdf:type owl:ObjectProperty ;
+                        owl:inverseOf nfdi4dso:personaProblemOf ;
+                        rdfs:label "persona problem" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/personaProblemOf
+nfdi4dso:personaProblemOf rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                          rdfs:domain nfdi4dso:PersonaProblemDescription ;
+                          rdfs:range nfdi4dso:Persona ;
+                          rdfs:label "persona problem of" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/softSkill
+nfdi4dso:softSkill rdf:type owl:ObjectProperty ;
+                   owl:inverseOf nfdi4dso:softSkillOf ;
+                   <http://purl.obolibrary.org/obo/IAO_0000115> "The level of soft skills the persona possesses" ;
+                   rdfs:label "soft skill" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/softSkillOf
+nfdi4dso:softSkillOf rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                     rdfs:domain nfdi4dso:PersonaSoftSkillLevel ;
+                     rdfs:range nfdi4dso:Persona ;
+                     rdfs:label "soft skill of" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/spokesperson
+nfdi4dso:spokesperson rdf:type owl:ObjectProperty ;
+                      owl:inverseOf nfdi4dso:spokespersonOf ;
+                      rdfs:domain nfdicore:Consortium ;
+                      rdfs:range nfdicore:Person ;
+                      <http://purl.obolibrary.org/obo/IAO_0000115> "A relationship between a consortium and its spokesperson" ;
+                      rdfs:label "spokesperson" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/spokespersonOf
+nfdi4dso:spokespersonOf rdf:type owl:ObjectProperty ;
+                        rdfs:label "spokesperson of" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/taskAreaOrMeasureContributor
+nfdi4dso:taskAreaOrMeasureContributor rdf:type owl:ObjectProperty ;
+                                      rdfs:domain [ rdf:type owl:Class ;
+                                                    owl:unionOf ( nfdi4dso:TaskArea
+                                                                  nfdi4dso:TaskAreaMeasure
+                                                                )
+                                                  ] ;
+                                      rdfs:range [ rdf:type owl:Class ;
+                                                   owl:unionOf ( nfdicore:ConsortiumMember
+                                                                 nfdicore:Person
+                                                               )
+                                                 ] ;
+                                      rdfs:label "task area or measure contributor" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevel
+nfdi4dso:technicalSkillLevel rdf:type owl:ObjectProperty ;
+                             owl:inverseOf nfdi4dso:technicalSkillLevelOf ;
+                             rdfs:label "technical skill level" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevelOf
+nfdi4dso:technicalSkillLevelOf rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                               rdfs:domain nfdi4dso:PersonaTechnicalSkillLevel ;
+                               rdfs:range nfdi4dso:Persona ;
+                               rdfs:label "technical skill level of" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/workingGroupContactPoint
+nfdi4dso:workingGroupContactPoint rdf:type owl:ObjectProperty ;
+                                  rdfs:domain nfdi4dso:WorkingGroup ;
+                                  rdfs:range [ rdf:type owl:Class ;
+                                               owl:unionOf ( nfdicore:ConsortiumMember
+                                                             nfdicore:Person
+                                                           )
+                                             ] ;
+                                  rdfs:label "working group contact point" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/workingGroupMember
+nfdi4dso:workingGroupMember rdf:type owl:ObjectProperty ;
+                            rdfs:domain nfdi4dso:WorkingGroup ;
+                            rdfs:range [ rdf:type owl:Class ;
+                                         owl:unionOf ( nfdicore:ConsortiumMember
+                                                       nfdicore:Person
+                                                     )
+                                       ] ;
+                            rdfs:label "working group member" .
 
 
 ###  https://schema.org/eventAttendanceMode
@@ -377,6 +453,26 @@ fabio:hasPublicationYear rdf:type owl:ObjectProperty ;
                                          rdfs:range <http://schema.org/EventAttendanceModeEnumeration> ;
                                          rdfs:isDefinedBy "https://schema.org/" ;
                                          rdfs:label "event attendance mode" .
+
+
+###  https://www.w3.org/TR/owl-time/#time:hasBeginning
+<https://www.w3.org/TR/owl-time/#time:hasBeginning> rdf:type owl:ObjectProperty ;
+                                                    rdfs:range <https://www.w3.org/TR/owl-time/#time:Instant> ;
+                                                    rdfs:isDefinedBy "https://www.w3.org/TR/owl-time/" .
+
+
+###  https://www.w3.org/TR/owl-time/#time:hasEnd
+<https://www.w3.org/TR/owl-time/#time:hasEnd> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <https://www.w3.org/TR/owl-time/#time:Interval> ;
+                                              rdfs:range <https://www.w3.org/TR/owl-time/#time:Instant> ;
+                                              rdfs:isDefinedBy "https://www.w3.org/TR/owl-time/" .
+
+
+###  https://www.w3.org/TR/owl-time/#time:hasTime
+<https://www.w3.org/TR/owl-time/#time:hasTime> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <https://www.w3.org/TR/owl-time/#time:Interval> ;
+                                               rdfs:range <https://www.w3.org/TR/owl-time/#time:Interval> ;
+                                               rdfs:isDefinedBy "https://www.w3.org/TR/owl-time/" .
 
 
 #################################################################
@@ -403,81 +499,109 @@ fabio:hasPublicationYear rdf:type owl:ObjectProperty ;
                                  rdfs:label "name" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/availableAt
-:availableAt rdf:type owl:DatatypeProperty ;
-             rdfs:domain :NewsArticle ;
-             rdfs:range xsd:string ;
-             <http://purl.obolibrary.org/obo/IAO_0000115> "The property takes as a value a url where the news article is available" ;
-             rdfs:label "available at" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/availableAt
+nfdi4dso:availableAt rdf:type owl:DatatypeProperty ;
+                     rdfs:domain nfdi4dso:NewsArticle ;
+                     rdfs:range xsd:string ;
+                     <http://purl.obolibrary.org/obo/IAO_0000115> "The property takes as a value a url where the news article is available" ;
+                     rdfs:label "available at" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasAbstract
-:hasAbstract rdf:type owl:DatatypeProperty ;
-             rdfs:domain nfdicore:Publication ;
-             rdfs:range xsd:string ;
-             <http://purl.obolibrary.org/obo/IAO_0000115> "The abstract of a publication" ;
-             rdfs:label "has abstract" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/hasAbstract
+nfdi4dso:hasAbstract rdf:type owl:DatatypeProperty ;
+                     rdfs:domain nfdicore:Publication ;
+                     rdfs:range xsd:string ;
+                     <http://purl.obolibrary.org/obo/IAO_0000115> "The abstract of a publication" ;
+                     rdfs:label "has abstract" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasRank
-:hasRank rdf:type owl:DatatypeProperty ;
-         rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000442> ;
-         rdfs:range xsd:string ;
-         <http://purl.obolibrary.org/obo/IAO_0000115> "The rank of an author of a document" ;
-         rdfs:label "has rank" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/hasSequenceIdentifier
-:hasSequenceIdentifier rdf:type owl:DatatypeProperty ;
-                       rdfs:domain [ rdf:type owl:Class ;
-                                     owl:unionOf ( fabio:JournalIssue
-                                                   fabio:JournalVolume
-                                                 )
-                                   ] ;
-                       rdfs:range xsd:positiveInteger ;
-                       <http://purl.obolibrary.org/obo/IAO_0000115> "The sequence of a journal issue or journal volume." ;
-                       rdfs:label "has sequence identifier" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/longDescription
-:longDescription rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :NewsArticle ;
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/hasRank
+nfdi4dso:hasRank rdf:type owl:DatatypeProperty ;
+                 rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000442> ;
                  rdfs:range xsd:string ;
-                 <http://purl.obolibrary.org/obo/IAO_0000115> "The detailed content of the news" ;
-                 rdfs:label "long description" .
+                 <http://purl.obolibrary.org/obo/IAO_0000115> "The rank of an author of a document" ;
+                 rdfs:label "has rank" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/maximum
-:maximum rdf:type owl:DatatypeProperty ;
-         rdfs:domain :PageRange ;
-         rdfs:range xsd:positiveInteger ;
-         <http://purl.obolibrary.org/obo/IAO_0000115> "The page number indicating the last page of a document in a proceeding" ;
-         rdfs:label "maximum" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/hasSequenceIdentifier
+nfdi4dso:hasSequenceIdentifier rdf:type owl:DatatypeProperty ;
+                               rdfs:domain [ rdf:type owl:Class ;
+                                             owl:unionOf ( fabio:JournalIssue
+                                                           fabio:JournalVolume
+                                                         )
+                                           ] ;
+                               rdfs:range xsd:positiveInteger ;
+                               <http://purl.obolibrary.org/obo/IAO_0000115> "The sequence of a journal issue or journal volume." ;
+                               rdfs:label "has sequence identifier" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/minimum
-:minimum rdf:type owl:DatatypeProperty ;
-         rdfs:domain :PageRange ;
-         rdfs:range xsd:positiveInteger ;
-         <http://purl.obolibrary.org/obo/IAO_0000115> "The page number indicating the first page of a document in a proceeding" ;
-         rdfs:label "minimum" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/longDescription
+nfdi4dso:longDescription rdf:type owl:DatatypeProperty ;
+                         rdfs:domain nfdi4dso:NewsArticle ;
+                         rdfs:range xsd:string ;
+                         <http://purl.obolibrary.org/obo/IAO_0000115> "The detailed content of the news" ;
+                         rdfs:label "long description" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/shortDescription
-:shortDescription rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :NewsArticle ;
-                  rdfs:range xsd:string ;
-                  <http://purl.obolibrary.org/obo/IAO_0000115> "The short description of the content of the news" ;
-                  rdfs:label "short description" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/maximum
+nfdi4dso:maximum rdf:type owl:DatatypeProperty ;
+                 rdfs:domain nfdi4dso:PageRange ;
+                 rdfs:range xsd:positiveInteger ;
+                 <http://purl.obolibrary.org/obo/IAO_0000115> "The page number indicating the last page of a document in a proceeding" ;
+                 rdfs:label "maximum" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/zipcode
-:zipcode rdf:type owl:DatatypeProperty .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/minimum
+nfdi4dso:minimum rdf:type owl:DatatypeProperty ;
+                 rdfs:domain nfdi4dso:PageRange ;
+                 rdfs:range xsd:positiveInteger ;
+                 <http://purl.obolibrary.org/obo/IAO_0000115> "The page number indicating the first page of a document in a proceeding" ;
+                 rdfs:label "minimum" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/shortDescription
+nfdi4dso:shortDescription rdf:type owl:DatatypeProperty ;
+                          rdfs:domain nfdi4dso:NewsArticle ;
+                          rdfs:range xsd:string ;
+                          <http://purl.obolibrary.org/obo/IAO_0000115> "The short description of the content of the news" ;
+                          rdfs:label "short description" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/zipcode
+nfdi4dso:zipcode rdf:type owl:DatatypeProperty .
 
 
 #################################################################
 #    Classes
 #################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000023
+<http://purl.obolibrary.org/obo/BFO_0000023> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000034
+<http://purl.obolibrary.org/obo/BFO_0000034> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000030
+<http://purl.obolibrary.org/obo/IAO_0000030> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000033
+<http://purl.obolibrary.org/obo/IAO_0000033> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000442
+<http://purl.obolibrary.org/obo/IAO_0000442> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000578
+<http://purl.obolibrary.org/obo/IAO_0000578> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000708
+<http://purl.obolibrary.org/obo/IAO_0000708> rdf:type owl:Class .
+
 
 ###  http://purl.obolibrary.org/obo/OBI_0002110
 <http://purl.obolibrary.org/obo/OBI_0002110> rdf:type owl:Class ;
@@ -508,361 +632,405 @@ fabio:JournalVolume rdf:type owl:Class .
                                                    rdfs:isDefinedBy <https://schema.org/EventAttendanceModeEnumeration> .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/AcademicEvent
-:AcademicEvent rdf:type owl:Class ;
-               rdfs:subClassOf :OrganizedEvent ;
-               <http://purl.obolibrary.org/obo/IAO_0000115> "An event which is for example a conference or conference-like event, and all the sub-events of those which are about the topic or theme of the conference, such as talks or panels." ;
-               rdfs:label "academic event" ;
-               <http://www.w3.org/2004/02/skos/core#exactMatch> cono:AcademicEvent .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/AcademicEvent
+nfdi4dso:AcademicEvent rdf:type owl:Class ;
+                       rdfs:subClassOf nfdi4dso:OrganizedEvent ;
+                       <http://purl.obolibrary.org/obo/IAO_0000115> "An event which is for example a conference or conference-like event, and all the sub-events of those which are about the topic or theme of the conference, such as talks or panels." ;
+                       rdfs:label "academic event" ;
+                       <http://www.w3.org/2004/02/skos/core#exactMatch> cono:AcademicEvent .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/CoSpokesPersonRole
-:CoSpokesPersonRole rdf:type owl:Class ;
-                    rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
-                    <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in a person that is realized when the person is a co-spokesperson of a Consortium." ;
-                    rdfs:label "co-spokesperson role" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/BecomingAMember
+nfdi4dso:BecomingAMember rdf:type owl:Class ;
+                         rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000011> ;
+                         <http://purl.obolibrary.org/obo/IAO_0000115> "A planned process of becomming a member of a group." ;
+                         rdfs:isDefinedBy "https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0" ;
+                         rdfs:label "becoming a member" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource nfdi4dso:BecomingAMember ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A planned process of becomming a member of a group." ;
+   rdfs:comment "nfdi4dso:BecomingAMember differs from the planned process nfdicore:Contributing because nfdicore:Contributing is when contributing to an endavour in stead of a group."
+ ] .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Conference
-:Conference rdf:type owl:Class ;
-            rdfs:subClassOf :AcademicEvent ;
-            <http://purl.obolibrary.org/obo/IAO_0000115> "A conference event." ;
-            rdfs:label "conference" ;
-            <http://www.w3.org/2004/02/skos/core#exactMatch> cono:Conference ;
-            <http://www.w3.org/2004/02/skos/core#example> "ISWC-2024" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/CoSpokespersonRole
+nfdi4dso:CoSpokespersonRole rdf:type owl:Class ;
+                            rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                            <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in a person that is realized when the person is a co-spokesperson of a Consortium." ;
+                            rdfs:label "co-spokesperson role" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/EducationalFunction
-:EducationalFunction rdf:type owl:Class ;
-                     rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     <http://purl.obolibrary.org/obo/IAO_0000115> "Educational function is \"One of four basic kinds of uses of social communication listed by Schramm from the perspective of the individual, in which the normative objectives are for the sender to teach and for the receiver to learn. He distinguishes this from a purely informational function. From the  perspective of society, Schramm argues that this function is analogous  to the function of socialization. See also media functions; personal functions.\"" ;
-                     <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.oxfordreference.com/display/10.1093/oi/authority.20110803095742736" ;
-                     rdfs:label "educational function" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/Conference
+nfdi4dso:Conference rdf:type owl:Class ;
+                    rdfs:subClassOf nfdi4dso:AcademicEvent ;
+                    <http://purl.obolibrary.org/obo/IAO_0000115> "A conference event." ;
+                    rdfs:label "conference" ;
+                    <http://www.w3.org/2004/02/skos/core#exactMatch> cono:Conference ;
+                    <http://www.w3.org/2004/02/skos/core#example> "ISWC-2024" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/EvaluationMetric
-:EvaluationMetric rdf:type owl:Class ;
-                  rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
-                  <http://purl.obolibrary.org/obo/IAO_0000115> "A quantitative measure used to assess the performance and effectiveness of a statistical or machine learning model" ;
-                  rdfs:label "evaluation metric" ;
-                  <http://www.w3.org/2004/02/skos/core#example> "Precision, recall, F1-score, and BLEU" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/EducationalFunction
+nfdi4dso:EducationalFunction rdf:type owl:Class ;
+                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000034> ;
+                             <http://purl.obolibrary.org/obo/IAO_0000115> "Educational function is \"One of four basic kinds of uses of social communication listed by Schramm from the perspective of the individual, in which the normative objectives are for the sender to teach and for the receiver to learn. He distinguishes this from a purely informational function. From the  perspective of society, Schramm argues that this function is analogous  to the function of socialization. See also media functions; personal functions.\"" ;
+                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.oxfordreference.com/display/10.1093/oi/authority.20110803095742736" ;
+                             rdfs:label "educational function" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple
-:FAIRDataPriniciple rdf:type owl:Class ;
-                    owl:equivalentClass [ rdf:type owl:Class ;
-                                          owl:oneOf ( :Accessible
-                                                      :Findable
-                                                      :Interoperable
-                                                      :Reusable
-                                                    )
-                                        ] ;
-                    rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
-                    <http://purl.obolibrary.org/obo/IAO_0000115> "A principle aiming to enhance the management of data, ultimately fostering transparency, collaboration, and innovation in research and beyond." ;
-                    rdfs:label "FAIR data principle" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/EvaluationMetric
+nfdi4dso:EvaluationMetric rdf:type owl:Class ;
+                          rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
+                          <http://purl.obolibrary.org/obo/IAO_0000115> "A quantitative measure used to assess the performance and effectiveness of a statistical or machine learning model" ;
+                          rdfs:label "evaluation metric" ;
+                          <http://www.w3.org/2004/02/skos/core#example> "Precision, recall, F1-score, and BLEU" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Hackathon
-:Hackathon rdf:type owl:Class ;
-           rdfs:subClassOf :OrganizedEvent ;
-           <http://purl.obolibrary.org/obo/IAO_0000115> "An event where individuals or teams come together to engage in rapid and collaborative engineering over a relatively short period of time." ;
-           rdfs:comment "An event where individuals or teams come together to engage in rapid and collaborative engineering over a relatively short period of time."@en ;
-           rdfs:label "hackathon" ;
-           <http://www.w3.org/2004/02/skos/core#example> "BioHackathon Germany" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/JointProject
-:JointProject rdf:type owl:Class ;
-              rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000011> ;
-              <http://purl.obolibrary.org/obo/IAO_0000115> "A joint project organized by a group of consortium members." ;
-<<<<<<< HEAD
-              rdfs:label "joint project" ;
-=======
-              rdfs:label "JointProject" ;
->>>>>>> 3bac401f34e8f38126ff1c18c59f40f47e9e85b5
-              <http://www.w3.org/2004/02/skos/core#example> "NFDI4DS Project" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/JournalArticle
-:JournalArticle rdf:type owl:Class ;
-                rdfs:subClassOf nfdicore:Publication ;
-                <http://purl.obolibrary.org/obo/IAO_0000115> "A report that is published in a jornal." ;
-                rdfs:label "journal article" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/LODRating
-:LODRating rdf:type owl:Class ;
-           rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
-           <http://purl.obolibrary.org/obo/IAO_0000115> "A rating of data based on 1) its availability on the Web under an open license, (2) being in the form of structured data, (3) being in a non-proprietary file format, (4) using URIs as its identifiers, (5) including links to other data sources." ;
-           rdfs:label "LOD rating" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Lecture
-:Lecture rdf:type owl:Class ;
-         rdfs:subClassOf :OrganizedEvent ;
-         <http://purl.obolibrary.org/obo/IAO_0000115> "An academic event which is intented to deliver instruction on a specific topic, most commonly to an audience of university students."@en ;
-         rdfs:label "lecture" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/MeasureContributorRole
-:MeasureContributorRole rdf:type owl:Class ;
-                        rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
-                        <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in an agent that is realized when the agent is a contributor of a measure defined in a Consortium." ;
-                        rdfs:label "measure contributor role" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/MeasureLeadRole
-:MeasureLeadRole rdf:type owl:Class ;
-                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
-                 <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in an agent that is realized when the agent is a leader of a measure defined in a Consortium." ;
-                 rdfs:label "measure lead role" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/NewsArticle
-:NewsArticle rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
-             <http://purl.obolibrary.org/obo/IAO_0000115> "A work consisting of an announcement or statement of recent or current events of new data" ;
-             rdfs:label "news article" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/OrganizedEvent
-:OrganizedEvent rdf:type owl:Class ;
-                rdfs:subClassOf nfdicore:Event ;
-                <http://purl.obolibrary.org/obo/IAO_0000115> "Any kind of organised event having a start and an end date."@en ;
-                <http://purl.obolibrary.org/obo/IAO_0000119> <http://www.scholarlydata.org/ontology/doc/#d4e1203> ;
-                rdfs:label "organized event" ;
-                <http://www.w3.org/2004/02/skos/core#exactMatch> cono:OrganisedEvent ;
-                <http://www.w3.org/2004/02/skos/core#example> "conferences, workshops, lectures, or any other planned event."@en .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PageRange
-:PageRange rdf:type owl:Class ;
-           rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
-           <http://purl.obolibrary.org/obo/IAO_0000115> "The range of pages indicating where a publication appears in a proceeding" ;
-           rdfs:label "page range" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Persona
-:Persona rdf:type owl:Class ;
-         rdfs:subClassOf nfdicore:Agent ;
-         <http://purl.obolibrary.org/obo/IAO_0000115> "A persona is a fictional character, which is created based upon a research to represent a group of users that might use a service, product, site, or brand in a similar way" ;
-         rdfs:label "persona" ;
-         <http://www.w3.org/2004/02/skos/core#example> "Alex https://www.nfdi4datascience.de/community/requirements-elicitation/personas/" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaDescription
-:PersonaDescription rdf:type owl:Class ;
-                    rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
-                    <http://purl.obolibrary.org/obo/IAO_0000115> "A description of a persona" ;
-                    rdfs:label "persona description" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaDomainKnowledgeLevel
-:PersonaDomainKnowledgeLevel rdf:type owl:Class ;
-                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
-                             <http://purl.obolibrary.org/obo/IAO_0000115> "The domain knowledge skill level a persona possesses" ;
-                             rdfs:label "persona domain knowledge level" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaEthicalOrLegalSkillLevel
-:PersonaEthicalOrLegalSkillLevel rdf:type owl:Class ;
-                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
-                                 <http://purl.obolibrary.org/obo/IAO_0000115> "The ethical legal skill level a persona possesses" ;
-                                 rdfs:label "persona ethical or legal skill level" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaOccupationRole
-:PersonaOccupationRole rdf:type owl:Class ;
-                       rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
-                       <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in a persona that is realized when the persona participates in a Project." ;
-                       rdfs:label "persona occupation role" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaProblemDescription
-:PersonaProblemDescription rdf:type owl:Class ;
-                           rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
-                           <http://purl.obolibrary.org/obo/IAO_0000115> "A description of a problem defined by a Persona" ;
-                           rdfs:label "persona problem description" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaSoftSkillLevel
-:PersonaSoftSkillLevel rdf:type owl:Class ;
-                       rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
-                       <http://purl.obolibrary.org/obo/IAO_0000115> "The soft skill level a persona possesses" ;
-                       rdfs:label "persona soft skill level" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaTask
-:PersonaTask rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
-             <http://purl.obolibrary.org/obo/IAO_0000115> "A task that is a persona wants to be addressed" ;
-             rdfs:label "persona task" .
-
-
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaTechnicalSkillLevel
-:PersonaTechnicalSkillLevel rdf:type owl:Class ;
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple
+nfdi4dso:FAIRDataPriniciple rdf:type owl:Class ;
+                            owl:equivalentClass [ rdf:type owl:Class ;
+                                                  owl:oneOf ( <https://nfdi.fiz-karlsruhe.de/nfdi4dsoAccessible>
+                                                              <https://nfdi.fiz-karlsruhe.de/nfdi4dsoFindable>
+                                                              <https://nfdi.fiz-karlsruhe.de/nfdi4dsoInteroperable>
+                                                              <https://nfdi.fiz-karlsruhe.de/nfdi4dsoReusable>
+                                                            )
+                                                ] ;
                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
-                            <http://purl.obolibrary.org/obo/IAO_0000115> "The technical skill level a persona possesses" ;
-                            rdfs:label "persona technical skill level" .
+                            <http://purl.obolibrary.org/obo/IAO_0000115> "A principle aiming to enhance the management of data, ultimately fostering transparency, collaboration, and innovation in research and beyond." ;
+                            rdfs:label "FAIR data principle" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/PersonaWishDescription
-:PersonaWishDescription rdf:type owl:Class ;
-                        rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
-                        <http://purl.obolibrary.org/obo/IAO_0000115> "A description of a wish defined by a Persona" ;
-                        rdfs:label "persona wish description" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/Hackathon
+nfdi4dso:Hackathon rdf:type owl:Class ;
+                   rdfs:subClassOf nfdi4dso:OrganizedEvent ;
+                   <http://purl.obolibrary.org/obo/IAO_0000115> "An event where individuals or teams come together to engage in rapid and collaborative engineering over a relatively short period of time." ;
+                   rdfs:comment "An event where individuals or teams come together to engage in rapid and collaborative engineering over a relatively short period of time."@en ;
+                   rdfs:label "hackathon" ;
+                   <http://www.w3.org/2004/02/skos/core#example> "BioHackathon Germany" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Proceedings
-:Proceedings rdf:type owl:Class ;
-             rdfs:subClassOf nfdicore:Publication ;
-             <http://purl.obolibrary.org/obo/IAO_0000115> "The collection of proceedings of an academic event." ;
-             rdfs:label "Proceedings" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/JournalArticle
+nfdi4dso:JournalArticle rdf:type owl:Class ;
+                        rdfs:subClassOf nfdicore:Publication ;
+                        <http://purl.obolibrary.org/obo/IAO_0000115> "A report that is published in a jornal." ;
+                        rdfs:label "journal article" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/ScienceSlam
-:ScienceSlam rdf:type owl:Class ;
-             rdfs:subClassOf :OrganizedEvent ;
-             <http://purl.obolibrary.org/obo/IAO_0000115> "A scientific talk where scientists present their own scientific research work in a given time frame in front of a non-expert audience."@en ;
-             rdfs:label "science slam" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/LODRating
+nfdi4dso:LODRating rdf:type owl:Class ;
+                   rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
+                   <http://purl.obolibrary.org/obo/IAO_0000115> "A rating of data based on 1) its availability on the Web under an open license, (2) being in the form of structured data, (3) being in a non-proprietary file format, (4) using URIs as its identifiers, (5) including links to other data sources." ;
+                   rdfs:label "LOD rating" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SharedTask
-:SharedTask rdf:type owl:Class ;
-            rdfs:subClassOf :AcademicEvent ;
-            <http://purl.obolibrary.org/obo/IAO_0000115> "A shared task is an interactive event organized by NFDI4DS that attract the data science and AI community. The task may be divided into subtasks." ;
-            rdfs:label "shared task" ;
-            <http://www.w3.org/2004/02/skos/core#example> "Scholarly QALD (Question Answering over Scholarly Knowledge Graphs) at ISWC 2023 https://kgqa.github.io/scholarly-QALD-challenge/2023/" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/Leading
+nfdi4dso:Leading rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000011> ;
+                 <http://purl.obolibrary.org/obo/IAO_0000115> "A planned process in which the leader information of an entity is provided." ;
+                 rdfs:isDefinedBy "https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0" ;
+                 rdfs:label "leading" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SpokesPersonRole
-:SpokesPersonRole rdf:type owl:Class ;
-                  rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
-                  <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in a person that is realized when the person is a spokesperson of a Consortium." ;
-                  rdfs:label "spokesperson role" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/Lecture
+nfdi4dso:Lecture rdf:type owl:Class ;
+                 rdfs:subClassOf nfdi4dso:OrganizedEvent ;
+                 <http://purl.obolibrary.org/obo/IAO_0000115> "An academic event which is intented to deliver instruction on a specific topic, most commonly to an audience of university students."@en ;
+                 rdfs:label "lecture" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubProject
-:SubProject rdf:type owl:Class ;
-            rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000011> ;
-            <http://purl.obolibrary.org/obo/IAO_0000115> "A sub project associated with another joint project." ;
-<<<<<<< HEAD
-            rdfs:label "sub-project" .
-=======
-            rdfs:label "SubProject" .
->>>>>>> 3bac401f34e8f38126ff1c18c59f40f47e9e85b5
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/MeasureContributorRole
+nfdi4dso:MeasureContributorRole rdf:type owl:Class ;
+                                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                                <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in an agent that is realized when the agent is a contributor of a measure defined in a Consortium." ;
+                                rdfs:label "measure contributor role" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SubTask
-:SubTask rdf:type owl:Class ;
-         rdfs:subClassOf :AcademicEvent ;
-         <http://purl.obolibrary.org/obo/IAO_0000115> "One of the divided tasks of a certain shared task." ;
-<<<<<<< HEAD
-         rdfs:label "sub-task" ;
-=======
-         rdfs:label "sub task" ;
->>>>>>> 3bac401f34e8f38126ff1c18c59f40f47e9e85b5
-         <http://www.w3.org/2004/02/skos/core#example> "Task 1: DBLP-QUAD — Knowledge Graph Question Answering over DBLP https://kgqa.github.io/scholarly-QALD-challenge/2023/" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/MeasureLeadRole
+nfdi4dso:MeasureLeadRole rdf:type owl:Class ;
+                         rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                         <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in an agent that is realized when the agent is a leader of a measure defined in a Consortium." ;
+                         rdfs:label "measure lead role" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/SummerSchool
-:SummerSchool rdf:type owl:Class ;
-              rdfs:subClassOf :OrganizedEvent ;
-              <http://purl.obolibrary.org/obo/IAO_0000115> "An intensive summer educational program with a focus on specialized topics within a particular field or discipline to offer participants the opportunity to deepen their knowledge, develop new skills, and engage with experts and peers in the field." ;
-              rdfs:label "summer school" ;
-              <http://www.w3.org/2004/02/skos/core#example> "International Semantic Web Summer School 2024 (ISWS) https://2024.semanticwebschool.org/" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/NewsArticle
+nfdi4dso:NewsArticle rdf:type owl:Class ;
+                     rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
+                     <http://purl.obolibrary.org/obo/IAO_0000115> "A work consisting of an announcement or statement of recent or current events of new data" ;
+                     rdfs:label "news article" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/TaskArea
-:TaskArea rdf:type owl:Class ;
-          rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033> ;
-          <http://purl.obolibrary.org/obo/IAO_0000115> "A task area (TA) defined in NFDI4DS project addressing one or more issues." ;
-          rdfs:label "task area" ;
-          <http://www.w3.org/2004/02/skos/core#example> """Task Area 1 DS and AI - Community and Training,
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/OrganizedEvent
+nfdi4dso:OrganizedEvent rdf:type owl:Class ;
+                        rdfs:subClassOf nfdicore:Event ;
+                        <http://purl.obolibrary.org/obo/IAO_0000115> "Any kind of organised event having a start and an end date."@en ;
+                        <http://purl.obolibrary.org/obo/IAO_0000119> <http://www.scholarlydata.org/ontology/doc/#d4e1203> ;
+                        rdfs:label "organized event" ;
+                        <http://www.w3.org/2004/02/skos/core#exactMatch> cono:OrganisedEvent ;
+                        <http://www.w3.org/2004/02/skos/core#example> "conferences, workshops, lectures, or any other planned event."@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/PageRange
+nfdi4dso:PageRange rdf:type owl:Class ;
+                   rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
+                   <http://purl.obolibrary.org/obo/IAO_0000115> "The range of pages indicating where a publication appears in a proceeding" ;
+                   rdfs:label "page range" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/Persona
+nfdi4dso:Persona rdf:type owl:Class ;
+                 rdfs:subClassOf nfdicore:Agent ;
+                 <http://purl.obolibrary.org/obo/IAO_0000115> "A persona is a fictional character, which is created based upon a research to represent a group of users that might use a service, product, site, or brand in a similar way" ;
+                 rdfs:label "persona" ;
+                 <http://www.w3.org/2004/02/skos/core#example> "Alex https://www.nfdi4datascience.de/community/requirements-elicitation/personas/" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaDescription
+nfdi4dso:PersonaDescription rdf:type owl:Class ;
+                            rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
+                            <http://purl.obolibrary.org/obo/IAO_0000115> "A description of a persona" ;
+                            rdfs:label "persona description" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaDomainKnowledgeLevel
+nfdi4dso:PersonaDomainKnowledgeLevel rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
+                                     <http://purl.obolibrary.org/obo/IAO_0000115> "The domain knowledge skill level a persona possesses" ;
+                                     rdfs:label "persona domain knowledge level" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaEthicalOrLegalSkillLevel
+nfdi4dso:PersonaEthicalOrLegalSkillLevel rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
+                                         <http://purl.obolibrary.org/obo/IAO_0000115> "The ethical legal skill level a persona possesses" ;
+                                         rdfs:label "persona ethical or legal skill level" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaOccupationRole
+nfdi4dso:PersonaOccupationRole rdf:type owl:Class ;
+                               rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                               <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in a persona that is realized when the persona participates in a Project." ;
+                               rdfs:label "persona occupation role" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaProblemDescription
+nfdi4dso:PersonaProblemDescription rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
+                                   <http://purl.obolibrary.org/obo/IAO_0000115> "A description of a problem defined by a Persona" ;
+                                   rdfs:label "persona problem description" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaSoftSkillLevel
+nfdi4dso:PersonaSoftSkillLevel rdf:type owl:Class ;
+                               rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
+                               <http://purl.obolibrary.org/obo/IAO_0000115> "The soft skill level a persona possesses" ;
+                               rdfs:label "persona soft skill level" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaTask
+nfdi4dso:PersonaTask rdf:type owl:Class ;
+                     rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
+                     <http://purl.obolibrary.org/obo/IAO_0000115> "A task that is a persona wants to be addressed" ;
+                     rdfs:label "persona task" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaTechnicalSkillLevel
+nfdi4dso:PersonaTechnicalSkillLevel rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
+                                    <http://purl.obolibrary.org/obo/IAO_0000115> "The technical skill level a persona possesses" ;
+                                    rdfs:label "persona technical skill level" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaWishDescription
+nfdi4dso:PersonaWishDescription rdf:type owl:Class ;
+                                rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
+                                <http://purl.obolibrary.org/obo/IAO_0000115> "A description of a wish defined by a Persona" ;
+                                rdfs:label "persona wish description" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/Proceedings
+nfdi4dso:Proceedings rdf:type owl:Class ;
+                     rdfs:subClassOf nfdicore:Publication ;
+                     <http://purl.obolibrary.org/obo/IAO_0000115> "The collection of proceedings of an academic event." ;
+                     rdfs:label "Proceedings" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/ScienceSlam
+nfdi4dso:ScienceSlam rdf:type owl:Class ;
+                     rdfs:subClassOf nfdi4dso:OrganizedEvent ;
+                     <http://purl.obolibrary.org/obo/IAO_0000115> "A scientific talk where scientists present their own scientific research work in a given time frame in front of a non-expert audience."@en ;
+                     rdfs:label "science slam" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/SharedTask
+nfdi4dso:SharedTask rdf:type owl:Class ;
+                    rdfs:subClassOf nfdi4dso:AcademicEvent ;
+                    <http://purl.obolibrary.org/obo/IAO_0000115> "A shared task is an interactive event organized by NFDI4DS that attract the data science and AI community. The task may be divided into subtasks." ;
+                    rdfs:label "shared task" ;
+                    <http://www.w3.org/2004/02/skos/core#example> "Scholarly QALD (Question Answering over Scholarly Knowledge Graphs) at ISWC 2023 https://kgqa.github.io/scholarly-QALD-challenge/2023/" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/SpokespersonRole
+nfdi4dso:SpokespersonRole rdf:type owl:Class ;
+                          rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                          <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in a person that is realized when the person is a spokesperson of a Consortium." ;
+                          rdfs:label "spokesperson role" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/SubTask
+nfdi4dso:SubTask rdf:type owl:Class ;
+                 rdfs:subClassOf nfdi4dso:AcademicEvent ;
+                 <http://purl.obolibrary.org/obo/IAO_0000115> "One of the divided tasks of a certain shared task." ;
+                 rdfs:label "sub-task" ;
+                 <http://www.w3.org/2004/02/skos/core#example> "Task 1: DBLP-QUAD — Knowledge Graph Question Answering over DBLP https://kgqa.github.io/scholarly-QALD-challenge/2023/" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/SummerSchool
+nfdi4dso:SummerSchool rdf:type owl:Class ;
+                      rdfs:subClassOf nfdi4dso:OrganizedEvent ;
+                      <http://purl.obolibrary.org/obo/IAO_0000115> "An intensive summer educational program with a focus on specialized topics within a particular field or discipline to offer participants the opportunity to deepen their knowledge, develop new skills, and engage with experts and peers in the field." ;
+                      rdfs:label "summer school" ;
+                      <http://www.w3.org/2004/02/skos/core#example> "International Semantic Web Summer School 2024 (ISWS) https://2024.semanticwebschool.org/" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/TaskArea
+nfdi4dso:TaskArea rdf:type owl:Class ;
+                  rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033> ;
+                  <http://purl.obolibrary.org/obo/IAO_0000115> "A task area (TA) defined in NFDI4DS project addressing one or more issues." ;
+                  rdfs:label "task area" ;
+                  <http://www.w3.org/2004/02/skos/core#example> """Task Area 1 DS and AI - Community and Training,
 Task Area 2 (Research Knowledge Graphs)""" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/TaskAreaContributorRole
-:TaskAreaContributorRole rdf:type owl:Class ;
-                         rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
-                         <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in an agent that is realized when the agent is a contributor of a task area defined in a Consortium." ;
-                         rdfs:label "task area contributor role" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/TaskAreaContributorRole
+nfdi4dso:TaskAreaContributorRole rdf:type owl:Class ;
+                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in an agent that is realized when the agent is a contributor of a task area defined in a Consortium." ;
+                                 rdfs:label "task area contributor role" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/TaskAreaLeadRole
-:TaskAreaLeadRole rdf:type owl:Class ;
-                  rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
-                  <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in an agent that is realized when the agent is a lead of a task area defined in a Consortium." ;
-                  rdfs:label "task area lead role" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/TaskAreaLeadRole
+nfdi4dso:TaskAreaLeadRole rdf:type owl:Class ;
+                          rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                          <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in an agent that is realized when the agent is a lead of a task area defined in a Consortium." ;
+                          rdfs:label "task area lead role" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/TaskAreaMeasure
-:TaskAreaMeasure rdf:type owl:Class ;
-                 rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033> ;
-                 <http://purl.obolibrary.org/obo/IAO_0000115> "a task area measure that is defined as part of a given project task area" ;
-                 rdfs:label "task area measure" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/TaskAreaMeasure
+nfdi4dso:TaskAreaMeasure rdf:type owl:Class ;
+                         rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033> ;
+                         <http://purl.obolibrary.org/obo/IAO_0000115> "a task area measure that is defined as part of a given project task area" ;
+                         rdfs:label "task area measure" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Tutorial
-:Tutorial rdf:type owl:Class ;
-          rdfs:subClassOf :AcademicEvent ;
-          <http://purl.obolibrary.org/obo/IAO_0000115> "A tutorial event." ;
-          rdfs:label "tutorial" ;
-          <http://www.w3.org/2004/02/skos/core#exactMatch> cono:Tutorial .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/Tutorial
+nfdi4dso:Tutorial rdf:type owl:Class ;
+                  rdfs:subClassOf nfdi4dso:AcademicEvent ;
+                  <http://purl.obolibrary.org/obo/IAO_0000115> "A tutorial event." ;
+                  rdfs:label "tutorial" ;
+                  <http://www.w3.org/2004/02/skos/core#exactMatch> cono:Tutorial .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/WorkingGroup
-:WorkingGroup rdf:type owl:Class ;
-              rdfs:subClassOf nfdicore:Agent ;
-              <http://purl.obolibrary.org/obo/IAO_0000115> "A group of individuals who are members of one or more task areas in NFDI4DS project with a focus on workin together to address a specific topic" ;
-              rdfs:label "working group" ;
-              <http://www.w3.org/2004/02/skos/core#example> "Metadata WG" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/WorkingGroup
+nfdi4dso:WorkingGroup rdf:type owl:Class ;
+                      rdfs:subClassOf nfdicore:Agent ;
+                      <http://purl.obolibrary.org/obo/IAO_0000115> "A group of individuals who are members of one or more task areas in NFDI4DS project with a focus on workin together to address a specific topic" ;
+                      rdfs:label "working group" ;
+                      <http://www.w3.org/2004/02/skos/core#example> "Metadata WG" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/WorkingGroupContactPointRole
-:WorkingGroupContactPointRole rdf:type owl:Class ;
-                              rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
-                              <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in an agent that is realized when the agent is a contact point of a working group defined in a Consortium." ;
-                              rdfs:label "working group contact point role" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/WorkingGroupContactPointRole
+nfdi4dso:WorkingGroupContactPointRole rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                                      <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in an agent that is realized when the agent is a contact point of a working group defined in a Consortium." ;
+                                      rdfs:label "working group contact point role" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/WorkingGroupMemberRole
-:WorkingGroupMemberRole rdf:type owl:Class ;
-                        rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
-                        <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in an agent that is realized when the agent is a member of a working group defined in a Consortium." ;
-                        rdfs:label "working group member role" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/WorkingGroupMemberRole
+nfdi4dso:WorkingGroupMemberRole rdf:type owl:Class ;
+                                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                                <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in an agent that is realized when the agent is a member of a working group defined in a Consortium." ;
+                                rdfs:label "working group member role" .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Workshop
-:Workshop rdf:type owl:Class ;
-          rdfs:subClassOf :AcademicEvent ;
-          <http://purl.obolibrary.org/obo/IAO_0000115> "A workshop event." ;
-          rdfs:label "workshop" ;
-          <http://www.w3.org/2004/02/skos/core#exactMatch> cono:Workshop .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/Workshop
+nfdi4dso:Workshop rdf:type owl:Class ;
+                  rdfs:subClassOf nfdi4dso:AcademicEvent ;
+                  <http://purl.obolibrary.org/obo/IAO_0000115> "A workshop event." ;
+                  rdfs:label "workshop" ;
+                  <http://www.w3.org/2004/02/skos/core#exactMatch> cono:Workshop .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/Agent
+nfdicore:Agent rdf:type owl:Class .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/Consortium
+nfdicore:Consortium rdf:type owl:Class .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/ConsortiumMember
+nfdicore:ConsortiumMember rdf:type owl:Class .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/Dataset
+nfdicore:Dataset rdf:type owl:Class .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/Event
+nfdicore:Event rdf:type owl:Class .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/Organization
+nfdicore:Organization rdf:type owl:Class .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/Person
+nfdicore:Person rdf:type owl:Class .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/Place
+nfdicore:Place rdf:type owl:Class .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/Project
+nfdicore:Project rdf:type owl:Class .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/Publication
+nfdicore:Publication rdf:type owl:Class .
+
+
+###  https://www.w3.org/TR/owl-time/#time:Instant
+<https://www.w3.org/TR/owl-time/#time:Instant> rdf:type owl:Class .
+
+
+###  https://www.w3.org/TR/owl-time/#time:Interval
+<https://www.w3.org/TR/owl-time/#time:Interval> rdf:type owl:Class .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Accessible
-:Accessible rdf:type owl:NamedIndividual ,
-                     :FAIRDataPriniciple .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dsoAccessible
+<https://nfdi.fiz-karlsruhe.de/nfdi4dsoAccessible> rdf:type owl:NamedIndividual ,
+                                                            nfdi4dso:FAIRDataPriniciple .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Findable
-:Findable rdf:type owl:NamedIndividual ,
-                   :FAIRDataPriniciple .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dsoFindable
+<https://nfdi.fiz-karlsruhe.de/nfdi4dsoFindable> rdf:type owl:NamedIndividual ,
+                                                          nfdi4dso:FAIRDataPriniciple .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Interoperable
-:Interoperable rdf:type owl:NamedIndividual ,
-                        :FAIRDataPriniciple .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dsoInteroperable
+<https://nfdi.fiz-karlsruhe.de/nfdi4dsoInteroperable> rdf:type owl:NamedIndividual ,
+                                                               nfdi4dso:FAIRDataPriniciple .
 
 
-###  https://nfdi4ds.fiz-karlsruhe.de/nfdi4dso/Reusable
-:Reusable rdf:type owl:NamedIndividual ,
-                   :FAIRDataPriniciple .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dsoReusable
+<https://nfdi.fiz-karlsruhe.de/nfdi4dsoReusable> rdf:type owl:NamedIndividual ,
+                                                          nfdi4dso:FAIRDataPriniciple .
 
 
 ###  https://schema.org/MixedEventAttendanceMode
@@ -879,5 +1047,747 @@ Task Area 2 (Research Knowledge Graphs)""" .
 <https://schema.org/OnlineEventAttendanceMode> rdf:type owl:NamedIndividual ,
                                                         <http://schema.org/EventAttendanceModeEnumeration> .
 
+
+#################################################################
+#    Rules
+#################################################################
+
+nfdi4dso:p rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+nfdi4dso:cm rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+nfdi4dso:w rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+nfdi4dso:t rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+nfdi4dso:pr rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+nfdi4dso:ro rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+nfdi4dso:c rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Spokesperson" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> nfdicore:Person ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> nfdicore:Consortium ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:c
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:Leading ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:pr
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:SpokespersonRole ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:ro
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:c ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:ro
+                                                                                                                       ] ;
+                                                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:ro ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                                  ] ;
+                                                                                                                        rdf:rest rdf:nil
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> nfdi4dso:spokesperson ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:c ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:p
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Task Area Lead" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> nfdicore:Person ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> nfdicore:ConsortiumMember ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:cm
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:TaskArea ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:t
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:Leading ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:pr
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:TaskAreaLeadRole ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:ro
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:cm ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                       ] ;
+                                                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:t ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                                  ] ;
+                                                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                   rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:ro
+                                                                                                                                             ] ;
+                                                                                                                                   rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                              rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:cm ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:ro
+                                                                                                                                                        ] ;
+                                                                                                                                              rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                         rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:ro ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                                                                   ] ;
+                                                                                                                                                         rdf:rest rdf:nil
+                                                                                                                                                       ]
+                                                                                                                                            ]
+                                                                                                                                 ]
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> nfdi4dso:lead ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:t ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:p
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> nfdi4dso:lead ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:t ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:cm
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Measure Contributor" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> nfdicore:Person ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> nfdicore:ConsortiumMember ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:cm
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:TaskAreaMeasure ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:t
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> nfdicore:Contributing ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:pr
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:MeasureLeadRole ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:ro
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:cm ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                       ] ;
+                                                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:t ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                                  ] ;
+                                                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                   rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:ro
+                                                                                                                                             ] ;
+                                                                                                                                   rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                              rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:cm ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:ro
+                                                                                                                                                        ] ;
+                                                                                                                                              rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                         rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:ro ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                                                                   ] ;
+                                                                                                                                                         rdf:rest rdf:nil
+                                                                                                                                                       ]
+                                                                                                                                            ]
+                                                                                                                                 ]
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> nfdi4dso:taskAreaOrMeasureContributor ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:t ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:p
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> nfdi4dso:taskAreaOrMeasureContributor ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:t ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:cm
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Task Area Contributor" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> nfdicore:Person ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> nfdicore:ConsortiumMember ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:cm
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:TaskArea ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:t
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> nfdicore:Contributing ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:pr
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:TaskAreaLeadRole ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:ro
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:cm ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                       ] ;
+                                                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:t ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                                  ] ;
+                                                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                   rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:ro
+                                                                                                                                             ] ;
+                                                                                                                                   rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                              rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:cm ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:ro
+                                                                                                                                                        ] ;
+                                                                                                                                              rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                         rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:ro ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                                                                   ] ;
+                                                                                                                                                         rdf:rest rdf:nil
+                                                                                                                                                       ]
+                                                                                                                                            ]
+                                                                                                                                 ]
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> nfdi4dso:taskAreaOrMeasureContributor ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:t ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:p
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> nfdi4dso:taskAreaOrMeasureContributor ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:t ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:cm
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Working Group Contact Point" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> nfdicore:Person ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> nfdicore:ConsortiumMember ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:cm
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:WorkingGroup ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:w
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:TaskAreaMeasure ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:t
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#classPredicate> nfdicore:Contacting ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:pr
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:WorkingGroupContactPointRole ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:ro
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                       ] ;
+                                                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:cm ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                                  ] ;
+                                                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                   rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:w ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                                             ] ;
+                                                                                                                                   rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                              rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:t ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                                                        ] ;
+                                                                                                                                              rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                         rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:ro
+                                                                                                                                                                   ] ;
+                                                                                                                                                         rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                    rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:cm ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:ro
+                                                                                                                                                                              ] ;
+                                                                                                                                                                    rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                               rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                                           <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                                                                                                                                                                           <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:ro ;
+                                                                                                                                                                                           <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                                                                                         ] ;
+                                                                                                                                                                               rdf:rest rdf:nil
+                                                                                                                                                                             ]
+                                                                                                                                                                  ]
+                                                                                                                                                       ]
+                                                                                                                                            ]
+                                                                                                                                 ]
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> nfdi4dso:workingGroupContactPoint ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:w ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:p
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> nfdi4dso:workingGroupContactPoint ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:w ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:cm
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Working Group Member" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> nfdicore:Person ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> nfdicore:ConsortiumMember ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:cm
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:WorkingGroup ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:w
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:TaskAreaMeasure ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:t
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:BecomingAMember ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:pr
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:WorkingGroupMemberRole ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:ro
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                       ] ;
+                                                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:cm ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                                  ] ;
+                                                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                   rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:w ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                                             ] ;
+                                                                                                                                   rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                              rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:t ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                                                        ] ;
+                                                                                                                                              rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                         rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:ro
+                                                                                                                                                                   ] ;
+                                                                                                                                                         rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                    rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:cm ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:ro
+                                                                                                                                                                              ] ;
+                                                                                                                                                                    rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                               rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                                           <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                                                                                                                                                                           <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:ro ;
+                                                                                                                                                                                           <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                                                                                         ] ;
+                                                                                                                                                                               rdf:rest rdf:nil
+                                                                                                                                                                             ]
+                                                                                                                                                                  ]
+                                                                                                                                                       ]
+                                                                                                                                            ]
+                                                                                                                                 ]
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> nfdi4dso:workingGroupMember ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:w ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:p
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> nfdi4dso:workingGroupMember ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:w ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:cm
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Co-spokesperson" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> nfdicore:Person ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> nfdicore:Consortium ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:c
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:Leading ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:pr
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:CoSpokespersonRole ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:ro
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:c ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:ro
+                                                                                                                       ] ;
+                                                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:ro ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                                  ] ;
+                                                                                                                        rdf:rest rdf:nil
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> nfdi4dso:coSpokesperson ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:c ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:p
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Measure Lead" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> nfdicore:Person ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> nfdicore:ConsortiumMember ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:cm
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:TaskAreaMeasure ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:t
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:Leading ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:pr
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:MeasureLeadRole ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:ro
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:cm ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                       ] ;
+                                                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:t ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                                  ] ;
+                                                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                   rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:p ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:ro
+                                                                                                                                             ] ;
+                                                                                                                                   rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                              rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:cm ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:ro
+                                                                                                                                                        ] ;
+                                                                                                                                              rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                         rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:ro ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:pr
+                                                                                                                                                                   ] ;
+                                                                                                                                                         rdf:rest rdf:nil
+                                                                                                                                                       ]
+                                                                                                                                            ]
+                                                                                                                                 ]
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> nfdi4dso:lead ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:t ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:p
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> nfdi4dso:lead ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:t ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> nfdi4dso:cm
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ]
+ ] .
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
