@@ -297,7 +297,7 @@ nfdi4dso:eventOrganizer rdf:type owl:ObjectProperty ;
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/fairStatus
 nfdi4dso:fairStatus rdf:type owl:ObjectProperty ;
                     owl:inverseOf nfdi4dso:fairStatusOf ;
-                    rdfs:isDefinedBy "https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0" ;
+                    rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                     rdfs:label "fair status" .
 
 
@@ -1123,22 +1123,30 @@ nfdicore:Publication rdf:type owl:Class .
 
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/Accessible
 nfdi4dso:Accessible rdf:type owl:NamedIndividual ,
-                             nfdi4dso:FAIRDataPriniciple .
+                             nfdi4dso:FAIRDataPriniciple ;
+                    rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
+                    rdfs:label "accessible" .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/Findable
 nfdi4dso:Findable rdf:type owl:NamedIndividual ,
-                           nfdi4dso:FAIRDataPriniciple .
+                           nfdi4dso:FAIRDataPriniciple ;
+                  rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
+                  rdfs:label "findable" .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/Interoperable
 nfdi4dso:Interoperable rdf:type owl:NamedIndividual ,
-                                nfdi4dso:FAIRDataPriniciple .
+                                nfdi4dso:FAIRDataPriniciple ;
+                       rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
+                       rdfs:label "interoperable" .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/Reusable
 nfdi4dso:Reusable rdf:type owl:NamedIndividual ,
-                           nfdi4dso:FAIRDataPriniciple .
+                           nfdi4dso:FAIRDataPriniciple ;
+                  rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
+                  rdfs:label "reusable" .
 
 
 #################################################################
