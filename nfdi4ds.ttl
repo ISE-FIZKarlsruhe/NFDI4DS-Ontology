@@ -656,7 +656,8 @@ nfdi4dso:zipcode rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.obolibrary.org/obo/OBI_0002110
 <http://purl.obolibrary.org/obo/OBI_0002110> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> .
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000578> ;
+                                             rdfs:label "digital object identifier" .
 
 
 ###  http://purl.org/spar/fabio/Journal
