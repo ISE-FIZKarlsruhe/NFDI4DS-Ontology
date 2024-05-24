@@ -94,8 +94,8 @@
 
 ###  http://prismstandard.org/namespaces/basic/2.0/doi
 <http://prismstandard.org/namespaces/basic/2.0/doi> rdf:type owl:ObjectProperty ;
-                                                    owl:inverseOf <https://nfdi.fiz-karlsruhe.de/nfdi4dsoDOIOf> ;
-                                                    rdfs:isDefinedBy "http://www.doi.org/" ;
+                                                    owl:inverseOf nfdi4dso:doiOf ;
+                                                    rdfs:isDefinedBy <http://www.doi.org/> ;
                                                     rdfs:label "has DOI" .
 
 
@@ -111,12 +111,13 @@
 fabio:hasPlaceOfPublication rdf:type owl:ObjectProperty ;
                             rdfs:domain nfdicore:Publication ;
                             rdfs:range nfdicore:Place ;
-                            rdfs:isDefinedBy "http://purl.org/spar/fabio" ;
+                            rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
                             rdfs:label "has place of publication" .
 
 
 ###  http://purl.org/spar/fabio/hasPublicationYear
 fabio:hasPublicationYear rdf:type owl:ObjectProperty ;
+                         rdfs:isDefinedBy <http://purl.org/spar/fabio> ;
                          rdfs:label "has publication year" .
 
 
@@ -146,58 +147,12 @@ fabio:hasPublicationYear rdf:type owl:ObjectProperty ;
                                       rdfs:isDefinedBy "http://www.w3.org/2006/time" .
 
 
-###  https://nfdi.fiz-karlsruhe.de/nfdi4dsoDOIOf
-<https://nfdi.fiz-karlsruhe.de/nfdi4dsoDOIOf> rdf:type owl:ObjectProperty ;
-                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000219> ;
-                                              rdfs:domain <http://purl.obolibrary.org/obo/OBI_0002110> ;
-                                              rdfs:range nfdicore:Publication ;
-                                              rdfs:label "DOI of" .
-
-
-###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/EthicalOrLegalSkillLevel
-nfdi4dso:EthicalOrLegalSkillLevel rdf:type owl:ObjectProperty ;
-                                  owl:inverseOf nfdi4dso:EthicalOrLegalSkillLevelOf ;
-                                  <http://purl.obolibrary.org/obo/IAO_0000115> "The level of Ethical or Legal skills the persona possesses" ;
-                                  rdfs:label "ethical or legal skill level" .
-
-
-###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/EthicalOrLegalSkillLevelOf
-nfdi4dso:EthicalOrLegalSkillLevelOf rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                                    rdfs:domain nfdi4dso:PersonaEthicalOrLegalSkillLevel ;
-                                    rdfs:range nfdi4dso:Persona ;
-                                    rdfs:label "ethical or legal skill level of" .
-
-
-###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/LODStatus
-nfdi4dso:LODStatus rdf:type owl:ObjectProperty ;
-                   owl:inverseOf nfdi4dso:LODStatusOf ;
-                   rdfs:label "LOD status" .
-
-
-###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/LODStatusOf
-nfdi4dso:LODStatusOf rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                     rdfs:domain nfdi4dso:LODRating ;
-                     rdfs:range nfdicore:Dataset ;
-                     <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a FAIR Data Principle and a dataset." ;
-                     rdfs:label "LOD status of" .
-
-
-###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/ORCIDIDof
-nfdi4dso:ORCIDIDof rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000219> ;
-                   owl:inverseOf nfdi4dso:hasORCIDID ;
-                   rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000708> ;
-                   rdfs:range nfdicore:Person ;
-                   rdfs:label "ORCIDID of" .
-
-
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/affiliation
 nfdi4dso:affiliation rdf:type owl:ObjectProperty ;
                      rdfs:domain nfdicore:Person ;
                      rdfs:range nfdicore:Organization ;
                      <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a person and an organization." ;
+                     rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                      rdfs:label "affiliation" .
 
 
@@ -206,6 +161,7 @@ nfdi4dso:appearsAt rdf:type owl:ObjectProperty ;
                    rdfs:domain nfdicore:Publication ;
                    rdfs:range nfdi4dso:PageRange ;
                    <http://purl.obolibrary.org/obo/IAO_0000115> "A relation between a publication and a page range which indicates where the publication appears in a proceeding using the minimum and maximum page numbers" ;
+                   rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                    rdfs:label "appears at" .
 
 
@@ -222,7 +178,8 @@ nfdi4dso:coLocatedWith rdf:type owl:ObjectProperty ;
                                    ] ;
                        rdfs:range nfdi4dso:Conference ;
                        <http://purl.obolibrary.org/obo/IAO_0000115> "A relationship between an event and a conference indicating that the event is happening together at the same place as the conference." ;
-                       rdfs:isDefinedBy "co-located with" .
+                       rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
+                       rdfs:label "co-located with" .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/coSpokesperson
@@ -231,18 +188,30 @@ nfdi4dso:coSpokesperson rdf:type owl:ObjectProperty ;
                         rdfs:domain nfdicore:Consortium ;
                         rdfs:range nfdicore:Person ;
                         <http://purl.obolibrary.org/obo/IAO_0000115> "A relationship between a consortium and its co-spokesperson" ;
+                        rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                         rdfs:label "co-spokesperson" .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/coSpokespersonOf
 nfdi4dso:coSpokespersonOf rdf:type owl:ObjectProperty ;
+                          rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                           rdfs:label "co-spokesperson of" .
 
 
-###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/domainknowledgeLevel
-nfdi4dso:domainknowledgeLevel rdf:type owl:ObjectProperty ;
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/doiOf
+nfdi4dso:doiOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000219> ;
+               rdfs:domain <http://purl.obolibrary.org/obo/OBI_0002110> ;
+               rdfs:range nfdicore:Publication ;
+               rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
+               rdfs:label "DOI of" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/domainKnowledgeLevel
+nfdi4dso:domainKnowledgeLevel rdf:type owl:ObjectProperty ;
                               owl:inverseOf nfdi4dso:domainknowledgeLevelOf ;
                               <http://purl.obolibrary.org/obo/IAO_0000115> "The level of domain knowledge the persona possesses" ;
+                              rdfs:isDefinedBy "https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0" ;
                               rdfs:label "domain knowledge level" .
 
 
@@ -251,6 +220,7 @@ nfdi4dso:domainknowledgeLevelOf rdf:type owl:ObjectProperty ;
                                 rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
                                 rdfs:domain nfdi4dso:PersonaDomainKnowledgeLevel ;
                                 rdfs:range nfdi4dso:Persona ;
+                                rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                                 rdfs:label "domain knowledge level of" .
 
 
@@ -259,7 +229,25 @@ nfdi4dso:establishedBy rdf:type owl:ObjectProperty ;
                        rdfs:domain nfdi4dso:WorkingGroup ;
                        rdfs:range nfdicore:Project ;
                        <http://purl.obolibrary.org/obo/IAO_0000115> "The property is a relation between a working group and a project" ;
+                       rdfs:isDefinedBy "https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0" ;
                        rdfs:label "established by" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/ethicalOrLegalSkillLevel
+nfdi4dso:ethicalOrLegalSkillLevel rdf:type owl:ObjectProperty ;
+                                  owl:inverseOf nfdi4dso:ethicalOrLegalSkillLevelOf ;
+                                  <http://purl.obolibrary.org/obo/IAO_0000115> "The level of Ethical or Legal skills the persona possesses" ;
+                                  rdfs:isDefinedBy "https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0" ;
+                                  rdfs:label "ethical or legal skill level" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/ethicalOrLegalSkillLevelOf
+nfdi4dso:ethicalOrLegalSkillLevelOf rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                    rdfs:domain nfdi4dso:PersonaEthicalOrLegalSkillLevel ;
+                                    rdfs:range nfdi4dso:Persona ;
+                                    rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
+                                    rdfs:label "ethical or legal skill level of" .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/evaluationDataset
@@ -271,6 +259,7 @@ nfdi4dso:evaluationDataset rdf:type owl:ObjectProperty ;
                                        ] ;
                            rdfs:range nfdicore:Dataset ;
                            <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a sharedtask or subtask and a dataset" ;
+                           rdfs:isDefinedBy "https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0" ;
                            rdfs:label "evaluation dataset" .
 
 
@@ -283,6 +272,7 @@ nfdi4dso:evaluationMetric rdf:type owl:ObjectProperty ;
                                       ] ;
                           rdfs:range nfdi4dso:EvaluationMetric ;
                           <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a shared task or a subtask and its evaluation metric" ;
+                          rdfs:isDefinedBy "https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0" ;
                           rdfs:label "evaluation metric" .
 
 
@@ -291,6 +281,7 @@ nfdi4dso:eventContactPoint rdf:type owl:ObjectProperty ;
                            rdfs:domain nfdicore:Event ;
                            rdfs:range nfdicore:Person ;
                            <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between an event and its contact point" ;
+                           rdfs:isDefinedBy "https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0" ;
                            rdfs:label "event contact point" .
 
 
@@ -299,12 +290,14 @@ nfdi4dso:eventOrganizer rdf:type owl:ObjectProperty ;
                         rdfs:domain nfdicore:Event ;
                         rdfs:range nfdicore:Agent ;
                         <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between an event and its organizer" ;
+                        rdfs:isDefinedBy "https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0" ;
                         rdfs:label "event organizer" .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/fairStatus
 nfdi4dso:fairStatus rdf:type owl:ObjectProperty ;
                     owl:inverseOf nfdi4dso:fairStatusOf ;
+                    rdfs:isDefinedBy "https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0" ;
                     rdfs:label "fair status" .
 
 
@@ -313,22 +306,26 @@ nfdi4dso:fairStatusOf rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
                       rdfs:domain nfdi4dso:FAIRDataPriniciple ;
                       rdfs:range nfdicore:Dataset ;
-                      <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a LOD Rating and a dataset." ,
-                                                                   "fair status of" .
+                      <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a LOD Rating and a dataset." ;
+                      rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
+                      rdfs:label "fair status of" .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/hasNext
 nfdi4dso:hasNext rdf:type owl:ObjectProperty ;
                  rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000442> ;
                  rdfs:range <http://purl.obolibrary.org/obo/IAO_0000442> ;
+                 rdfs:isDefinedBy "https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0" ;
                  rdfs:label "has next" ;
                  rdfs:seeAlso <https://w3id.org/oc/ontology/hasNext> .
 
 
-###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/hasORCIDID
-nfdi4dso:hasORCIDID rdf:type owl:ObjectProperty ;
-                    <http://purl.obolibrary.org/obo/IAO_0000115> "The ORCID ID of the person" ;
-                    rdfs:label "has ORCIDID" .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/hasORCID
+nfdi4dso:hasORCID rdf:type owl:ObjectProperty ;
+                  owl:inverseOf nfdi4dso:orcidOf ;
+                  <http://purl.obolibrary.org/obo/IAO_0000115> "The Open Researcher and Contributor ID of the person" ;
+                  rdfs:isDefinedBy "https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0" ;
+                  rdfs:label "has ORCID" .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/isAssociatedWith
@@ -336,6 +333,7 @@ nfdi4dso:isAssociatedWith rdf:type owl:ObjectProperty ;
                           rdfs:domain nfdi4dso:Proceedings ;
                           rdfs:range nfdi4dso:AcademicEvent ;
                           <http://purl.obolibrary.org/obo/IAO_0000115> "An academic event a given proceedings publication is associated with" ;
+                          rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                           rdfs:label "is associated with" .
 
 
@@ -353,29 +351,62 @@ nfdi4dso:lead rdf:type owl:ObjectProperty ;
                                        )
                          ] ;
               <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a measure or a task area and its lead." ;
+              rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
               rdfs:label "lead" .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/leadOf
 nfdi4dso:leadOf rdf:type owl:ObjectProperty ;
+                rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                 rdfs:label "lead of" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/lodStatus
+nfdi4dso:lodStatus rdf:type owl:ObjectProperty ;
+                   owl:inverseOf nfdi4dso:lodStatusOf ;
+                   rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
+                   rdfs:label "LOD status" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/lodStatusOf
+nfdi4dso:lodStatusOf rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                     rdfs:domain nfdi4dso:LODRating ;
+                     rdfs:range nfdicore:Dataset ;
+                     <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a FAIR Data Principle and a dataset." ;
+                     rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
+                     rdfs:label "LOD status of" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/orcidOf
+nfdi4dso:orcidOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000219> ;
+                 rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000708> ;
+                 rdfs:range nfdicore:Person ;
+                 rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
+                 rdfs:label "ORCID of" .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/personaDescription
 nfdi4dso:personaDescription rdf:type owl:ObjectProperty ;
                             owl:inverseOf nfdi4dso:personaDescriptionOf ;
+                            rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                             rdfs:label "persona description" .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/personaDescriptionOf
 nfdi4dso:personaDescriptionOf rdf:type owl:ObjectProperty ;
                               rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                              rdfs:domain nfdi4dso:PersonaDescription ;
+                              rdfs:range nfdi4dso:Persona ;
+                              rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                               rdfs:label "persona description of" .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/personaProblem
 nfdi4dso:personaProblem rdf:type owl:ObjectProperty ;
                         owl:inverseOf nfdi4dso:personaProblemOf ;
+                        rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                         rdfs:label "persona problem" .
 
 
@@ -384,6 +415,7 @@ nfdi4dso:personaProblemOf rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
                           rdfs:domain nfdi4dso:PersonaProblemDescription ;
                           rdfs:range nfdi4dso:Persona ;
+                          rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                           rdfs:label "persona problem of" .
 
 
@@ -391,6 +423,7 @@ nfdi4dso:personaProblemOf rdf:type owl:ObjectProperty ;
 nfdi4dso:softSkill rdf:type owl:ObjectProperty ;
                    owl:inverseOf nfdi4dso:softSkillOf ;
                    <http://purl.obolibrary.org/obo/IAO_0000115> "The level of soft skills the persona possesses" ;
+                   rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                    rdfs:label "soft skill" .
 
 
@@ -399,6 +432,7 @@ nfdi4dso:softSkillOf rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
                      rdfs:domain nfdi4dso:PersonaSoftSkillLevel ;
                      rdfs:range nfdi4dso:Persona ;
+                     rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                      rdfs:label "soft skill of" .
 
 
@@ -408,11 +442,13 @@ nfdi4dso:spokesperson rdf:type owl:ObjectProperty ;
                       rdfs:domain nfdicore:Consortium ;
                       rdfs:range nfdicore:Person ;
                       <http://purl.obolibrary.org/obo/IAO_0000115> "A relationship between a consortium and its spokesperson" ;
+                      rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                       rdfs:label "spokesperson" .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/spokespersonOf
 nfdi4dso:spokespersonOf rdf:type owl:ObjectProperty ;
+                        rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                         rdfs:label "spokesperson of" .
 
 
@@ -428,12 +464,14 @@ nfdi4dso:taskAreaOrMeasureContributor rdf:type owl:ObjectProperty ;
                                                                  nfdicore:Person
                                                                )
                                                  ] ;
+                                      rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                                       rdfs:label "task area or measure contributor" .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/technicalSkillLevel
 nfdi4dso:technicalSkillLevel rdf:type owl:ObjectProperty ;
                              owl:inverseOf nfdi4dso:technicalSkillLevelOf ;
+                             rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                              rdfs:label "technical skill level" .
 
 
@@ -442,6 +480,7 @@ nfdi4dso:technicalSkillLevelOf rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
                                rdfs:domain nfdi4dso:PersonaTechnicalSkillLevel ;
                                rdfs:range nfdi4dso:Persona ;
+                               rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                                rdfs:label "technical skill level of" .
 
 
@@ -453,6 +492,7 @@ nfdi4dso:workingGroupContactPoint rdf:type owl:ObjectProperty ;
                                                              nfdicore:Person
                                                            )
                                              ] ;
+                                  rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                                   rdfs:label "working group contact point" .
 
 
@@ -464,6 +504,7 @@ nfdi4dso:workingGroupMember rdf:type owl:ObjectProperty ;
                                                        nfdicore:Person
                                                      )
                                        ] ;
+                            rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                             rdfs:label "working group member" .
 
 
@@ -471,7 +512,7 @@ nfdi4dso:workingGroupMember rdf:type owl:ObjectProperty ;
 <https://schema.org/eventAttendanceMode> rdf:type owl:ObjectProperty ;
                                          rdfs:domain nfdicore:Event ;
                                          rdfs:range <http://schema.org/EventAttendanceModeEnumeration> ;
-                                         rdfs:isDefinedBy "https://schema.org/" ;
+                                         rdfs:isDefinedBy <https://schema.org/> ;
                                          rdfs:label "event attendance mode" .
 
 
@@ -504,6 +545,7 @@ nfdi4dso:availableAt rdf:type owl:DatatypeProperty ;
                      rdfs:domain nfdi4dso:NewsArticle ;
                      rdfs:range xsd:string ;
                      <http://purl.obolibrary.org/obo/IAO_0000115> "The property takes as a value a url where the news article is available" ;
+                     rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                      rdfs:label "available at" .
 
 
@@ -512,6 +554,7 @@ nfdi4dso:hasAbstract rdf:type owl:DatatypeProperty ;
                      rdfs:domain nfdicore:Publication ;
                      rdfs:range xsd:string ;
                      <http://purl.obolibrary.org/obo/IAO_0000115> "The abstract of a publication" ;
+                     rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                      rdfs:label "has abstract" .
 
 
@@ -520,6 +563,7 @@ nfdi4dso:hasRank rdf:type owl:DatatypeProperty ;
                  rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000442> ;
                  rdfs:range xsd:string ;
                  <http://purl.obolibrary.org/obo/IAO_0000115> "The rank of an author of a document" ;
+                 rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                  rdfs:label "has rank" .
 
 
@@ -532,6 +576,7 @@ nfdi4dso:hasSequenceIdentifier rdf:type owl:DatatypeProperty ;
                                            ] ;
                                rdfs:range xsd:positiveInteger ;
                                <http://purl.obolibrary.org/obo/IAO_0000115> "The sequence of a journal issue or journal volume." ;
+                               rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                                rdfs:label "has sequence identifier" .
 
 
@@ -540,6 +585,7 @@ nfdi4dso:longDescription rdf:type owl:DatatypeProperty ;
                          rdfs:domain nfdi4dso:NewsArticle ;
                          rdfs:range xsd:string ;
                          <http://purl.obolibrary.org/obo/IAO_0000115> "The detailed content of the news" ;
+                         rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                          rdfs:label "long description" .
 
 
@@ -548,6 +594,7 @@ nfdi4dso:maximum rdf:type owl:DatatypeProperty ;
                  rdfs:domain nfdi4dso:PageRange ;
                  rdfs:range xsd:positiveInteger ;
                  <http://purl.obolibrary.org/obo/IAO_0000115> "The page number indicating the last page of a document in a proceeding" ;
+                 rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                  rdfs:label "maximum" .
 
 
@@ -556,6 +603,7 @@ nfdi4dso:minimum rdf:type owl:DatatypeProperty ;
                  rdfs:domain nfdi4dso:PageRange ;
                  rdfs:range xsd:positiveInteger ;
                  <http://purl.obolibrary.org/obo/IAO_0000115> "The page number indicating the first page of a document in a proceeding" ;
+                 rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                  rdfs:label "minimum" .
 
 
@@ -564,11 +612,14 @@ nfdi4dso:shortDescription rdf:type owl:DatatypeProperty ;
                           rdfs:domain nfdi4dso:NewsArticle ;
                           rdfs:range xsd:string ;
                           <http://purl.obolibrary.org/obo/IAO_0000115> "The short description of the content of the news" ;
+                          rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                           rdfs:label "short description" .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/zipcode
-nfdi4dso:zipcode rdf:type owl:DatatypeProperty .
+nfdi4dso:zipcode rdf:type owl:DatatypeProperty ;
+                 rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
+                 rdfs:label "ZIP code" .
 
 
 #################################################################
@@ -629,21 +680,24 @@ fabio:JournalVolume rdf:type owl:Class .
                                                                                    )
                                                                        ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000115> "An EventAttendanceMode is one of potentially several modes of organising an event, relating to whether it is online or offline. E.g., Hybrid." ;
-                                                   rdfs:isDefinedBy <https://schema.org/EventAttendanceModeEnumeration> .
+                                                   rdfs:isDefinedBy <https://schema.org/> .
 
 
 ###  http://www.w3.org/2006/time#Instant
-<http://www.w3.org/2006/time#Instant> rdf:type owl:Class .
+<http://www.w3.org/2006/time#Instant> rdf:type owl:Class ;
+                                      rdfs:isDefinedBy <http://www.w3.org/2006/time> .
 
 
 ###  http://www.w3.org/2006/time#Interval
-<http://www.w3.org/2006/time#Interval> rdf:type owl:Class .
+<http://www.w3.org/2006/time#Interval> rdf:type owl:Class ;
+                                       rdfs:isDefinedBy <http://www.w3.org/2006/time> .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/AcademicEvent
 nfdi4dso:AcademicEvent rdf:type owl:Class ;
                        rdfs:subClassOf nfdi4dso:OrganizedEvent ;
                        <http://purl.obolibrary.org/obo/IAO_0000115> "An event which is for example a conference or conference-like event, and all the sub-events of those which are about the topic or theme of the conference, such as talks or panels." ;
+                       rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                        rdfs:label "academic event" ;
                        <http://www.w3.org/2004/02/skos/core#exactMatch> cono:AcademicEvent .
 
@@ -667,6 +721,7 @@ nfdi4dso:BecomingAMember rdf:type owl:Class ;
 nfdi4dso:CoSpokespersonRole rdf:type owl:Class ;
                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
                             <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in a person that is realized when the person is a co-spokesperson of a Consortium." ;
+                            rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                             rdfs:label "co-spokesperson role" .
 
 
@@ -674,6 +729,7 @@ nfdi4dso:CoSpokespersonRole rdf:type owl:Class ;
 nfdi4dso:Conference rdf:type owl:Class ;
                     rdfs:subClassOf nfdi4dso:AcademicEvent ;
                     <http://purl.obolibrary.org/obo/IAO_0000115> "A conference event." ;
+                    rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                     rdfs:label "conference" ;
                     <http://www.w3.org/2004/02/skos/core#exactMatch> cono:Conference ;
                     <http://www.w3.org/2004/02/skos/core#example> "ISWC-2024" .
@@ -684,6 +740,7 @@ nfdi4dso:EducationalFunction rdf:type owl:Class ;
                              rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000034> ;
                              <http://purl.obolibrary.org/obo/IAO_0000115> "Educational function is \"One of four basic kinds of uses of social communication listed by Schramm from the perspective of the individual, in which the normative objectives are for the sender to teach and for the receiver to learn. He distinguishes this from a purely informational function. From the  perspective of society, Schramm argues that this function is analogous  to the function of socialization. See also media functions; personal functions.\"" ;
                              <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.oxfordreference.com/display/10.1093/oi/authority.20110803095742736" ;
+                             rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                              rdfs:label "educational function" .
 
 
@@ -691,6 +748,7 @@ nfdi4dso:EducationalFunction rdf:type owl:Class ;
 nfdi4dso:EvaluationMetric rdf:type owl:Class ;
                           rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
                           <http://purl.obolibrary.org/obo/IAO_0000115> "A quantitative measure used to assess the performance and effectiveness of a statistical or machine learning model" ;
+                          rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                           rdfs:label "evaluation metric" ;
                           <http://www.w3.org/2004/02/skos/core#example> "Precision, recall, F1-score, and BLEU" .
 
@@ -706,6 +764,7 @@ nfdi4dso:FAIRDataPriniciple rdf:type owl:Class ;
                                                 ] ;
                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
                             <http://purl.obolibrary.org/obo/IAO_0000115> "A principle aiming to enhance the management of data, ultimately fostering transparency, collaboration, and innovation in research and beyond." ;
+                            rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                             rdfs:label "FAIR data principle" .
 
 
@@ -714,6 +773,7 @@ nfdi4dso:Hackathon rdf:type owl:Class ;
                    rdfs:subClassOf nfdi4dso:OrganizedEvent ;
                    <http://purl.obolibrary.org/obo/IAO_0000115> "An event where individuals or teams come together to engage in rapid and collaborative engineering over a relatively short period of time." ;
                    rdfs:comment "An event where individuals or teams come together to engage in rapid and collaborative engineering over a relatively short period of time."@en ;
+                   rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                    rdfs:label "hackathon" ;
                    <http://www.w3.org/2004/02/skos/core#example> "BioHackathon Germany" .
 
@@ -722,6 +782,7 @@ nfdi4dso:Hackathon rdf:type owl:Class ;
 nfdi4dso:JournalArticle rdf:type owl:Class ;
                         rdfs:subClassOf nfdicore:Publication ;
                         <http://purl.obolibrary.org/obo/IAO_0000115> "A report that is published in a jornal." ;
+                        rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                         rdfs:label "journal article" .
 
 
@@ -729,6 +790,7 @@ nfdi4dso:JournalArticle rdf:type owl:Class ;
 nfdi4dso:LODRating rdf:type owl:Class ;
                    rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
                    <http://purl.obolibrary.org/obo/IAO_0000115> "A rating of data based on 1) its availability on the Web under an open license, (2) being in the form of structured data, (3) being in a non-proprietary file format, (4) using URIs as its identifiers, (5) including links to other data sources." ;
+                   rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                    rdfs:label "LOD rating" .
 
 
@@ -744,6 +806,7 @@ nfdi4dso:Leading rdf:type owl:Class ;
 nfdi4dso:Lecture rdf:type owl:Class ;
                  rdfs:subClassOf nfdi4dso:OrganizedEvent ;
                  <http://purl.obolibrary.org/obo/IAO_0000115> "An academic event which is intented to deliver instruction on a specific topic, most commonly to an audience of university students."@en ;
+                 rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                  rdfs:label "lecture" .
 
 
@@ -751,6 +814,7 @@ nfdi4dso:Lecture rdf:type owl:Class ;
 nfdi4dso:MeasureContributorRole rdf:type owl:Class ;
                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in an agent that is realized when the agent is a contributor of a measure defined in a Consortium." ;
+                                rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                                 rdfs:label "measure contributor role" .
 
 
@@ -758,6 +822,7 @@ nfdi4dso:MeasureContributorRole rdf:type owl:Class ;
 nfdi4dso:MeasureLeadRole rdf:type owl:Class ;
                          rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
                          <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in an agent that is realized when the agent is a leader of a measure defined in a Consortium." ;
+                         rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                          rdfs:label "measure lead role" .
 
 
@@ -765,6 +830,7 @@ nfdi4dso:MeasureLeadRole rdf:type owl:Class ;
 nfdi4dso:NewsArticle rdf:type owl:Class ;
                      rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
                      <http://purl.obolibrary.org/obo/IAO_0000115> "A work consisting of an announcement or statement of recent or current events of new data" ;
+                     rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                      rdfs:label "news article" .
 
 
@@ -773,6 +839,7 @@ nfdi4dso:OrganizedEvent rdf:type owl:Class ;
                         rdfs:subClassOf nfdicore:Event ;
                         <http://purl.obolibrary.org/obo/IAO_0000115> "Any kind of organised event having a start and an end date."@en ;
                         <http://purl.obolibrary.org/obo/IAO_0000119> <http://www.scholarlydata.org/ontology/doc/#d4e1203> ;
+                        rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                         rdfs:label "organized event" ;
                         <http://www.w3.org/2004/02/skos/core#exactMatch> cono:OrganisedEvent ;
                         <http://www.w3.org/2004/02/skos/core#example> "conferences, workshops, lectures, or any other planned event."@en .
@@ -782,6 +849,7 @@ nfdi4dso:OrganizedEvent rdf:type owl:Class ;
 nfdi4dso:PageRange rdf:type owl:Class ;
                    rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
                    <http://purl.obolibrary.org/obo/IAO_0000115> "The range of pages indicating where a publication appears in a proceeding" ;
+                   rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                    rdfs:label "page range" .
 
 
@@ -789,6 +857,7 @@ nfdi4dso:PageRange rdf:type owl:Class ;
 nfdi4dso:Persona rdf:type owl:Class ;
                  rdfs:subClassOf nfdicore:Agent ;
                  <http://purl.obolibrary.org/obo/IAO_0000115> "A persona is a fictional character, which is created based upon a research to represent a group of users that might use a service, product, site, or brand in a similar way" ;
+                 rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                  rdfs:label "persona" ;
                  <http://www.w3.org/2004/02/skos/core#example> "Alex https://www.nfdi4datascience.de/community/requirements-elicitation/personas/" .
 
@@ -797,6 +866,7 @@ nfdi4dso:Persona rdf:type owl:Class ;
 nfdi4dso:PersonaDescription rdf:type owl:Class ;
                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
                             <http://purl.obolibrary.org/obo/IAO_0000115> "A description of a persona" ;
+                            rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                             rdfs:label "persona description" .
 
 
@@ -804,6 +874,7 @@ nfdi4dso:PersonaDescription rdf:type owl:Class ;
 nfdi4dso:PersonaDomainKnowledgeLevel rdf:type owl:Class ;
                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
                                      <http://purl.obolibrary.org/obo/IAO_0000115> "The domain knowledge skill level a persona possesses" ;
+                                     rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                                      rdfs:label "persona domain knowledge level" .
 
 
@@ -811,6 +882,7 @@ nfdi4dso:PersonaDomainKnowledgeLevel rdf:type owl:Class ;
 nfdi4dso:PersonaEthicalOrLegalSkillLevel rdf:type owl:Class ;
                                          rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
                                          <http://purl.obolibrary.org/obo/IAO_0000115> "The ethical legal skill level a persona possesses" ;
+                                         rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                                          rdfs:label "persona ethical or legal skill level" .
 
 
@@ -818,6 +890,7 @@ nfdi4dso:PersonaEthicalOrLegalSkillLevel rdf:type owl:Class ;
 nfdi4dso:PersonaOccupationRole rdf:type owl:Class ;
                                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
                                <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in a persona that is realized when the persona participates in a Project." ;
+                               rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                                rdfs:label "persona occupation role" .
 
 
@@ -825,6 +898,7 @@ nfdi4dso:PersonaOccupationRole rdf:type owl:Class ;
 nfdi4dso:PersonaProblemDescription rdf:type owl:Class ;
                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
                                    <http://purl.obolibrary.org/obo/IAO_0000115> "A description of a problem defined by a Persona" ;
+                                   rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                                    rdfs:label "persona problem description" .
 
 
@@ -832,6 +906,7 @@ nfdi4dso:PersonaProblemDescription rdf:type owl:Class ;
 nfdi4dso:PersonaSoftSkillLevel rdf:type owl:Class ;
                                rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
                                <http://purl.obolibrary.org/obo/IAO_0000115> "The soft skill level a persona possesses" ;
+                               rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                                rdfs:label "persona soft skill level" .
 
 
@@ -839,6 +914,7 @@ nfdi4dso:PersonaSoftSkillLevel rdf:type owl:Class ;
 nfdi4dso:PersonaTask rdf:type owl:Class ;
                      rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
                      <http://purl.obolibrary.org/obo/IAO_0000115> "A task that is a persona wants to be addressed" ;
+                     rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                      rdfs:label "persona task" .
 
 
@@ -846,6 +922,7 @@ nfdi4dso:PersonaTask rdf:type owl:Class ;
 nfdi4dso:PersonaTechnicalSkillLevel rdf:type owl:Class ;
                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
                                     <http://purl.obolibrary.org/obo/IAO_0000115> "The technical skill level a persona possesses" ;
+                                    rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                                     rdfs:label "persona technical skill level" .
 
 
@@ -853,6 +930,7 @@ nfdi4dso:PersonaTechnicalSkillLevel rdf:type owl:Class ;
 nfdi4dso:PersonaWishDescription rdf:type owl:Class ;
                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A description of a wish defined by a Persona" ;
+                                rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                                 rdfs:label "persona wish description" .
 
 
@@ -860,6 +938,7 @@ nfdi4dso:PersonaWishDescription rdf:type owl:Class ;
 nfdi4dso:Proceedings rdf:type owl:Class ;
                      rdfs:subClassOf nfdicore:Publication ;
                      <http://purl.obolibrary.org/obo/IAO_0000115> "The collection of proceedings of an academic event." ;
+                     rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                      rdfs:label "Proceedings" .
 
 
@@ -867,6 +946,7 @@ nfdi4dso:Proceedings rdf:type owl:Class ;
 nfdi4dso:ScienceSlam rdf:type owl:Class ;
                      rdfs:subClassOf nfdi4dso:OrganizedEvent ;
                      <http://purl.obolibrary.org/obo/IAO_0000115> "A scientific talk where scientists present their own scientific research work in a given time frame in front of a non-expert audience."@en ;
+                     rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                      rdfs:label "science slam" .
 
 
@@ -874,6 +954,7 @@ nfdi4dso:ScienceSlam rdf:type owl:Class ;
 nfdi4dso:SharedTask rdf:type owl:Class ;
                     rdfs:subClassOf nfdi4dso:AcademicEvent ;
                     <http://purl.obolibrary.org/obo/IAO_0000115> "A shared task is an interactive event organized by NFDI4DS that attract the data science and AI community. The task may be divided into subtasks." ;
+                    rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                     rdfs:label "shared task" ;
                     <http://www.w3.org/2004/02/skos/core#example> "Scholarly QALD (Question Answering over Scholarly Knowledge Graphs) at ISWC 2023 https://kgqa.github.io/scholarly-QALD-challenge/2023/" .
 
@@ -882,6 +963,7 @@ nfdi4dso:SharedTask rdf:type owl:Class ;
 nfdi4dso:SpokespersonRole rdf:type owl:Class ;
                           rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
                           <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in a person that is realized when the person is a spokesperson of a Consortium." ;
+                          rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                           rdfs:label "spokesperson role" .
 
 
@@ -889,6 +971,7 @@ nfdi4dso:SpokespersonRole rdf:type owl:Class ;
 nfdi4dso:SubTask rdf:type owl:Class ;
                  rdfs:subClassOf nfdi4dso:AcademicEvent ;
                  <http://purl.obolibrary.org/obo/IAO_0000115> "One of the divided tasks of a certain shared task." ;
+                 rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                  rdfs:label "sub-task" ;
                  <http://www.w3.org/2004/02/skos/core#example> "Task 1: DBLP-QUAD — Knowledge Graph Question Answering over DBLP https://kgqa.github.io/scholarly-QALD-challenge/2023/" .
 
@@ -897,6 +980,7 @@ nfdi4dso:SubTask rdf:type owl:Class ;
 nfdi4dso:SummerSchool rdf:type owl:Class ;
                       rdfs:subClassOf nfdi4dso:OrganizedEvent ;
                       <http://purl.obolibrary.org/obo/IAO_0000115> "An intensive summer educational program with a focus on specialized topics within a particular field or discipline to offer participants the opportunity to deepen their knowledge, develop new skills, and engage with experts and peers in the field." ;
+                      rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                       rdfs:label "summer school" ;
                       <http://www.w3.org/2004/02/skos/core#example> "International Semantic Web Summer School 2024 (ISWS) https://2024.semanticwebschool.org/" .
 
@@ -905,6 +989,7 @@ nfdi4dso:SummerSchool rdf:type owl:Class ;
 nfdi4dso:TaskArea rdf:type owl:Class ;
                   rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033> ;
                   <http://purl.obolibrary.org/obo/IAO_0000115> "A task area (TA) defined in NFDI4DS project addressing one or more issues." ;
+                  rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                   rdfs:label "task area" ;
                   <http://www.w3.org/2004/02/skos/core#example> """Task Area 1 DS and AI - Community and Training,
 Task Area 2 (Research Knowledge Graphs)""" .
@@ -914,6 +999,7 @@ Task Area 2 (Research Knowledge Graphs)""" .
 nfdi4dso:TaskAreaContributorRole rdf:type owl:Class ;
                                  rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
                                  <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in an agent that is realized when the agent is a contributor of a task area defined in a Consortium." ;
+                                 rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                                  rdfs:label "task area contributor role" .
 
 
@@ -921,6 +1007,7 @@ nfdi4dso:TaskAreaContributorRole rdf:type owl:Class ;
 nfdi4dso:TaskAreaLeadRole rdf:type owl:Class ;
                           rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
                           <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in an agent that is realized when the agent is a lead of a task area defined in a Consortium." ;
+                          rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                           rdfs:label "task area lead role" .
 
 
@@ -928,6 +1015,7 @@ nfdi4dso:TaskAreaLeadRole rdf:type owl:Class ;
 nfdi4dso:TaskAreaMeasure rdf:type owl:Class ;
                          rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033> ;
                          <http://purl.obolibrary.org/obo/IAO_0000115> "a task area measure that is defined as part of a given project task area" ;
+                         rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                          rdfs:label "task area measure" .
 
 
@@ -935,6 +1023,7 @@ nfdi4dso:TaskAreaMeasure rdf:type owl:Class ;
 nfdi4dso:Tutorial rdf:type owl:Class ;
                   rdfs:subClassOf nfdi4dso:AcademicEvent ;
                   <http://purl.obolibrary.org/obo/IAO_0000115> "A tutorial event." ;
+                  rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                   rdfs:label "tutorial" ;
                   <http://www.w3.org/2004/02/skos/core#exactMatch> cono:Tutorial .
 
@@ -943,6 +1032,7 @@ nfdi4dso:Tutorial rdf:type owl:Class ;
 nfdi4dso:WorkingGroup rdf:type owl:Class ;
                       rdfs:subClassOf nfdicore:Agent ;
                       <http://purl.obolibrary.org/obo/IAO_0000115> "A group of individuals who are members of one or more task areas in NFDI4DS project with a focus on workin together to address a specific topic" ;
+                      rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                       rdfs:label "working group" ;
                       <http://www.w3.org/2004/02/skos/core#example> "Metadata WG" .
 
@@ -951,6 +1041,7 @@ nfdi4dso:WorkingGroup rdf:type owl:Class ;
 nfdi4dso:WorkingGroupContactPointRole rdf:type owl:Class ;
                                       rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in an agent that is realized when the agent is a contact point of a working group defined in a Consortium." ;
+                                      rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                                       rdfs:label "working group contact point role" .
 
 
@@ -958,6 +1049,7 @@ nfdi4dso:WorkingGroupContactPointRole rdf:type owl:Class ;
 nfdi4dso:WorkingGroupMemberRole rdf:type owl:Class ;
                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A role inhering in an agent that is realized when the agent is a member of a working group defined in a Consortium." ;
+                                rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                                 rdfs:label "working group member role" .
 
 
@@ -965,6 +1057,7 @@ nfdi4dso:WorkingGroupMemberRole rdf:type owl:Class ;
 nfdi4dso:Workshop rdf:type owl:Class ;
                   rdfs:subClassOf nfdi4dso:AcademicEvent ;
                   <http://purl.obolibrary.org/obo/IAO_0000115> "A workshop event." ;
+                  rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                   rdfs:label "workshop" ;
                   <http://www.w3.org/2004/02/skos/core#exactMatch> cono:Workshop .
 
@@ -1052,12 +1145,13 @@ nfdicore:Publication rdf:type owl:Class .
 #    Annotations
 #################################################################
 
-<https://orcid.org/0000-0003-3807-7145> rdfs:label "Genet Asefa Gesese" .
+<https://orcid.org/0000-0001-7069-9804> rdfs:label "Harald Sack" .
+
 
 <https://orcid.org/0000-0001-7192-7143> rdfs:label "Jörg Waitelonis" .
 
-<https://orcid.org/0000-0001-7069-9804> rdfs:label "Harald Sack" .
 
+<https://orcid.org/0000-0003-3807-7145> rdfs:label "Genet Asefa Gesese" .
 
 
 #################################################################
