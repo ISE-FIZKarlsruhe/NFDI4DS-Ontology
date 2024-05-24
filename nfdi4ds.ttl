@@ -674,9 +674,9 @@ fabio:JournalVolume rdf:type owl:Class .
 ###  http://schema.org/EventAttendanceModeEnumeration
 <http://schema.org/EventAttendanceModeEnumeration> rdf:type owl:Class ;
                                                    owl:equivalentClass [ rdf:type owl:Class ;
-                                                                         owl:oneOf ( <https://schema.org/MixedEventAttendanceMode>
-                                                                                     <https://schema.org/OfflineEventAttendanceMode>
-                                                                                     <https://schema.org/OnlineEventAttendanceMode>
+                                                                         owl:oneOf ( <http://schema.org/MixedEventAttendanceMode>
+                                                                                     <http://schema.org/OfflineEventAttendanceMode>
+                                                                                     <http://schema.org/OnlineEventAttendanceMode>
                                                                                    )
                                                                        ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000115> "An EventAttendanceMode is one of potentially several modes of organising an event, relating to whether it is online or offline. E.g., Hybrid." ;
@@ -756,10 +756,10 @@ nfdi4dso:EvaluationMetric rdf:type owl:Class ;
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/FAIRDataPriniciple
 nfdi4dso:FAIRDataPriniciple rdf:type owl:Class ;
                             owl:equivalentClass [ rdf:type owl:Class ;
-                                                  owl:oneOf ( <https://nfdi.fiz-karlsruhe.de/nfdi4dsoAccessible>
-                                                              <https://nfdi.fiz-karlsruhe.de/nfdi4dsoFindable>
-                                                              <https://nfdi.fiz-karlsruhe.de/nfdi4dsoInteroperable>
-                                                              <https://nfdi.fiz-karlsruhe.de/nfdi4dsoReusable>
+                                                  owl:oneOf ( nfdi4dso:Accessible
+                                                              nfdi4dso:Findable
+                                                              nfdi4dso:Interoperable
+                                                              nfdi4dso:Reusable
                                                             )
                                                 ] ;
                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
@@ -1106,39 +1106,39 @@ nfdicore:Publication rdf:type owl:Class .
 #    Individuals
 #################################################################
 
-###  https://nfdi.fiz-karlsruhe.de/nfdi4dsoAccessible
-<https://nfdi.fiz-karlsruhe.de/nfdi4dsoAccessible> rdf:type owl:NamedIndividual ,
-                                                            nfdi4dso:FAIRDataPriniciple .
+###  http://schema.org/MixedEventAttendanceMode
+<http://schema.org/MixedEventAttendanceMode> rdf:type owl:NamedIndividual ,
+                                                      <http://schema.org/EventAttendanceModeEnumeration> .
 
 
-###  https://nfdi.fiz-karlsruhe.de/nfdi4dsoFindable
-<https://nfdi.fiz-karlsruhe.de/nfdi4dsoFindable> rdf:type owl:NamedIndividual ,
-                                                          nfdi4dso:FAIRDataPriniciple .
+###  http://schema.org/OfflineEventAttendanceMode
+<http://schema.org/OfflineEventAttendanceMode> rdf:type owl:NamedIndividual ,
+                                                        <http://schema.org/EventAttendanceModeEnumeration> .
 
 
-###  https://nfdi.fiz-karlsruhe.de/nfdi4dsoInteroperable
-<https://nfdi.fiz-karlsruhe.de/nfdi4dsoInteroperable> rdf:type owl:NamedIndividual ,
-                                                               nfdi4dso:FAIRDataPriniciple .
-
-
-###  https://nfdi.fiz-karlsruhe.de/nfdi4dsoReusable
-<https://nfdi.fiz-karlsruhe.de/nfdi4dsoReusable> rdf:type owl:NamedIndividual ,
-                                                          nfdi4dso:FAIRDataPriniciple .
-
-
-###  https://schema.org/MixedEventAttendanceMode
-<https://schema.org/MixedEventAttendanceMode> rdf:type owl:NamedIndividual ,
+###  http://schema.org/OnlineEventAttendanceMode
+<http://schema.org/OnlineEventAttendanceMode> rdf:type owl:NamedIndividual ,
                                                        <http://schema.org/EventAttendanceModeEnumeration> .
 
 
-###  https://schema.org/OfflineEventAttendanceMode
-<https://schema.org/OfflineEventAttendanceMode> rdf:type owl:NamedIndividual ,
-                                                         <http://schema.org/EventAttendanceModeEnumeration> .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/Accessible
+nfdi4dso:Accessible rdf:type owl:NamedIndividual ,
+                             nfdi4dso:FAIRDataPriniciple .
 
 
-###  https://schema.org/OnlineEventAttendanceMode
-<https://schema.org/OnlineEventAttendanceMode> rdf:type owl:NamedIndividual ,
-                                                        <http://schema.org/EventAttendanceModeEnumeration> .
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/Findable
+nfdi4dso:Findable rdf:type owl:NamedIndividual ,
+                           nfdi4dso:FAIRDataPriniciple .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/Interoperable
+nfdi4dso:Interoperable rdf:type owl:NamedIndividual ,
+                                nfdi4dso:FAIRDataPriniciple .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/Reusable
+nfdi4dso:Reusable rdf:type owl:NamedIndividual ,
+                           nfdi4dso:FAIRDataPriniciple .
 
 
 #################################################################
