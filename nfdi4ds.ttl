@@ -147,6 +147,13 @@ fabio:hasPublicationYear rdf:type owl:ObjectProperty ;
                                       rdfs:isDefinedBy "http://www.w3.org/2006/time" .
 
 
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/PersonaWishDescriptionOf
+nfdi4dso:PersonaWishDescriptionOf rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                  owl:inverseOf nfdi4dso:personaWishDescription ;
+                                  rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> .
+
+
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/affiliation
 nfdi4dso:affiliation rdf:type owl:ObjectProperty ;
                      rdfs:domain nfdicore:Person ;
@@ -417,6 +424,30 @@ nfdi4dso:personaProblemOf rdf:type owl:ObjectProperty ;
                           rdfs:range nfdi4dso:Persona ;
                           rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
                           rdfs:label "persona problem of" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/personaTask
+nfdi4dso:personaTask rdf:type owl:ObjectProperty ;
+                     owl:inverseOf nfdi4dso:personaTaskOf ;
+                     rdfs:domain nfdi4dso:Persona ;
+                     rdfs:range nfdi4dso:PersonaTask ;
+                     rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
+                     rdfs:label "persona task" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/personaTaskOf
+nfdi4dso:personaTaskOf rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                       rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
+                       rdfs:label "persona task of" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/personaWishDescription
+nfdi4dso:personaWishDescription rdf:type owl:ObjectProperty ;
+                                rdfs:domain nfdi4dso:Persona ;
+                                rdfs:range nfdi4dso:PersonaWishDescription ;
+                                rdfs:isDefinedBy <https://nfdi.fiz-karlsruhe.de/nfdi4dso/1.0.0> ;
+                                rdfs:label "persona wish description" .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/nfdi4dso/softSkill
@@ -1368,7 +1399,7 @@ nfdi4dso:c rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
                                                                                       ] ;
                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                                                   <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:MeasureLeadRole ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:MeasureContributorRole ;
                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:ro
                                                                                                  ] ;
                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -1462,7 +1493,7 @@ nfdi4dso:c rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
                                                                                       ] ;
                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                                                   <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:TaskAreaLeadRole ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#classPredicate> nfdi4dso:TaskAreaContributorRole ;
                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> nfdi4dso:ro
                                                                                                  ] ;
                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
